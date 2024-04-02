@@ -1,2 +1,3 @@
-# demographic_model_page
-A GitHub Page for the interactive visualization of my demographic model
+# Demographic Model Page
+
+https://danieleongari.github.io/demographic_model_page/
