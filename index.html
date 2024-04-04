@@ -2,6 +2,7 @@
 <html>
  <head>
    <title>Demographic Model</title>
+   <link rel="icon" href="favicon-32x32.png" >
    <style>
       body {
          
@@ -60,30 +61,48 @@
    </div> 
    <div class="container">
       <h1>Demographic Model of the Italian population from 2002 to 2100</h1>
-      <p>Visualization of my model of the Italian population based on the data published by <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.</p>
-      <p>For checking the model, calculation by calculation, visit my GitHub repository <a href="https://github.com/danieleongari/saturdaymorningdsprojects">Saturday-Morning-Projects</a>, and don't hesitate to contribute!</p>
+      <p>Visualization of my model of the Italian population based on the data published by 
+        <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.</p>
+      <p>For checking the model, calculation by calculation, visit my GitHub repository 
+        <a href="https://github.com/danieleongari/saturdaymorningdsprojects">Saturday-Morning-Projects</a>, and don't hesitate to contribute!</p>
       <h2>Description of the Model</h2>
       <img src="model.png" alt="Model Image" style="width: 800px; "> 
       <h2>Presenting the 3x3 scenarios</h3>
-         <p>Projecting the fertility rate into the future, I assume 3 scenarios: lowering to 0 in 2100, constant, and increasing to 2 in 2100</p>
+         <p>I need to make some assumptions to forecast the future, 
+            therefore I will consider 9 scenarios obtained by combining 3 scenarios for the fertility rate 
+            and 3 for the net migration balance</p>
+         <p>Scenarios for the fertility rate: lowering to 0.0 in 2100, constant, and increasing to 2.0 in 2100</p>
          <iframe src="3_fertility_scenarios.html">  </iframe>
 
-         <p>Projecting the net migration balance into the future, I assume 3 scenarios: null migration since this year, constant (average since 2002), increasing to 5 times the current one in 2100</p>
+         <p>Scenarios for the net migration balance: null net migration since this year, 
+            constant (average since 2002), increasing to 5-times the current value in 2100</p>
          <iframe src="3_migration_balance_scenarios.html">  </iframe>
          
 
-      <h2>Extrapolating the future the Population Growth Rate for the older population</h2> 
+      <h2>Extrapolating the Population Growth Rate for the older</h2> 
+         <p>I use the past data (2002-2024) for the population older than 60 to fit and exponential decaying fit. 
+            Note that we expect improving life conditions due to care technology.</p>
          <iframe src="3_pgr_extrapolation.html" >  </iframe>
+         <p>Visualize here the past (fitted) and future (predicted) population growth rate by age. 
+            For the second one I'm not considering the net migration balance: it will be added later according to the scenario considered.</p>
          <iframe src="3_pgr.html" >  </iframe>
 
-      <h2>I can now forecast the population by age from 2002 to 2100, in the 9 scenarios</h2> 
+      <h2>Forecasting the population by age from 2002 to 2100</h2> 
+        <p>Here you can see the forecast of the population by age for the 9 scenarios. 
+            The population is divided into single-year age groups.</p>
          <iframe src="3_final_population_by_age.html" style="height: 450px;"> </iframe>
 
-      <h2>Summing up all the ages, this is the forecast of the future population in the 9 scenarios</h2> 
+      <h2>Forecasting the future population </h2> 
+            <p>Summing all up for the 9 scenarios.</p>
          <iframe src="3_final_total_population.html" style="height: 400px;"> </iframe>
 
-      <h2>Final forecast of the expected retirement age</h3>
+      <h2>Forecasting the future age of retirement</h3>
+            <p> Assuming an average age of 20 years old to start working, 
+                and keeping a constant reasonable balance of 2.2 working people per retired person,
+                I can forecast the expected retirement age for the 9 scenarios.
+            </p>
          <iframe src="4_sustainable_retirement_age.html" style="height: 400px;"> </iframe>
+         <p>Any comment? <a href="https://github.com/danieleongari/demographic_model_page/issues">Write me!</a></p>
    </div>
 </body>
 </html>
