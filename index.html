@@ -3,51 +3,99 @@
  <head>
    <title>Demographic Model</title>
    <style>
-     html, body {
-        height: 100%;
-        margin: 0;
-        padding-left: 20px;
+      body {
+         
+         display: flex;
+         flex-direction: column; /* align items vertically */
+         justify-content: center;
+         align-items: center;
+         margin: 0;
+         background-color: #f0f0f0;
+         font-family: Arial, sans-serif;
      }
-     h2 {
-        padding-left: 10px;
+     .banner {
+         height: 30px;
+         width: 100%;
+         background-color: #333;
+         color: white;
+         padding: 10px 0;
+         position: fixed;
+         top: 0;
+         z-index: 100;
+         display: flex;
+         justify-content: flex-end;
+     }
+     .banner a {
+         margin-right: 10px;
+         color: white;
+         text-decoration: none;
+     }
+     .container {
+         padding-top: 50px; /* to avoid the fixed banner */ 
+         text-align: center;
+
+         max-width: 800px;
+         margin: 0 auto;
+     }
+     h2, h3, h4 {
+         text-align: left;
      }
      p {
-        padding-left: 10px;
+         text-align: left;
      }
      iframe {
-        width: 100%;
-        height: 400px;
-        border: none;
+         width: 100%;
+         height: 300px;
+         border: none;
+         display: block;
+         margin: auto;
      }
   </style>
  </head>
  <body>
-   <h1>Demographic Model of the Italian population from 2002 to 2100</h1>
-   <p>Visualization of my model of the Italian population based on the data published by <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.</p>
-   <p>For checking the model, calculation by calculation, visit my GitHub repository <a href="https://github.com/danieleongari/saturdaymorningdsprojects">Saturday-Morning-Projects</a>, and don't hesitate to contribute!</p>
-   <h2>Description of the Model</h2>
-   <img src="model.png" alt="Model Image" style="height: 300px;"> 
-   <h2>Presenting the 3x3 scenarios</h3>
-      <p>Projecting the fertility rate into the future, I assume 3 scenarios: lowering to 0 in 2100, constant, and increasing to 2 in 2100</p>
-      <iframe src="3_fertility_scenarios.html">  </iframe>
+   <div class="banner">
+      <a href="https://github.com/danieleongari/demographic_model_page">
+            <img src="github-mark-white.png" alt="GitHub" style="height: 30px"> <!-- Same height as banner -->
+      </a> 
+   </div> 
+   <div class="container">
+      <h1>Demographic Model of the Italian population from 2002 to 2100</h1>
+      <p>Visualization of my model of the Italian population based on the data published by <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.</p>
+      <p>For checking the model, calculation by calculation, visit my GitHub repository <a href="https://github.com/danieleongari/saturdaymorningdsprojects">Saturday-Morning-Projects</a>, and don't hesitate to contribute!</p>
+      <h2>Description of the Model</h2>
+      <img src="model.png" alt="Model Image" style="height: 300px;"> 
+      <h2>Presenting the 3x3 scenarios</h3>
+         <p>Projecting the fertility rate into the future, I assume 3 scenarios: lowering to 0 in 2100, constant, and increasing to 2 in 2100</p>
+         <iframe src="3_fertility_scenarios.html">  </iframe>
 
-      <p>Projecting the net migration balance into the future, I assume 3 scenarios: null migration since this year, constant (average since 2002), increasing to 5 times the current one in 2100</p>
-      <iframe src="3_migration_balance_scenario_0x.html" style="height: 300px;">  </iframe>
-      <iframe src="3_migration_balance_scenario_1x.html" style="height: 300px;">  </iframe>
-      <iframe src="3_migration_balance_scenario_5x.html" style="height: 300px;">  </iframe>
-      
+         <p>Projecting the net migration balance into the future, I assume 3 scenarios: null migration since this year, constant (average since 2002), increasing to 5 times the current one in 2100</p>
+         <iframe src="3_migration_balance_scenario_0x.html" style="height: 300px;">  </iframe>
+         <iframe src="3_migration_balance_scenario_1x.html" style="height: 300px;">  </iframe>
+         <iframe src="3_migration_balance_scenario_5x.html" style="height: 300px;">  </iframe>
+         
 
-   <h2>Extrapolating the future the Population Growth Rate for the older population</h2> 
-      <iframe src="3_pgr_extrapolation.html" >  </iframe>
-      <iframe src="3_pgr.html" >  </iframe>
+      <h2>Extrapolating the future the Population Growth Rate for the older population</h2> 
+         <iframe src="3_pgr_extrapolation.html" >  </iframe>
+         <iframe src="3_pgr.html" >  </iframe>
 
-   <h2>I can now forecast the population by age from 2002 to 2100, in the 9 scenarios</h2> 
-      <iframe src="3_final_population_by_age.html" >  </iframe>
+      <h2>I can now forecast the population by age from 2002 to 2100, in the 9 scenarios</h2> 
+         <iframe src="3_final_population_by_age.html" >  </iframe>
 
-   <h2>Summing up all the ages, this is the forecast of the future population in the 9 scenarios</h2> 
-      <iframe src="3_final_total_population.html" >  </iframe>
+      <h2>Summing up all the ages, this is the forecast of the future population in the 9 scenarios</h2> 
+         <iframe src="3_final_total_population.html" >  </iframe>
 
-   <h2>Final forecast of the expected retirement age</h3>
-      <iframe src="4_sustainable_retirement_age.html">  </iframe>
+      <h2>Final forecast of the expected retirement age</h3>
+         <iframe src="4_sustainable_retirement_age.html">  </iframe>
+   </div>
 </body>
 </html>
+<script> /* This makes the banner disappear in a way that makes the user perceive that it is separated from body */
+   window.onscroll = function() {
+       var banner = document.querySelector('.banner');
+       if (window.pageYOffset > 50) { // Adjust this value based on when you want the change to occur
+           banner.style.position = 'relative';
+       } else {
+           banner.style.position = 'fixed';
+       }
+   };
+</script>
