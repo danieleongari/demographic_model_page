@@ -10,7 +10,7 @@
          justify-content: center;
          align-items: center;
          margin: 0;
-         background-color: #f0f0f0;
+         background-color: white;
          font-family: Arial, sans-serif;
      }
      .banner {
@@ -33,7 +33,7 @@
      .container {
          padding-top: 50px; /* to avoid the fixed banner */ 
          text-align: center;
-
+         background-color: white;
          max-width: 800px;
          margin: 0 auto;
      }
@@ -63,15 +63,13 @@
       <p>Visualization of my model of the Italian population based on the data published by <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.</p>
       <p>For checking the model, calculation by calculation, visit my GitHub repository <a href="https://github.com/danieleongari/saturdaymorningdsprojects">Saturday-Morning-Projects</a>, and don't hesitate to contribute!</p>
       <h2>Description of the Model</h2>
-      <img src="model.png" alt="Model Image" style="height: 300px;"> 
+      <img src="model.png" alt="Model Image" style="width: 800px; "> 
       <h2>Presenting the 3x3 scenarios</h3>
          <p>Projecting the fertility rate into the future, I assume 3 scenarios: lowering to 0 in 2100, constant, and increasing to 2 in 2100</p>
          <iframe src="3_fertility_scenarios.html">  </iframe>
 
          <p>Projecting the net migration balance into the future, I assume 3 scenarios: null migration since this year, constant (average since 2002), increasing to 5 times the current one in 2100</p>
-         <iframe src="3_migration_balance_scenario_0x.html" style="height: 300px;">  </iframe>
-         <iframe src="3_migration_balance_scenario_1x.html" style="height: 300px;">  </iframe>
-         <iframe src="3_migration_balance_scenario_5x.html" style="height: 300px;">  </iframe>
+         <iframe src="3_migration_balance_scenarios.html">  </iframe>
          
 
       <h2>Extrapolating the future the Population Growth Rate for the older population</h2> 
@@ -79,13 +77,13 @@
          <iframe src="3_pgr.html" >  </iframe>
 
       <h2>I can now forecast the population by age from 2002 to 2100, in the 9 scenarios</h2> 
-         <iframe src="3_final_population_by_age.html" >  </iframe>
+         <iframe src="3_final_population_by_age.html" style="height: 450px;"> </iframe>
 
       <h2>Summing up all the ages, this is the forecast of the future population in the 9 scenarios</h2> 
-         <iframe src="3_final_total_population.html" >  </iframe>
+         <iframe src="3_final_total_population.html" style="height: 400px;"> </iframe>
 
       <h2>Final forecast of the expected retirement age</h3>
-         <iframe src="4_sustainable_retirement_age.html">  </iframe>
+         <iframe src="4_sustainable_retirement_age.html" style="height: 400px;"> </iframe>
    </div>
 </body>
 </html>
