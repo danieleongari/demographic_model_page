@@ -3,54 +3,94 @@
  <head>
    <title>Demographic Model</title>
    <link rel="icon" href="favicon-32x32.png" >
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
    <style>
       body {
-         
+         padding-top: 50px; /* to avoid the fixed banner */ 
          display: flex;
          flex-direction: column; /* align items vertically */
          justify-content: center;
          align-items: center;
          margin: 0;
+         padding: 50px 0 0 0;
          background-color: white;
          font-family: Arial, sans-serif;
-     }
-     .banner {
+      }
+      .banner {
          height: 30px;
          width: 100%;
          background-color: #333;
-         color: white;
          padding: 10px 0;
-         position: fixed;
+         position: fixed; /* a script will touch this later */
          top: 0;
          z-index: 100;
          display: flex;
          justify-content: flex-end;
-     }
-     .banner a {
-         margin-right: 10px;
-         color: white;
-         text-decoration: none;
-     }
+         transition: transform 0.3s ease-in-out; /* slower transition for reappearing */
+      }
+      .banner-hidden {
+         transform: translateY(-100%);
+         transition: transform 0.2s ease-in-out;
+      }
+      .banner a {
+            padding-right: 10px;
+            text-decoration: none;
+      }
+      .banner a img:hover {
+            filter: hue-rotate(0deg) saturate(100%) brightness(80%);
+      }
      .container {
-         padding-top: 50px; /* to avoid the fixed banner */ 
          text-align: center;
          background-color: white;
          max-width: 800px;
          margin: 0 auto;
-     }
+      }
+      .footer {
+         bottom: 0;
+         width: 100%;
+         height: 50px; /* Adjust this value to match the height of your banner */
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-end;
+         margin-top: 10px;
+         border-top: 1px solid white;
+         background: linear-gradient(to bottom, white 0%, white 50% );
+         }
+      .footer .left {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            color: black;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+      }
+      .footer .left:hover {
+            color: gray;
+      }
+      .footer .right {
+            padding-right: 10px;
+            padding-bottom: 10px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+      }
+      #modDate {
+            font-size: 15px;
+      }
      h2, h3, h4 {
          text-align: left;
-     }
-     p {
-         text-align: left;
-     }
-     iframe {
-         width: 100%;
-         height: 300px;
-         border: none;
-         display: block;
-         margin: auto;
-     }
+      }
+      p {
+            text-align: left;
+      }
+      iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            display: block;
+            margin: auto;
+      }
   </style>
  </head>
  <body>
@@ -115,15 +155,35 @@
             <img src="tldr.jpg" alt="TLDR Image" style="width: 700px;">
         </div>
    </div>
+   <div class="footer">
+      <span class="left"> </span>
+      <span class="right">Last modification <span id="modDate" font-size="10px"></span></span>
+  </div>
 </body>
 </html>
-<script> /* This makes the banner disappear in a way that makes the user perceive that it is separated from body */
-   window.onscroll = function() {
-       var banner = document.querySelector('.banner');
-       if (window.pageYOffset > 50) { // Adjust this value based on when you want the change to occur
-           banner.style.position = 'relative';
+<script>
+   var lastScrollTop = 0;
+   var banner = document.querySelector('.banner');
+
+   window.addEventListener('scroll', function() {
+       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+       if (scrollTop > lastScrollTop) {
+           // Downscroll, hide banner
+           banner.classList.add('banner-hidden');
        } else {
-           banner.style.position = 'fixed';
+           // Upscroll, show banner
+           banner.classList.remove('banner-hidden');
        }
-   };
+       lastScrollTop = scrollTop;
+   });
+</script>
+<script>
+   var lastMod = new Date(document.lastModified);
+   var day = ("0" + lastMod.getDate()).slice(-2);
+   var month = ("0" + (lastMod.getMonth() + 1)).slice(-2);
+   var year = lastMod.getFullYear();
+   var hours = ("0" + lastMod.getHours()).slice(-2);
+   var minutes = ("0" + lastMod.getMinutes()).slice(-2);
+   var formattedDate = day + "/" + month + "/" + year + " " + hours + ":" + minutes;
+   document.getElementById('modDate').textContent = formattedDate;
 </script>
