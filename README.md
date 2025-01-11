@@ -11,10 +11,15 @@ Visualization posted on:
 
 ## ChengeLog
 
+### Jan25
+
+- Compared mortality from `DCIS_MORTALITA1` and `DCIS_DECESSI` and opened [a ticket to ISTAT for clarification](https://contact.istat.it/s/case/500Tj00000GdztvIAB)
+- Compared deaths with change-in-population, and obtained some qualitative results (not quantitative, as I can not use deaths data directly)
+
 ### Jun24
 
 - Moved the whole analysis to this repository (`DEPRECATION` label on [StaurdayMorningDSProjects](https://github.com/danieleongari/saturdaymorningdsprojects) repo)
-- Accurate mortality data considered in the analysis
+- Try to consider mortality data
 
 ### Apr24
 
