@@ -2,7 +2,7 @@
 
 🌐 https://danieleongari.github.io/demographic_model_page/
 
-Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects.
+🔗 Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects.
 
 🗣️ Posted on:
 
