@@ -1,17 +1,17 @@
 # Demographic Model Page
 
-Visualization: https://danieleongari.github.io/demographic_model_page/
+🌐 https://danieleongari.github.io/demographic_model_page/
 
-Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects, find the analysis in the `notebooks` folder of this repository.
+Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects.
 
-Visualization posted on:
+🗣️ Posted on:
 
 - [Linkedin (italian)](https://www.linkedin.com/posts/danieleongari_ho-preso-gli-ultimi-aggiornamenti-istat-e-activity-7181748786174586881-F5hI) - Apr24
 - [Reddit r/ItaliaPersonalFinance](https://www.reddit.com/r/ItaliaPersonalFinance/comments/1bwcg3g/ho_preso_gli_ultimi_aggiornamenti_demografici/) - Apr24
 
 ## Notebooks
 
-:chart with upward trend: Visualize the notebooks with interactive plotly graphs on [nbviewer](https://nbviewer.jupyter.org/github/danieleongari/demographic_model_page/tree/main/notebooks/).
+📈 Visualize the notebooks with interactive plotly graphs on [nbviewer](https://nbviewer.jupyter.org/github/danieleongari/demographic_model_page/tree/main/notebooks/).
 
 - Exploring data
   - `available_istat_dataset` - explore how the istat_api package works, what can be the relevant dataset I need, and their structure
