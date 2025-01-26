@@ -9,16 +9,19 @@ Visualization posted on:
 - [Linkedin (italian)](https://www.linkedin.com/posts/danieleongari_ho-preso-gli-ultimi-aggiornamenti-istat-e-activity-7181748786174586881-F5hI) - Apr24
 - [Reddit r/ItaliaPersonalFinance](https://www.reddit.com/r/ItaliaPersonalFinance/comments/1bwcg3g/ho_preso_gli_ultimi_aggiornamenti_demografici/) - Apr24
 
-## Index
+## Notebooks
 
-- Exploring the data
+:chart with upward trend: Visualize the notebooks with interactive plotly graphs on [nbviewer](https://nbviewer.jupyter.org/github/danieleongari/demographic_model_page/tree/main/notebooks/).
+
+- Exploring data
   - `available_istat_dataset` - explore how the istat_api package works, what can be the relevant dataset I need, and their structure
   - `investigate_italian_residents` - explore datasets for registered residents in Italy: `DCIS_RICPOPRES2011` and `DCIS_POPRES1`
   - `investigate_italian_deaths` - compare datasets `DCIS_MORTALITA1` and `DCIS_DECESSI` to spot the differences
   - `compare_deaths_deltaresidents` - compare deaths with the change in residents to spot the migration balance
   - `investigate_italian_deathprob` - spot trents in mortality over the years of observation, since 1974
   - `investigate_italian_fertility` - explore dataset `DCIS_FECONDITA1` and reconcile data with the population dataset 
-- Analyze the data
+  - `investigate_italian_migrations` - explore dataset `DCIS_MIGRAZIONI` and reconcile data with the population dataset
+- Analyzing data
   - `correlate_deaths_heathwaves_2003` - correlate deaths with heatwaves to spot the bump in mortality in 2003
 - Making predictions
   - `modelling_future_population` - predict future population based on past data and several extreme assumptions (scenarios)
