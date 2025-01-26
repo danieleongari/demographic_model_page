@@ -30,8 +30,8 @@ Original project from deprecated https://github.com/danieleongari/saturdaymornin
 ## ChengeLog
 
 - 2025 January
-  - Compared mortality from `DCIS_MORTALITA1` and `DCIS_DECESSI` and opened [a ticket to ISTAT for clarification](https://contact.istat.it/s/case/500Tj00000GdztvIAB)
-  - Compared deaths with change-in-population, and obtained some qualitative results (not quantitative, as I can not use deaths data directly)
+  - More in depth analysis for mortality, fertility rates, and migration balance: comparing my calculations from the 
+    change in population, with the official ISTAT data for these observables
 - 2024 June
   - Moved the whole analysis to this repository (`DEPRECATION` label on [StaurdayMorningDSProjects](https://github.com/danieleongari/saturdaymorningdsprojects) repo)
   - Try to consider mortality data
