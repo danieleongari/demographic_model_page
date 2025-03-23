@@ -100,59 +100,120 @@
       </a> 
    </div> 
    <div class="container">
-      <h1>Demographic Model of the Italian population from 2002 to 2100</h1>
-      <p>Visualization of my model of the Italian population based on the data published by 
-        <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.</p>
-      <p>For checking the model, calculation by calculation, visit my GitHub repository 
-        <a href="https://github.com/danieleongari/saturdaymorningdsprojects">Saturday-Morning-Projects</a>, and don't hesitate to contribute!</p>
-      <p><i>Tips for visualization: best way is to browse the web page on a computer, as you can hover the mouse on the plots and check the data in detail 
-         (often more convenient than comparing the colors to the legend). Still acceptable for smartphone visualization, it is better to turn it horizontal.</i></p>
 
-      <h2>Description of the Model</h2>
-      <img src="images_other/model.png" alt="Model Image" style="width: 800px; "> 
-      <h2>Presenting the 3x3 scenarios</h3>
-         <p>I need to make some assumptions to forecast the future, 
-            therefore I will consider 9 scenarios obtained by combining 3 scenarios for the fertility rate 
-            and 3 for the net migration balance</p>
-         <p>Scenarios for the fertility rate: lowering to 0.0 in 2100, constant, and increasing to 2.0 in 2100</p>
-         <iframe src="images_plotly/3_fertility_scenarios.html">  </iframe>
+      <h1>Demographic Model of the Italian population</h1>
 
-         <p>Scenarios for the net migration balance: null net migration since this year, 
-            constant (average since 2002), increasing to 5-times the current value in 2100</p>
-         <iframe src="images_plotly/3_migration_balance_scenarios.html">  </iframe>
-         
+         <p>This is a visualization of a model of the resident population in Italy, projected till 2100.
+            The model is based on the historical demographic data published by 
+         <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>,
+         whose database is explored in 
 
-      <h2>Extrapolating the Population Growth Rate for the older</h2> 
-         <p>I use the past data (2002-2024) for the population older than 60 to fit and exponential decaying fit. 
-            Note that we expect improving life conditions due to care technology.</p>
-         <iframe src="images_plotly/3_pgr_extrapolation.html" >  </iframe>
-         <p>Visualize here the past (fitted) and future (predicted) population growth rate by age. 
-            For the second one I'm not considering the net migration balance: it will be added later according to the scenario considered.</p>
-         <iframe src="images_plotly/3_pgr.html" >  </iframe>
+         <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#05</a>.</p>
 
-      <h2>Forecasting the population by age from 2002 to 2100</h2> 
-        <p>Here you can see the forecast of the population by age for the 9 scenarios. 
-            The population is divided into single-year age groups. 
-            The 18-45 age window highlighted represent the age at which couples are expected to have children according to the fertility rate.</p>
-         <iframe src="images_plotly/3_final_population_by_age.html" style="height: 450px;"> </iframe>
+         <p>All calcuations, starting from raw data, are available for inspection in the 
+            <a href="https://github.com/danieleongari/demographic_model_page">GitHub repository</a> for this project.
+            Don't hesitate to contribute!</p>
 
-      <h2>Forecasting the future population </h2> 
-            <p>Summing all up for the 9 scenarios.</p>
-         <iframe src="images_plotly/3_final_total_population.html" style="height: 400px;"> </iframe>
-         <p>Note that the baseline scenario (constant fertility & migration) is quite similar to the 
-            <a href=https://demo.istat.it/data/previsioni/Population-and-households-projections-EN.pdf>latest ISTAT projections (see page 24, "istat mediano" red curve).</a> 
-         </p>
+         <p><i>Tips for visualization: best way is to browse the web page on a computer, as you can hover the mouse on the plots and check the data in detail 
+            (often more convenient than comparing the colors to the legend). Still acceptable for smartphone visualization, it is better to turn it horizontal.</i></p>
 
-      <h2>Forecasting the future age of retirement</h3>
-            <p> Assuming an average age of 20 years old to start working, 
-                and keeping constant an <a href=https://nbviewer.org/github/danieleongari/saturdaymorningdsprojects/blob/master/01_will_i_ever_retire_in_italy/4_sustainable_retirement_age.ipynb> average historical ratio of 2.2 working people per retired person</a>  (which I think is to low and needs further investigation),
-                I can forecast the expected retirement age for the 9 scenarios.
+         <h2>Snapshot of the current situation</h2>
+
+            <iframe src="images_output/pop_by_age.html" style="height: 450px;">  </iframe>
+
+            <p>From the database of ISTAT we can plot the number of residents in Italy, grouped by age, 
+               at the first of January, since 2002 
+               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#14</a>).
+               By sliding the cursor you can navigate through the years, till the most recent data,
+               and note several features in this distribution: the peak of baby boomers, the decline in births, and the 
+               wells created by the WW1, the Spanish flu and the WW2. In 2002, the well around 81-86 y.o. could be attributed to the
+               difficult birth conditions in 1916-1921, plus the deaths of soldiers who were 19-29 in 1940-1945. 
+               Also in 2002, the well around 55-61 y.o. could be attributed to the difficult birth conditions in 1941-1947.
             </p>
-         <iframe src="images_plotly/4_sustainable_retirement_age.html" style="height: 400px;"> </iframe>
-         <p>Any comment? <a href="https://github.com/danieleongari/demographic_model_page/issues">Write me!</a></p>
+
+            <p>Given this peculiar fingerprint of the Italian distribution of population, when a new year passes we can expect
+               the number of residents with a certain age to be the same as the number of residents one year younger the previous year,
+               if not because of deaths (always decreasind the count) or the migration balance (increasing or decreasing the count
+               depending on its net balance). 
+            </p>
+
+            <p>In the next plots it is shown this change of population by age, for each year of observation.
+               In case of no deaths and a zero net migration balance, the population would remain constant showing always a value of 0%.
+               This is certainly not the case, showing positive/negative %-change among young and mid-age residents,
+               and negative %-change among older residents, mainly impacted by the deaths. 
+            </p>
+
+            <iframe src="images_output/pop_growth_rate.html" style="height: 450px;">  </iframe>
+
+            <p>Note that 2020 has an oulier curve, which is not mainly attributed to the COVID but to 
+               <a href="https://www.istat.it/comunicato-stampa/censimento-della-popolazione-e-dinamica-demografica-anno-2020/">a change in the methodology of counting</a><div class=""></div>
+            </p>
+
+            <p>However, ISTAT provides data on mortality and migration balnace, directly. 
+               Next sections will investigate these data as a more robust source of information, than the change of population
+               that I could simply calculate from the demographic data.
+            </p>
+
+         <h2>Investigation on the Mortality</h2>
+
+            <p>The probability of death by age and year of observation provided by ISTAT has been investigated in
+               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebooks #20, #25 and 30</a>.
+               ISTAT data on mortality comes from a 
+               <a href="https://www.istat.it/it/files/2018/08/volume-tavole-mortalita-1998.pdf">robust methodology</a>
+               and provides data back to 1974 (red curve in the plot below).
+            </p>
+
+            <p>As we can expect, the probability of death decreased in the last decades, expecially among the eldest people,
+               due to increase care technology. To predict the future probability of death I could use an exponential regression (blue),
+               or to assume that it will stay constant at the average value of the last years (cyan): 
+               not knowing which one is the best approach, I considered an average of the two, as shown in the next plot in green
+               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#63</a>).
+            </p>
+
+            <img src="images_output/deathprob_by_age_year_projection.png" style="width: 780px;">
+
+         <h2>Investigation on the Net Migration Balance</h2>
+
+            <p>Let's investigate deeper... </p>
+
+         <h2>Investigation on the Fertility rate</h2>
+
+            <p>Let's investigate deeper... </p>
+
+            <iframe src="images_output/fertility_scenarios.html" style="height: 450px;"> </iframe>
+
+         <h2>Projection of the future population (3x3 scenarios)</h2>
+
+            <p>I will consider 9 scenarios obtained by combining 3 scenarios for the fertility rate 
+               and 3 for the net migration balance...</p>
+
+            <p>The 18-45 age window highlighted represent the age at which couples are expected to have children according to the fertility rate.</p>
+
+            <iframe src="images_output/pop_by_age_proj.html" style="height: 450px;"> </iframe>
+
+            <p>Summing all ages...</p>
+
+            <iframe src="images_output/pop_tot_proj.html" style="height: 450px;"> </iframe>
+
+         <h2>Forecasting the future age of retirement</h2>
+
+            <p> I will take a pragmatic approach here to estimate the future age of retirements based on the projections of the population,
+               and the assumption that the ratio between working people and retired people will remain constant.</p>
+
+            <p> Assuming an average age of 20 years old to start working, 
+               and keeping constant an average historical ratio of 2.2 working people per retired person
+               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#84</a>)
+               I can forecast the expected retirement age for the 9 scenarios.
+            </p>
+
+            <iframe src="images_output/sust_retirement_age.html" style="height: 450px;"> </iframe>
+            
+            
+            <p>Any comment? <a href="https://github.com/danieleongari/demographic_model_page/issues">Write me!</a></p>
+            
          <div style="height:50px"></div> </div>
-         <div style="text-align: center;">
-            <img src="images_other/tldr.jpg" alt="TLDR Image" style="width: 700px;">
+         <!-- <div style="text-align: center;">
+            <img src="images_other/tldr.jpg" alt="TLDR Image" style="width: 700px;"> -->
         </div>
    </div>
    <div class="footer">
