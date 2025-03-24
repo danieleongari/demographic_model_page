@@ -115,7 +115,9 @@
             Don't hesitate to contribute!</p>
 
          <p><i>Tips for visualization: best way is to browse the web page on a computer, as you can hover the mouse on the plots and check the data in detail 
-            (often more convenient than comparing the colors to the legend). Still acceptable for smartphone visualization, it is better to turn it horizontal.</i></p>
+            (often more convenient than comparing the colors to the legend). Still acceptable for smartphone visualization, it is better to turn it horizontal.
+            The page does contain a lot of interactive plots, so it may take a while to load. Be patient, please!
+         </i></p>
 
          <h2>Snapshot of the current situation</h2>
 
@@ -176,49 +178,74 @@
 
          <h2>Investigation on the Net Migration Balance</h2>
 
-            <p>Let's investigate deeper
-               ... 
+            <p>By subtracting the probability of death from the year-on-year change in the population, I can obtain the net migration balance for each age group
+               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#45</a>).
+               Note, as it was explained before that 2020 has weird values due to the change in the methodology of counting, so I excluded it from the compute of the avarage.
             </p>
 
             <iframe src="images_output/migrants_by_age.html" style="height: 350px;"> </iframe>
 
+            <p>If we sum all the ages, we obtain the total net migration balance which can compared directly with the data from ISTAT:
+               these are collected with a different methodology, so it makes sense not to have exactly the same values.
+            </p>
+
             <iframe src="images_output/migrants_total.html" style="height: 350px;"> </iframe>
+
+            <p>To predict the amount of net migrants, by age, I will consider 3 scenarios: no migration,
+                an average total amount of migrants (i.e., around 250k people per year), and twice this average amount 
+                (i.e., around 500k people per year, as reached in 2003 and 2007).
+                Note that I will spread this total amount of migrants according to the average distribution of ages (traced above in black):
+                as I don't see evident shifts in this distribution, I'll keep it constant.
+            </p> 
 
          <h2>Investigation on the Fertility rate</h2>
 
-            <p>Let's investigate deeper
-               ... 
+            <p>Newborns are a computed from the amount of potential mothers in the range of 18-50 years old.
+               In the next plot we see the probability of having children by age. 
             </p>
 
             <iframe src="images_output/fertility_by_age.html" style="height: 350px;"> </iframe>
 
-            <p>Let's investigate deeper
-               ... 
-            </p>           
+            <p>As we can see an evident trend in this ditribution, in 
+               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#40</a>
+               I compute the coefficient to propagate this trend in the future.
+            </p>   
+            
+            <p>After knowing the normalized distribution fertility by age, and simply assuming that half the Italian residents are women,
+               I still need to guess the total fertility rate for each year.
+               For this I willi consider 3 scenarios: the first is a declining trend seen since 2008 that will lead to a distopian zero fertility rate in 2100,
+               the second is keeping the same value as last year, the last is to assume an increasing fertility up to 2 in 2100.
+            </p>
 
             <iframe src="images_output/fertility_scenarios.html" style="height: 350px;"> </iframe>
 
+            <p>Note that the plot also contains ISTAT's projections, with uncertainty intervals, which are estimated till 2080.
+            </p>
+
          <h2>Projection of the future population (3x3 scenarios)</h2>
 
-            <p>I will consider 9 scenarios obtained by combining 3 scenarios for the fertility rate 
-               and 3 for the net migration balance...</p>
-
-            <p>The 18-45 age window highlighted represent the age at which couples are expected to have children according to the fertility rate.</p>
+            <p>From the last sections I have now all the elements to forecast the future population, 
+               combining the 3 scenarios of fertility, and 3 scenarios of net migration balance
+               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#70</a>.
+               Note that the orange area highlights the 18-50 years old range, to visually appreciate the amount of potential mothers
+               who will give birth to the next generation of newborns.
+            </p>
 
             <iframe src="images_output/pop_by_age_proj.html" style="height: 450px;"> </iframe>
 
-            <p>Summing all ages
-               ...
+            <p>Summing all ages, we obtain the total resident population till 2100, 
+               compared with ISTAT's projections till 2080.
             </p>
 
             <iframe src="images_output/pop_tot_proj.html" style="height: 350px;"> </iframe>
 
-            <p>Considering 3 age groups
-               ...
+            <p>In order to highlight the shift in the composition of the population, 
+               the next plots shows the amount of people belonging to three representative groups: under 21, 21-69, and 70+ years old. 
             </p>
 
-            <img src="images_output/pop_by_age_proj_groups.png" style="width: 750px;"> 
             <!-- No need for link in this case, as the image is clearly visible -->
+            <img src="images_output/pop_by_age_proj_groups.png" style="width: 750px;"> 
+            
 
          <h2>Forecasting the future age of retirement</h2>
 
