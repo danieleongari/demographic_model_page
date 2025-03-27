@@ -57,39 +57,43 @@
          background: linear-gradient(to bottom, white 0%, white 50% );
          }
       .footer .left {
-            padding-left: 10px;
-            padding-bottom: 10px;
-            font-family: 'Dancing Script', cursive;
-            font-size: 20px;
-            color: black;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-            text-decoration: none;
+         padding-left: 10px;
+         padding-bottom: 10px;
+         font-family: 'Dancing Script', cursive;
+         font-size: 20px;
+         color: black;
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+         text-decoration: none;
       }
       .footer .left:hover {
-            color: gray;
+         color: gray;
       }
       .footer .right {
-            padding-right: 10px;
-            padding-bottom: 10px;
-            font-family: 'Dancing Script', cursive;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-            font-size: 18px;
+         padding-right: 10px;
+         padding-bottom: 10px;
+         font-family: 'Dancing Script', cursive;
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+         font-size: 18px;
       }
       #modDate {
-            font-size: 15px;
+         font-size: 15px;
       }
      h2, h3, h4 {
          text-align: left;
       }
       p {
-            text-align: left;
+         text-align: left;
       }
+      ul {
+         text-align: left;
+         margin-left: 20px; /* Optional: Adjust the indentation */
+       }
       iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            display: block;
-            margin: auto;
+         width: 100%;
+         height: 300px;
+         border: none;
+         display: block;
+         margin: auto;
       }
   </style>
  </head>
@@ -239,18 +243,52 @@
 
             <iframe src="images_output/pop_tot_proj.html" style="height: 350px;"> </iframe>
 
+         <h2>Change in populations</h2>
+
             <p>In order to highlight the shift in the composition of the population, 
                the next plots shows the amount of people belonging to three representative groups: under 21, 21-69, and 70+ years old. 
             </p>
 
-            <!-- No need for link in this case, as the image is clearly visible -->
             <img src="images_output/analysis_proj_groups.png" style="width: 700px;"> 
 
             <p>Change in High-school age population (14-18 y.o.):</p>
             </p>            
 
             <img src="images_output/analysis_proj_teens.png" style="width: 700px;"> 
-            
+
+            <p>Number of potential mothers, i.e., the number of women weighted by their probability of having a child according to their age.
+               This is by definition equal to the number of newborns when keeping fertiliy constant to one.
+            </p>
+            <img src="images_output/analysis_proj_mothers.png" style="width: 700px;"> 
+
+            <p>All plots in this sections are generated from 
+               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#73</a>.
+            </p>
+
+
+         <h2>Limitations of the 3x3 scenarios</h2>
+            <p>The scenarios described here are clearly a semplification to test the sensitivity of the model with 
+               first-effect variations. To stress this concept I just list here some possible second-order effect that
+               one could consider to improve the model at the cost of embedding more opinionated assumptions.
+            </p>
+
+            <ul>
+               <li>foreigner migrants may rise the fertility rate as seen in Notebook
+                  <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#40</a>
+                  </li>
+               <li>there could be an emigrating flux of residents born outside Italy, deciding to spend the retirement in their native country,
+                  which we still don't see in the data.
+               </li>
+               <li>there could be an immigrating flux of foreigner elder people, deciding to spend their retirement in Italy</li>
+               <li>decreasing trus in the Italian retirement sistem could raise the fertility rate, in the utilitarianism thesis presented by 
+                  <a href="https://www.nber.org/papers/w11146">Boldrin et al. (2015)</a>
+                  </li>
+               <li>disruptive events like wars or pandemics</li>
+            </ul>
+
+            <p>This is just a quick brainstorming, that reminds the reader to take the output of the model with a grain of salt.
+               The model is not meant to be a prediction, but rather a tool to understand the dynamics of the population.
+            </p>
 
          <h2>Forecasting the future age of retirement</h2>
 
