@@ -26,21 +26,34 @@
   - `correlate_deaths_heathwaves_2003` - correlate deaths with heatwaves to spot the bump in mortality in 2003
 - Making predictions
   - `modelling_future_population` - predict future population based on past data and several extreme assumptions (scenarios)
+  - `analyze_future_population` - opinionated plots on how the future population will look like, based on the previous notebook
   - `sustainable_retirement_age` - compute, for each generation, the retirement age to keep a consistent ratio of workers/retired
 
 ## ChengeLog
 
+- 2025 March
+  - Revamp the population projections on 3x3 scenarios 
+  - add more plots about the future population
+  - Revamp the website 
+
 - 2025 January
+
   - More in depth analysis for mortality, fertility rates, and migration balance: comparing my calculations from the 
     change in population, with the official ISTAT data for these observables
+
 - 2024 June
+
   - Moved the whole analysis to this repository (`DEPRECATION` label on [StaurdayMorningDSProjects](https://github.com/danieleongari/saturdaymorningdsprojects) repo)
   - Try to consider mortality data
+
 - 2024 April
+
   - Updated with 2024 data
   - Better but still approximate estimation of mortality/migration split
   - Conceived 9 scenarios for future mortality and migration balance
   - Created Pages visualization
+
 - 2023 April
+
   - First release of the project on https://github.com/danieleongari/saturdaymorningdsprojects
   - In hindsight, my retirement age of 76 was overestimated due to the rough extrapolation of future population change, without splitting into mortality and migration balance
