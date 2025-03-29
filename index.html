@@ -109,10 +109,10 @@
 
          <p>This is a visualization of a model of the resident population in Italy, projected till 2100.
             The model is based on the historical demographic data published by 
-         <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>,
-         whose database is explored in 
-
-         <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#05</a>.</p>
+            <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>,
+            whose database is explored in 
+            <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#05</a>.
+         </p>
 
          <p>All calcuations, starting from raw data, are available for inspection in the 
             <a href="https://github.com/danieleongari/demographic_model_page">GitHub repository</a> for this project.
@@ -123,12 +123,13 @@
             The page does contain a lot of interactive plots, so it may take a while to load. Be patient, please!
          </i></p>
 
+
          <h2>Snapshot of the current situation</h2>
 
             <iframe src="images_output/pop_by_age.html" style="height: 450px;">  </iframe>
 
-            <p>From the database of ISTAT we can plot the number of residents in Italy, grouped by age, 
-               at the first of January, since 2002 
+            <p>From the database of ISTAT we can plot the number of residents in Italy, grouped by age (cohorts), 
+               as counted at the first of January, since 2002 
                (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#14</a>).
                By sliding the cursor you can navigate through the years, till the most recent data,
                and note several features in this distribution: the peak of baby boomers, the decline in births, and the 
@@ -138,13 +139,14 @@
             </p>
 
             <p>Given this peculiar fingerprint of the Italian distribution of population, when a new year passes we can expect
-               the number of residents with a certain age to be the same as the number of residents one year younger the previous year,
+               the number of residents with a certain age, i.e. the "cohorts", to be the same as the number of residents one year younger the previous year,
                if not because of deaths (always decreasind the count) or the migration balance (increasing or decreasing the count
                depending on its net balance). 
             </p>
 
             <p>In the next plots it is shown this change of population by age, for each year of observation: this will be referred to as 
-               "Cohort Change Rate" (where "cohorts" are the groups of people born in the same year).
+               "Cohort Change Ratio" (where "cohorts" are the groups of people born in the same year).
+               Each year of observation refers to the change in cohorts between the first of January of the year and the first of January of the next year.
                In case of no deaths and a zero net migration balance, the cohorts would remain constant showing always a value of 0%.
                This is certainly not the case, showing positive/negative %-change among young and mid-age residents,
                and negative %-change among older residents, mainly impacted by the deaths. 
@@ -152,14 +154,19 @@
 
             <iframe src="images_output/cohort_change_ratio.html" style="height: 350px;">  </iframe>
 
-            <p>Note that 2020 has an oulier curve, which is not mainly attributed to the COVID but to 
+            <p>Note that 2020 has an outlying curve, which is not mainly attributed to the COVID but to 
                <a href="https://www.istat.it/comunicato-stampa/censimento-della-popolazione-e-dinamica-demografica-anno-2020/">a change in the methodology of counting</a><div class=""></div>
             </p>
 
-            <p>However, ISTAT provides data on mortality and migration balnace, directly. 
-               Next sections will investigate these data as a more robust source of information, than the change of population
-               that I could simply calculate from the demographic data.
+            <p>As this Cohort Change Ratio computed directly from the population count mixes together 
+               the effects of deaths and net migration balance (and possiblely some other artifacts, e.g., due to changes in the methodology of counting),
+               I will try to disentangle these two effects in the next sections.
+               Indeed, ISTAT provides also the probability of death by age and year of observation and the net migration balance by age.
+               The importance of disentangling these two effects is that the net migration balance is a policy variable that could suddenly change
+               and for which we need to assume some future scenarios,
+               while the probability of death is a slow variable where I can extrapolate the trend for a projection in the future.
             </p>
+            
 
          <h2>Investigation on the Mortality</h2>
 
@@ -181,6 +188,7 @@
                <img src="images_output/deathprob_by_age_year_projection.png" style="width: 780px;">
             </a>
 
+
          <h2>Investigation on the Net Migration Balance</h2>
 
             <p>By subtracting the probability of death from the year-on-year change in the population, I can obtain the net migration balance for each age group
@@ -192,6 +200,8 @@
 
             <p>If we sum all the ages, we obtain the total net migration balance which can compared directly with the data from ISTAT:
                these are collected with a different methodology, so it makes sense not to have exactly the same values.
+               From the plot below, we have enough agreement between computed and collected data, 
+               to state what is the range of values we saw in the past and assume some reasonable average.
             </p>
 
             <iframe src="images_output/migrants_total.html" style="height: 350px;"> </iframe>
@@ -203,10 +213,11 @@
                 as I don't see evident shifts in this distribution, I'll keep it constant.
             </p> 
 
+
          <h2>Investigation on the Fertility rate</h2>
 
             <p>Newborns are a computed from the amount of potential mothers in the range of 18-50 years old.
-               In the next plot we see the probability of having children by age. 
+               In the next plot we see the probability that women of a certain age have to give birth computed by ISTAT. 
             </p>
 
             <iframe src="images_output/fertility_by_age.html" style="height: 350px;"> </iframe>
@@ -224,16 +235,19 @@
 
             <iframe src="images_output/fertility_scenarios.html" style="height: 350px;"> </iframe>
 
-            <p>Note that the plot also contains ISTAT's projections, with uncertainty intervals, which are estimated till 2080.
+            <p>Note from the graph that the backfitted value of the fertility rate from the age-probability, population, 
+               and assuming 50% women, is sligtly different from the official valus from ISTAT due to unavoidable small differences
+               in the methodology, but it is anyway a very close.
+               The plot also contains ISTAT's projections for the future fertility rate, with uncertainty intervals, which are estimated till 2080.
             </p>
+
 
          <h2>Projection of the future population (3x3 scenarios)</h2>
 
             <p>From the last sections I have now all the elements to forecast the future population, 
                combining the 3 scenarios of fertility, and 3 scenarios of net migration balance
                <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#70</a>.
-               Note that the orange area highlights the 18-50 years old range, to visually appreciate the amount of potential mothers
-               who will give birth to the next generation of newborns.
+               The orange area highights 18-50 years old range, the age of women who can potentially give birth to the next generation.
             </p>
 
             <iframe src="images_output/pop_by_age_proj.html" style="height: 450px;"> </iframe>
@@ -243,6 +257,7 @@
             </p>
 
             <iframe src="images_output/pop_tot_proj.html" style="height: 350px;"> </iframe>
+
 
          <h2>Change in populations</h2>
 
@@ -260,6 +275,7 @@
             <p>Number of potential mothers, i.e., the number of women weighted by their probability of having a child according to their age.
                This is by definition equal to the number of newborns when keeping fertiliy constant to one.
             </p>
+
             <img src="images_output/analysis_proj_mothers.png" style="width: 700px;"> 
 
             <p>All plots in this sections are generated from 
@@ -268,7 +284,8 @@
 
 
          <h2>Limitations of the 3x3 scenarios</h2>
-            <p>The scenarios described here are clearly a semplification to test the sensitivity of the model with 
+
+            <p>The scenarios described here are clearly a semplification to test the sensitivity of the model to 
                first-effect variations. To stress this concept I just list here some possible second-order effect that
                one could consider to improve the model at the cost of embedding more opinionated assumptions.
             </p>
@@ -280,21 +297,25 @@
                <li>there could be an emigrating flux of residents born outside Italy, deciding to spend the retirement in their native country,
                   which we still don't see in the data.
                </li>
-               <li>there could be an immigrating flux of foreigner elder people, deciding to spend their retirement in Italy</li>
+               <li>there could be an immigrating flux of foreigner elder people, deciding to spend their retirement in Italy
+               </li>
                <li>decreasing trus in the Italian retirement sistem could raise the fertility rate, in the utilitarianism thesis presented by 
                   <a href="https://www.nber.org/papers/w11146">Boldrin et al. (2015)</a>
-                  </li>
-               <li>disruptive events like wars or pandemics</li>
+               </li>
+               <li>disruptive events like wars or pandemics
+               </li>
             </ul>
 
             <p>This is just a quick brainstorming, that reminds the reader to take the output of the model with a grain of salt.
-               The model is not meant to be a prediction, but rather a tool to understand the dynamics of the population.
+               The model is not meant to be a granitic prediction, but rather a tool to understand the dynamics of the population.
             </p>
+
 
          <h2>Forecasting the future age of retirement</h2>
 
             <p> I will take a pragmatic approach here to estimate the future age of retirements based on the projections of the population,
-               and the assumption that the ratio between working people and retired people will remain constant.</p>
+               and the assumption that the ratio between working people and retired people will remain constant.
+            </p>
 
             <p> Assuming an average age of 20 years old to start working, 
                and keeping constant an average historical ratio of 2.2 working people per retired person
@@ -304,14 +325,16 @@
 
             <iframe src="images_output/sust_retirement_age.html" style="height: 350px;"> </iframe>
 
-            <p>That's all folks!</p>
+            <p>That's all folks!
+            </p>
             
-            <p>Any comment? <a href="https://github.com/danieleongari/demographic_model_page/issues">Write me!</a></p>
+            <p>Any comment? 
+               <a href="https://github.com/danieleongari/demographic_model_page/issues">Write me!</a>
+            </p>
             
-         <div style="height:50px"></div> </div>
+         <div style="height:50px"></div> 
          <!-- <div style="text-align: center;">
             <img src="images_other/tldr.jpg" alt="TLDR Image" style="width: 700px;"> -->
-        </div>
    </div>
    <div class="footer">
       <span class="left"> </span>
