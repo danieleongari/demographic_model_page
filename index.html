@@ -114,7 +114,7 @@
             <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#05</a>.
          </p>
 
-         <p>All calcuations, starting from raw data, are available for inspection in the 
+         <p>All calculations, starting from raw data, are available for inspection in the 
             <a href="https://github.com/danieleongari/demographic_model_page">GitHub repository</a> for this project.
             Don't hesitate to contribute!</p>
 
@@ -140,7 +140,7 @@
 
             <p>Given this peculiar fingerprint of the Italian distribution of population, when a new year passes we can expect
                the number of residents with a certain age, i.e. the "cohorts", to be the same as the number of residents one year younger the previous year,
-               if not because of deaths (always decreasind the count) or the migration balance (increasing or decreasing the count
+               if not because of deaths (always decreasing the count) or the migration balance (increasing or decreasing the count
                depending on its net balance). 
             </p>
 
@@ -155,11 +155,11 @@
             <iframe src="images_output/cohort_change_ratio.html" style="height: 350px;">  </iframe>
 
             <p>Note that 2020 has an outlying curve, which is not mainly attributed to the COVID but to 
-               <a href="https://www.istat.it/comunicato-stampa/censimento-della-popolazione-e-dinamica-demografica-anno-2020/">a change in the methodology of counting</a><div class=""></div>
+               <a href="https://www.istat.it/comunicato-stampa/censimento-della-popolazione-e-dinamica-demografica-anno-2020/">a change in the methodology of counting</a>.
             </p>
 
             <p>As this Cohort Change Ratio computed directly from the population count mixes together 
-               the effects of deaths and net migration balance (and possiblely some other artifacts, e.g., due to changes in the methodology of counting),
+               the effects of deaths and net migration balance (and possibly some other artifacts, e.g., due to changes in the methodology of counting),
                I will try to disentangle these two effects in the next sections.
                Indeed, ISTAT provides also the probability of death by age and year of observation and the net migration balance by age.
                The importance of disentangling these two effects is that the net migration balance is a policy variable that could suddenly change
@@ -177,9 +177,9 @@
                and provides data back to 1974 (red curve in the plot below).
             </p>
 
-            <p>As we can expect, the probability of death decreased in the last decades, expecially among the eldest people,
-               due to increase care technology. To predict the future probability of death I could use an exponential regression (blue),
-               or to assume that it will stay constant at the average value of the last years (cyan): 
+            <p>As we can expect, the probability of death decreased in the last decades, especially among the eldest people,
+               due to increased care technology. To predict the future probability of death I could use an exponential regression (blue),
+               or to assume that it will remain constant at the average value of the last years (cyan): 
                not knowing which one is the best approach, I considered an average of the two, as shown in the next plot in green
                (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#63</a>).
             </p>
@@ -193,12 +193,13 @@
 
             <p>By subtracting the probability of death from the year-on-year change in the population, I can obtain the net migration balance for each age group
                (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#45</a>).
-               Note, as it was explained before that 2020 has weird values due to the change in the methodology of counting, so I excluded it from the compute of the avarage.
+               Note, as explained before, that 2020 has weird values due to the change in the methodology of counting, 
+               so I excluded it from the computation of the avarage.
             </p>
 
             <iframe src="images_output/migrants_by_age.html" style="height: 350px;"> </iframe>
 
-            <p>If we sum all the ages, we obtain the total net migration balance which can compared directly with the data from ISTAT:
+            <p>If we sum all the ages, we obtain the total net migration balance which can be compared directly with the data from ISTAT:
                these are collected with a different methodology, so it makes sense not to have exactly the same values.
                From the plot below, we have enough agreement between computed and collected data, 
                to state what is the range of values we saw in the past and assume some reasonable average.
@@ -222,22 +223,22 @@
 
             <iframe src="images_output/fertility_by_age.html" style="height: 350px;"> </iframe>
 
-            <p>As we can see an evident trend in this ditribution, in 
+            <p>As we can clearly see a trend in this distribution, with the age window of motherhood slightly increasing year by year, in 
                <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#40</a>
                I compute the coefficient to propagate this trend in the future.
             </p>   
             
             <p>After knowing the normalized distribution fertility by age, and simply assuming that half the Italian residents are women,
                I still need to guess the total fertility rate for each year.
-               For this I willi consider 3 scenarios: the first is a declining trend seen since 2008 that will lead to a distopian zero fertility rate in 2100,
+               For this I will consider 3 scenarios: the first is a declining trend seen since 2008 that will lead to a dystopian zero fertility rate in 2100,
                the second is keeping the same value as last year, the last is to assume an increasing fertility up to 2 in 2100.
             </p>
 
             <iframe src="images_output/fertility_scenarios.html" style="height: 350px;"> </iframe>
 
             <p>Note from the graph that the backfitted value of the fertility rate from the age-probability, population, 
-               and assuming 50% women, is sligtly different from the official valus from ISTAT due to unavoidable small differences
-               in the methodology, but it is anyway a very close.
+               and assuming 50% women, is slightly different from the official values from ISTAT due to unavoidable small differences
+               in the methodology, but it is still very close.
                The plot also contains ISTAT's projections for the future fertility rate, with uncertainty intervals, which are estimated till 2080.
             </p>
 
@@ -247,7 +248,7 @@
             <p>From the last sections I have now all the elements to forecast the future population, 
                combining the 3 scenarios of fertility, and 3 scenarios of net migration balance
                <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#70</a>.
-               The orange area highights 18-50 years old range, the age of women who can potentially give birth to the next generation.
+               The orange area highlights 18-50 years old range, the age of women who can potentially give birth to the next generation.
             </p>
 
             <iframe src="images_output/pop_by_age_proj.html" style="height: 450px;"> </iframe>
@@ -259,7 +260,7 @@
             <iframe src="images_output/pop_tot_proj.html" style="height: 350px;"> </iframe>
 
 
-         <h2>Change in populations</h2>
+         <h2>Change in population</h2>
 
             <p>In order to highlight the shift in the composition of the population, 
                the next plots shows the amount of people belonging to three representative groups: under 21, 21-69, and 70+ years old. 
@@ -273,19 +274,19 @@
             <img src="images_output/analysis_proj_teens.png" style="width: 700px;"> 
 
             <p>Number of potential mothers, i.e., the number of women weighted by their probability of having a child according to their age.
-               This is by definition equal to the number of newborns when keeping fertiliy constant to one.
+               This is by definition equal to the number of newborns when keeping fertility constant to one.
             </p>
 
             <img src="images_output/analysis_proj_mothers.png" style="width: 700px;"> 
 
-            <p>All plots in this sections are generated from 
+            <p>All plots in this section are generated from 
                <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#73</a>.
             </p>
 
 
          <h2>Limitations of the 3x3 scenarios</h2>
 
-            <p>The scenarios described here are clearly a semplification to test the sensitivity of the model to 
+            <p>The scenarios described here are clearly a simplification to test the sensitivity of the model to 
                first-effect variations. To stress this concept I just list here some possible second-order effect that
                one could consider to improve the model at the cost of embedding more opinionated assumptions.
             </p>
@@ -299,7 +300,7 @@
                </li>
                <li>there could be an immigrating flux of foreigner elder people, deciding to spend their retirement in Italy
                </li>
-               <li>decreasing trus in the Italian retirement sistem could raise the fertility rate, in the utilitarianism thesis presented by 
+               <li>decreasing trust in the Italian retirement system could raise the fertility rate, in the utilitarianism thesis presented by 
                   <a href="https://www.nber.org/papers/w11146">Boldrin et al. (2015)</a>
                </li>
                <li>disruptive events like wars or pandemics
@@ -307,13 +308,18 @@
             </ul>
 
             <p>This is just a quick brainstorming, that reminds the reader to take the output of the model with a grain of salt.
-               The model is not meant to be a granitic prediction, but rather a tool to understand the dynamics of the population.
+               The model is not meant to be a definitive prediction, but rather a tool to understand the dynamics of the population.
+            </p>
+
+            <p>If you are interested in considering more details, you can compare the results of my model, 
+               with the projections by ISTAT and their full methodological note: 
+               <a href="https://www.istat.it/en/tag/population-projections/">find here their press releases</a>.
             </p>
 
 
          <h2>Forecasting the future age of retirement</h2>
 
-            <p> I will take a pragmatic approach here to estimate the future age of retirements based on the projections of the population,
+            <p> I will take a pragmatic approach here to estimate the future age of retirement based on the projections of the population,
                and the assumption that the ratio between working people and retired people will remain constant.
             </p>
 
