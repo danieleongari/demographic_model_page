@@ -35,6 +35,7 @@
   - Revamp the population projections on 3x3 scenarios 
   - add more plots about the future population
   - Revamp the website 
+  - Update with 2024 data ([press release](https://www.istat.it/comunicato-stampa/indicatori-demografici-anno-2024/)) but note that this is still a partial update because it still lacks the latest mortality and fertility data
 
 - 2025 January
 
