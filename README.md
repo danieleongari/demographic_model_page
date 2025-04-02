@@ -7,8 +7,10 @@
 🗣️ Posted on:
 
 - [Linkedin (Italian)](https://www.linkedin.com/posts/danieleongari_i-was-born-in-1990-and-i-will-retire-in-italy-activity-7051629734937411584-eDWZ) - 2023, April
-- [Linkedin (italian)](https://www.linkedin.com/posts/danieleongari_ho-preso-gli-ultimi-aggiornamenti-istat-e-activity-7181748786174586881-F5hI) - 2024, April
+- [Linkedin (Italian)](https://www.linkedin.com/posts/danieleongari_ho-preso-gli-ultimi-aggiornamenti-istat-e-activity-7181748786174586881-F5hI) - 2024, April
 - [Reddit r/ItaliaPersonalFinance](https://www.reddit.com/r/ItaliaPersonalFinance/comments/1bwcg3g/ho_preso_gli_ultimi_aggiornamenti_demografici/) - 2024, April
+- [Reddit r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/1jmkoul/demographic_model_of_italy_what_the_future_could/) - 2025, March
+- [Linkedin (Italian)](https://www.linkedin.com/posts/danieleongari_con-i-dati-pubblicati-da-istat-questa-mattina-activity-7312426628574330880-wiUa) - 2025, March
 
 ## Notebooks
 
@@ -25,6 +27,7 @@
 - Analyzing data
   - `correlate_deaths_heathwaves_2003` - correlate deaths with heatwaves to spot the bump in mortality in 2003
 - Making predictions
+  - `projection_death_prob` - predict the future mortality rate based on past data 
   - `modelling_future_population` - predict future population based on past data and several extreme assumptions (scenarios)
   - `analyze_future_population` - opinionated plots on how the future population will look like, based on the previous notebook
   - `sustainable_retirement_age` - compute, for each generation, the retirement age to keep a consistent ratio of workers/retired
