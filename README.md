@@ -11,6 +11,7 @@
 - [Reddit r/ItaliaPersonalFinance](https://www.reddit.com/r/ItaliaPersonalFinance/comments/1bwcg3g/ho_preso_gli_ultimi_aggiornamenti_demografici/) - 2024, April
 - [Reddit r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/1jmkoul/demographic_model_of_italy_what_the_future_could/) - 2025, March
 - [Linkedin (Italian)](https://www.linkedin.com/posts/danieleongari_con-i-dati-pubblicati-da-istat-questa-mattina-activity-7312426628574330880-wiUa) - 2025, March
+- [YouTube EconomiaItalia (Italian)](https://youtu.be/y7qPip1zdAU) - 2025, April
 
 ## Notebooks
 
