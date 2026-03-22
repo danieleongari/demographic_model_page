@@ -1,6 +1,6 @@
 # Demographic Model Page
 
-🌐 https://danieleongari.github.io/demographic_model_page/
+🌐 View the presentation at https://danieleongari.github.io/demographic_model_page/
 
 🔗 Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects.
 
@@ -14,8 +14,6 @@
 - [YouTube EconomiaItalia (Italian)](https://youtu.be/y7qPip1zdAU) - 2025, April
 
 ## Notebooks
-
-📈 Visualize the notebooks with interactive plotly graphs on [nbviewer](https://nbviewer.jupyter.org/github/danieleongari/demographic_model_page/tree/main/notebooks/).
 
 - Exploring data
   - `investigate_italian_residents` - explore datasets for registered residents in Italy: `DCIS_RICPOPRES2011` and `DCIS_POPRES1`
@@ -37,6 +35,7 @@
 - 2026 March
   - Using different APIs: `sdmx` for ISTAT and `wbgapi` for World Bank
   - Update fertility stats with [2024 data released last October](https://www.istat.it/en/press-release/births-and-fertility-of-the-resident-population-year-2024/).
+  - Deprecate [nbviewer](https://nbviewer.jupyter.org/github/danieleongari/demographic_model_page/tree/main/notebooks/) in favour of local htmls created with [nbmirror](https://github.com/danieleongari/nbmirror)
   
 - 2025 March
   - Revamp the population projections on 3x3 scenarios 

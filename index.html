@@ -109,9 +109,7 @@
 
          <p>This is a visualization of a model of the resident population in Italy, projected till 2100.
             The model is based on the historical demographic data published by 
-            <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>,
-            whose database is explored in 
-            <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#05</a>.
+            <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.
          </p>
 
          <p>All calculations, starting from raw data, are available for inspection in the 
@@ -130,7 +128,7 @@
 
             <p>From the database of ISTAT we can plot the number of residents in Italy, grouped by age (cohorts), 
                as counted at the first of January, since 2002 
-               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#14</a>).
+               (<a href="notebooks_html/14_investigate_italian_residents.html">Notebook#14</a>).
                By sliding the cursor you can navigate through the years, till the most recent data,
                and note several features in this distribution: the peak of baby boomers, the decline in births, and the 
                wells created by the WW1, the Spanish flu and the WW2. In 2002, the well around 81-86 y.o. could be attributed to the
@@ -171,7 +169,9 @@
          <h2>Investigation on the Mortality</h2>
 
             <p>The probability of death by age and year of observation provided by ISTAT has been investigated in
-               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebooks #20, #25 and 30</a>.
+               <a href="notebooks_html/20_investigate_deaths.html">Notebooks #20</a>, 
+               <a href="notebooks_html/25_compare_deaths_deltaresidents.html">#25</a> and 
+               <a href="notebooks_html/30_investigate_italian_deathprob.html">#30</a>.
                ISTAT data on mortality comes from a 
                <a href="https://www.istat.it/it/files/2018/08/volume-tavole-mortalita-1998.pdf">robust methodology</a>
                and provides data back to 1974 (red curve in the plot below).
@@ -181,8 +181,8 @@
                due to increased care technology. To predict the future probability of death I could use an exponential regression (blue),
                or to assume that it will remain constant at the average value of the last years (cyan): 
                not knowing which one is the best approach, I considered an average of the two, as shown in the next plot in green
-               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#63</a>).
-            </p>
+                  (<a href="notebooks_html/63_deathprob_projections.html">Notebook#63</a>).
+               </p>
 
             <a href="images_output/deathprob_by_age_year_projection.png" target="_blank">
                <img src="images_output/deathprob_by_age_year_projection.png" style="width: 780px;">
@@ -197,7 +197,7 @@
          <h2>Investigation on the Net Migration Balance</h2>
 
             <p>By subtracting the probability of death from the year-on-year change in the population, I can obtain the net migration balance for each age group
-               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#45</a>).
+               (<a href="notebooks_html/45_investigate_italian_migration.html">Notebook#45</a>).
                Note, as explained before, that 2020 has weird values due to the change in the methodology of counting, 
                so I excluded it from the computation of the avarage.
             </p>
@@ -229,7 +229,7 @@
             <iframe src="images_output/fertility_by_age.html" style="height: 350px;"> </iframe>
 
             <p>As we can clearly see a trend in this distribution, with the age window of motherhood slightly increasing year by year, in 
-               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#40</a>
+               <a href="notebooks_html/40_investigate_italian_fertility.html">Notebook#40</a>
                I compute the coefficient to propagate this trend in the future.
             </p>   
             
@@ -252,7 +252,7 @@
 
             <p>From the last sections I have now all the elements to forecast the future population, 
                combining the 3 scenarios of fertility, and 3 scenarios of net migration balance
-               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#70</a>.
+               <a href="notebooks_html/70_modelling_future_population.html">Notebook#70</a>.
                The orange area highlights 18-50 years old range, the age of women who can potentially give birth to the next generation.
             </p>
 
@@ -292,7 +292,7 @@
             <img src="images_output/analysis_proj_mothers.png" style="width: 700px;"> 
 
             <p>All plots in this section are generated from 
-               <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#73</a>.
+               <a href="notebooks_html/73_analyse_future_population.html">Notebook#73</a>.
             </p>
 
 
@@ -305,7 +305,7 @@
 
             <ul>
                <li>foreigner migrants may rise the fertility rate as seen in 
-                  <a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#40</a>
+                  <a href="notebooks_html/40_investigate_italian_fertility.html">Notebook#40</a>
                   </li>
                <li>there could be an emigrating flux of residents born outside Italy, deciding to spend the retirement in their native country,
                   which we still don't see in the data.
@@ -332,7 +332,7 @@
 
             <p> Assuming an average age of 20 years old to start working, 
                and keeping constant an average historical ratio of 2.2 working people per retired person
-               (<a href="https://nbviewer.org/github/danieleongari/demographic_model_page/tree/main/notebooks/">Notebook#84</a>)
+               (<a href="notebooks_html/84_sustainable_retirement_age.html">Notebook#84</a>)
                I can forecast the expected retirement age for the 9 scenarios.
             </p>
 
