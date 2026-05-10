@@ -35,7 +35,7 @@
 - 2026 May
   - Update with 2025 data ([press release](https://www.istat.it/en/press-release/indicatori-demografici-anno-2025/)) 
   - Finalize replacement of `istatapi` with `sdmx` for ISTAT data retrieval
-  - For the population, use `RICPOPRES` data back to 1982
+  - For the population, use `RICPOPRES` data back to 1952
   - Include gender split in some graphs 
 
 - 2026 March
