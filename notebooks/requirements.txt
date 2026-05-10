@@ -3,5 +3,6 @@ scipy
 pandas
 matplotlib
 plotly<6.0.0 # untill they solve https://github.com/plotly/plotly.py/issues/4953
-istatapi
+#istatapi
+sdmx1~=2.25.1
 

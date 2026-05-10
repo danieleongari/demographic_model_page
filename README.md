@@ -32,6 +32,12 @@
 
 ## ChengeLog
 
+- 2026 May
+  - Update with 2025 data ([press release](https://www.istat.it/en/press-release/indicatori-demografici-anno-2025/)) 
+  - Finalize replacement of `istatapi` with `sdmx` for ISTAT data retrieval
+  - For the population, use `RICPOPRES` data back to 1982
+  - Include gender split in some graphs 
+
 - 2026 March
   - Using different APIs: `sdmx` for ISTAT and `wbgapi` for World Bank
   - Update fertility stats with [2024 data released last October](https://www.istat.it/en/press-release/births-and-fertility-of-the-resident-population-year-2024/).
@@ -44,24 +50,20 @@
   - Update with 2024 data ([press release](https://www.istat.it/comunicato-stampa/indicatori-demografici-anno-2024/)) but note that this is still a partial update because it still lacks the latest mortality and fertility data
 
 - 2025 January
-
   - More in depth analysis for mortality, fertility rates, and migration balance: comparing my calculations from the 
     change in population, with the official ISTAT data for these observables
 
 - 2024 June
-
   - Moved the whole analysis to this repository (`DEPRECATION` label on [StaurdayMorningDSProjects](https://github.com/danieleongari/saturdaymorningdsprojects) repo)
   - Try to consider mortality data
 
 - 2024 April
-
   - Updated with 2024 data
   - Better but still approximate estimation of mortality/migration split
   - Conceived 9 scenarios for future mortality and migration balance
   - Created Pages visualization
 
 - 2023 April
-
   - First release of the project on https://github.com/danieleongari/saturdaymorningdsprojects
   - In hindsight, my retirement age of 76 was overestimated due to the rough extrapolation of future population change, without splitting into mortality and migration balance
 
