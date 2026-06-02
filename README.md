@@ -37,6 +37,7 @@
   - Finalize replacement of `istatapi` with `sdmx` for ISTAT data retrieval
   - For the population, use `RICPOPRES` data back to 1952
   - Include gender split in some graphs 
+  - Include [better data](https://github.com/danieleongari/demographic_model_page/issues/3) for historical retirement age and plot it with future projections
 
 - 2026 March
   - Using different APIs: `sdmx` for ISTAT and `wbgapi` for World Bank
