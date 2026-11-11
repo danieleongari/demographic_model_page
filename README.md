@@ -4,6 +4,9 @@
 
 🔗 Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects.
 
+Agent contributors: [AGENTS.md](AGENTS.md) points to the
+[repository working instructions](.github/copilot-instructions.md) in `.github/`.
+
 🗣️ Posted on:
 
 - [Linkedin (Italian)](https://www.linkedin.com/posts/danieleongari_i-was-born-in-1990-and-i-will-retire-in-italy-activity-7051629734937411584-eDWZ) - 2023, April
