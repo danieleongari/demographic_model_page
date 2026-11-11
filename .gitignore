@@ -1,1 +1,6 @@
 .DS_Store
+.vscode/
+.cache/
+__pycache__/
+/data/sources/
+.venv/

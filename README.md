@@ -26,14 +26,102 @@ Agent contributors: [AGENTS.md](AGENTS.md) points to the
   - `investigate_italian_fertility` - explore dataset `DCIS_FECONDITA1` and reconcile data with the population dataset 
   - `investigate_italian_migrations` - explore dataset `DCIS_MIGRAZIONI` and reconcile data with the population dataset
 - Analyzing data
-  - `correlate_deaths_heathwaves_2003` - correlate deaths with heatwaves to spot the bump in mortality in 2003
+  - `53_correlate_deaths_heatwaves_2003` - explore Milan heat exposure and Italy's cohort changes, with corrected calendar alignment and sensitivity checks
 - Making predictions
   - `projection_death_prob` - predict the future mortality rate based on past data 
   - `modelling_future_population` - predict future population based on past data and several extreme assumptions (scenarios)
   - `analyze_future_population` - opinionated plots on how the future population will look like, based on the previous notebook
   - `sustainable_retirement_age` - compute, for each generation, the retirement age to keep a consistent ratio of workers/retired
 
-## ChengeLog
+## Reproducing the model
+
+Python dependencies are in [`requirements.txt`](requirements.txt). Install them in
+an isolated environment with a Python Jupyter kernel. The Plotly `<6` constraint
+is intentional. All non-notebook utilities are in [`scripts/`](scripts/).
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/refresh_model.py --refresh
+```
+
+Live retrieval is serialized through a shared limiter: a quiet minute per live
+run, at least **30.1 seconds after each completed request** before another starts
+(at most two requests per rolling minute), and no retries or redirects. Every
+request has a **45-second total deadline**, 5-second connection and 10-second
+read timeouts, and an 8 MiB response limit. The network worker is killed at the
+deadline, including during a slow/dripping response. A refresh is limited to
+eight live attempts and eight minutes. Any timeout, interruption, HTTP error,
+unexpected SDMX response, or size/budget violation halts subsequent live access
+across sessions until explicitly reviewed. A busy limiter fails immediately
+instead of queuing. Coordinate other ISTAT
+usage on the same public IP before starting. Matching query parameters reuse
+downloads from the same calendar day in Europe/Rome. Raw source CSVs and their
+manifests stay in **gitignored `data/sources/`**; HTTP responses and the local
+environment are ignored too. A fresh checkout therefore needs a live refresh.
+
+The pre-2019 population baseline is retained from the existing notebook's full
+saved figure and checked against the existing population CSV. It is not presented
+as freshly downloaded historical data. Current population since 2019 and the
+other maintained sources are refreshed from ISTAT. To recompute from local
+sources with HTTP disabled:
+
+```sh
+python scripts/refresh_model.py
+python -m unittest discover -s scripts -p 'test_*.py'
+```
+
+The runner checks notebook `00`'s cached catalogue, then executes `14`, `30`, `40`,
+`45`, `63`, `70`, `73`, and `84` in dependency order, exports notebook HTML with
+`nbmirror`, and records offline checks and changes from the Git `HEAD` model in
+[`data/refresh_validation.json`](data/refresh_validation.json). Optional
+investigations `20`, `25` and the live exploration cells of `00` are outside
+this runner; notebook `53` uses the separate option below. `--refresh --download-only` saves sources only;
+`--from-notebook 40` resumes offline execution at a maintained notebook.
+The seven maintained national queries use explicit SDMX dimension order, avoiding
+automatic metadata/codelist requests. New dataflows and unbounded geographical
+queries are rejected. Start/finish times, URLs, durations and failures are logged
+beside the shared temporary limiter. See the
+[request-safety audit](.github/istat-access-audit.md). Legacy ISTAT retrieval in
+notebooks `20` and `25` is disabled until migrated to the guarded client.
+If ISTAT blocks or stalls, the agent stops and asks the user to enable their VPN
+(or check it if already enabled). After confirmation, one small connection check
+uses the same request limiter and strict deadlines. VPN switching and repeated
+probes are never automatic; cached work continues where possible.
+
+Notebook `53` can be refreshed separately:
+
+```sh
+python scripts/refresh_model.py --heatwaves --refresh
+python scripts/refresh_model.py --heatwaves  # cached weather; HTTP disabled
+```
+
+This fetches only [Open-Meteo historical weather](https://open-meteo.com/en/docs/historical-weather-api),
+with no ISTAT requests and no API key for noncommercial use. ERA5 is selected
+explicitly to keep the model consistent across years. Complete 2002–2025 daily
+temperatures near Milan are cached in gitignored `data/sources/open_meteo/`, with
+query parameters and retrieval dates. Six-year chunks, spaced 31.1 seconds after
+completion, avoid a single large request and account for the provider's weighted
+call limits. Each request has a 45-second total deadline and no retries.
+
+The analysis now matches weather year `y` to the cohort transition from January
+`y` to January `y+1`, retains zero-exposure years, and reports signed correlations
+and sensitivity to pandemic years and 2003. Cohort decline includes migration
+and statistical revisions and is not a mortality rate. Derived results are in
+[`data/heatwave_analysis_summary.json`](data/heatwave_analysis_summary.json).
+Weather attribution: ERA5 / ECMWF / Copernicus C3S via Open-Meteo, CC BY 4.0;
+monthly means and annual heat exposure are calculated in this project.
+
+## ChangeLog
+
+- 2026 November
+  - Refresh the national model using [final 2025 fertility data, released on 21 October 2026](https://www.istat.it/comunicato-stampa/natalita-e-fecondita-della-popolazione-residente-anno-2025/),
+    and [ISTAT population and fertility projections based on 1 January 2025](https://www.istat.it/comunicato-stampa/previsioni-della-popolazione-residente-delle-famiglie-e-delle-forze-di-lavoro-base-1-1-2025/).
+  - Keep the provisional January–July 2026 fertility estimate separate from full-year observations.
+  - Use the same fitted fertility-age parameters for calibration and projection;
+    align migration residuals with origin-age mortality; roll the mortality
+    recent-average window forward to the latest available observations.
+  - Add opt-in, rate-limited source retrieval, local same-day caching, ordered
+    offline execution, and demographic accounting validation.
 
 - 2026 May
   - Update with 2025 data ([press release](https://www.istat.it/en/press-release/indicatori-demografici-anno-2025/)) 
@@ -77,8 +165,33 @@ In 2026 the best way to retrieve ISTAT data is [sdmx](https://www.istat.it/en/cl
 
 > NOTE: To prevent SDMX web service overloading, a limit of 5 queries per minute has been set for each IP. Once this limit is exceeded, an access block lasting between 1 and 2 days is activated.
 
-The following notes need to be updated for the new databases:
-the best way to find the proper `dataset_id` is to browse [esploradati.istat.it](https://esploradati.istat.it/databrowser/#/en/dw/categories).
+The maintained national sources use these SDMX dataflows. Query filters and
+retrieval timestamps are recorded locally with each cached response; a compact
+provenance summary accompanies the tracked validation report.
+
+| Input | SDMX dataflow | Current coverage / interpretation |
+| --- | --- | --- |
+| Population | `22_289_DF_DCIS_POPRES1_1` | Residents on 1 January, since 2019; earlier years retained from the existing reconstruction baseline |
+| Death probability | `26_295_DF_DCIS_MORTALITA1_2` | Annual single-age probabilities; source values per thousand converted to probabilities |
+| Official fertility | `25_326_DF_DCIS_FECONDITA1_5` | Full-year TFR by mother's citizenship |
+| Fertility age profile | `25_326_DF_DCIS_FECONDITA1_7` | Age-specific rates per thousand women |
+| Migration comparison | `28_185` | Immigration/emigration with abroad, by age group and citizenship |
+| Population projections | `165_889_DF_DCIS_PREVDEM1_1` | Base 1 January 2025, through 2080 |
+| Fertility projections | `165_889_DF_DCIS_PREVDEM1_3` | TFR assumptions, base 2025, through 2080 |
+
+The official full-year 2025 TFR is **1.14**. The model separately calibrates an
+effective rate to reproduce age-0 residents on the following 1 January under its
+50% women and fitted age-profile assumptions. These quantities differ and should
+not be labelled interchangeably. The nine model scenarios are sensitivity
+assumptions; ISTAT's central 80% uncertainty interval is a separate comparison.
+The retirement calculation remains a population-ratio proxy, without wages,
+employment or pension-finance modelling.
+
+### Historical source notes
+
+The legacy IDs and coverage below describe earlier versions of this analysis.
+For discovery, use the saved catalogue first, or browse
+[IstatData](https://esploradati.istat.it/databrowser/#/en/dw/categories).
 
 ### `DCIS_POPRES1` - Resident population on 1st January
 - yearly (2019-latest) population by age, gender, town, marital status (no citizenship)

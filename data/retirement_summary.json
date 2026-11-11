@@ -1,0 +1,64 @@
+{
+  "reference_ratio": 2.06,
+  "reference_years": [
+    2000,
+    2026
+  ],
+  "birth_year": 1990,
+  "scenarios": {
+    "migr double  & fert \u2191 2 in 2100": {
+      "retirement_age_min": 67,
+      "retirement_age_max": 67,
+      "retirement_year_min": 2057,
+      "retirement_year_max": 2057
+    },
+    "migr double  & fert eq. to last": {
+      "retirement_age_min": 67,
+      "retirement_age_max": 67,
+      "retirement_year_min": 2057,
+      "retirement_year_max": 2057
+    },
+    "migr double  & fert \u2193 0 in 2100": {
+      "retirement_age_min": 67,
+      "retirement_age_max": 67,
+      "retirement_year_min": 2057,
+      "retirement_year_max": 2057
+    },
+    "migr average & fert \u2191 2 in 2100": {
+      "retirement_age_min": 69,
+      "retirement_age_max": 69,
+      "retirement_year_min": 2059,
+      "retirement_year_max": 2059
+    },
+    "migr average & fert eq. to last": {
+      "retirement_age_min": 69,
+      "retirement_age_max": 69,
+      "retirement_year_min": 2059,
+      "retirement_year_max": 2059
+    },
+    "migr average & fert \u2193 0 in 2100": {
+      "retirement_age_min": 69,
+      "retirement_age_max": 69,
+      "retirement_year_min": 2059,
+      "retirement_year_max": 2059
+    },
+    "migr zero    & fert \u2191 2 in 2100": {
+      "retirement_age_min": 72,
+      "retirement_age_max": 72,
+      "retirement_year_min": 2062,
+      "retirement_year_max": 2062
+    },
+    "migr zero    & fert eq. to last": {
+      "retirement_age_min": 72,
+      "retirement_age_max": 72,
+      "retirement_year_min": 2062,
+      "retirement_year_max": 2062
+    },
+    "migr zero    & fert \u2193 0 in 2100": {
+      "retirement_age_min": 72,
+      "retirement_age_max": 72,
+      "retirement_year_min": 2062,
+      "retirement_year_max": 2062
+    }
+  }
+}

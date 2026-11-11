@@ -1,0 +1,317 @@
+{
+  "validated_at": "2026-11-11T08:45:46.085335+00:00",
+  "observation_years": [
+    1952,
+    2026
+  ],
+  "mortality_observed_through": 2025,
+  "fertility": {
+    "last_observed_year": 2025,
+    "last_observed_value": 1.109729190221021,
+    "sigmoid_x0": [
+      0.09617143688493088,
+      -163.08834799890786
+    ],
+    "sigmoid_k": 0.2963913700353926,
+    "assumed_women_ratio": 0.5,
+    "last_official_year": 2025,
+    "last_official_value": 1.14,
+    "calibration": "Effective rate reproducing age-0 residents on next 1 January; not the official TFR"
+  },
+  "retirement_1990_cohort": {
+    "reference_ratio": 2.06,
+    "reference_years": [
+      2000,
+      2026
+    ],
+    "birth_year": 1990,
+    "scenarios": {
+      "migr double  & fert \u2191 2 in 2100": {
+        "retirement_age_min": 67,
+        "retirement_age_max": 67,
+        "retirement_year_min": 2057,
+        "retirement_year_max": 2057
+      },
+      "migr double  & fert eq. to last": {
+        "retirement_age_min": 67,
+        "retirement_age_max": 67,
+        "retirement_year_min": 2057,
+        "retirement_year_max": 2057
+      },
+      "migr double  & fert \u2193 0 in 2100": {
+        "retirement_age_min": 67,
+        "retirement_age_max": 67,
+        "retirement_year_min": 2057,
+        "retirement_year_max": 2057
+      },
+      "migr average & fert \u2191 2 in 2100": {
+        "retirement_age_min": 69,
+        "retirement_age_max": 69,
+        "retirement_year_min": 2059,
+        "retirement_year_max": 2059
+      },
+      "migr average & fert eq. to last": {
+        "retirement_age_min": 69,
+        "retirement_age_max": 69,
+        "retirement_year_min": 2059,
+        "retirement_year_max": 2059
+      },
+      "migr average & fert \u2193 0 in 2100": {
+        "retirement_age_min": 69,
+        "retirement_age_max": 69,
+        "retirement_year_min": 2059,
+        "retirement_year_max": 2059
+      },
+      "migr zero    & fert \u2191 2 in 2100": {
+        "retirement_age_min": 72,
+        "retirement_age_max": 72,
+        "retirement_year_min": 2062,
+        "retirement_year_max": 2062
+      },
+      "migr zero    & fert eq. to last": {
+        "retirement_age_min": 72,
+        "retirement_age_max": 72,
+        "retirement_year_min": 2062,
+        "retirement_year_max": 2062
+      },
+      "migr zero    & fert \u2193 0 in 2100": {
+        "retirement_age_min": 72,
+        "retirement_age_max": 72,
+        "retirement_year_min": 2062,
+        "retirement_year_max": 2062
+      }
+    }
+  },
+  "average_annual_migration": 233404,
+  "max_cohort_rounding_error_people": 1.0604699962132145,
+  "max_birth_rounding_error_people": 0.9616270683472976,
+  "checks": [
+    "source hashes and unique keys",
+    "complete age/year grids",
+    "sex totals",
+    "nonnegative finite populations",
+    "probabilities in [0, 1]",
+    "historical cohort changes",
+    "migration reconciliation",
+    "observations preserved in all nine scenarios",
+    "yearly births/deaths/migration accounting",
+    "base-2025 official projections and ordered intervals"
+  ],
+  "source_snapshots": [
+    {
+      "resource_id": "164_346_DF_DCIS_RICPOPRES1971_1",
+      "time_min": "1952",
+      "time_max": "1971",
+      "retrieved_at": "2026-11-11T07:40:37.495115+00:00"
+    },
+    {
+      "resource_id": "164_347_DF_DCIS_RICPOPRES1981_1",
+      "time_min": "1972",
+      "time_max": "1981",
+      "retrieved_at": "2026-11-11T07:41:06.059765+00:00"
+    },
+    {
+      "resource_id": "165_889_DF_DCIS_PREVDEM1_1",
+      "time_min": "2025",
+      "time_max": "2080",
+      "retrieved_at": "2026-11-11T08:03:03.200843+00:00"
+    },
+    {
+      "resource_id": "165_889_DF_DCIS_PREVDEM1_3",
+      "time_min": "2025",
+      "time_max": "2080",
+      "retrieved_at": "2026-11-11T08:01:42.985924+00:00"
+    },
+    {
+      "resource_id": "22_289_DF_DCIS_POPRES1_1",
+      "time_min": "2019",
+      "time_max": "2026",
+      "retrieved_at": "2026-11-11T07:57:25.924420+00:00"
+    },
+    {
+      "resource_id": "25_326_DF_DCIS_FECONDITA1_5",
+      "time_min": "1999",
+      "time_max": "2025",
+      "retrieved_at": "2026-11-11T07:59:28.856591+00:00"
+    },
+    {
+      "resource_id": "25_326_DF_DCIS_FECONDITA1_7",
+      "time_min": "1999",
+      "time_max": "2025",
+      "retrieved_at": "2026-11-11T08:00:33.133075+00:00"
+    },
+    {
+      "resource_id": "26_295_DF_DCIS_MORTALITA1_2",
+      "time_min": "1974",
+      "time_max": "2025",
+      "retrieved_at": "2026-11-11T07:58:38.835035+00:00"
+    },
+    {
+      "resource_id": "28_185",
+      "time_min": "2002",
+      "time_max": "2025",
+      "retrieved_at": "2026-11-11T08:02:41.487461+00:00"
+    },
+    {
+      "kind": "retained checked-in historical baseline; not a new download",
+      "git_commit": "1fd4487cd8655d103e8eb0602bb0b0fb8219771a",
+      "source_notebook": "notebooks/14_investigate_italian_residents.ipynb",
+      "time_min": 1952,
+      "time_max": 2018
+    }
+  ],
+  "scenario_totals_and_changes": {
+    "2026": {
+      "migr double  & fert \u2191 2 in 2100": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr double  & fert eq. to last": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr double  & fert \u2193 0 in 2100": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr average & fert \u2191 2 in 2100": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr average & fert eq. to last": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr average & fert \u2193 0 in 2100": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr zero    & fert \u2191 2 in 2100": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr zero    & fert eq. to last": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      },
+      "migr zero    & fert \u2193 0 in 2100": {
+        "population": 58942828,
+        "change_from_previous_model": 0
+      }
+    },
+    "2050": {
+      "migr double  & fert \u2191 2 in 2100": {
+        "population": 63200569,
+        "change_from_previous_model": -752057
+      },
+      "migr double  & fert eq. to last": {
+        "population": 61873764,
+        "change_from_previous_model": -734512
+      },
+      "migr double  & fert \u2193 0 in 2100": {
+        "population": 60220066,
+        "change_from_previous_model": -559841
+      },
+      "migr average & fert \u2191 2 in 2100": {
+        "population": 56647992,
+        "change_from_previous_model": -480681
+      },
+      "migr average & fert eq. to last": {
+        "population": 55479715,
+        "change_from_previous_model": -463088
+      },
+      "migr average & fert \u2193 0 in 2100": {
+        "population": 54023618,
+        "change_from_previous_model": -306377
+      },
+      "migr zero    & fert \u2191 2 in 2100": {
+        "population": 50095409,
+        "change_from_previous_model": -209307
+      },
+      "migr zero    & fert eq. to last": {
+        "population": 49085657,
+        "change_from_previous_model": -191662
+      },
+      "migr zero    & fert \u2193 0 in 2100": {
+        "population": 47827161,
+        "change_from_previous_model": -52915
+      }
+    },
+    "2080": {
+      "migr double  & fert \u2191 2 in 2100": {
+        "population": 69075247,
+        "change_from_previous_model": -1308838
+      },
+      "migr double  & fert eq. to last": {
+        "population": 62118604,
+        "change_from_previous_model": -1388016
+      },
+      "migr double  & fert \u2193 0 in 2100": {
+        "population": 54003129,
+        "change_from_previous_model": -780305
+      },
+      "migr average & fert \u2191 2 in 2100": {
+        "population": 52683349,
+        "change_from_previous_model": -943594
+      },
+      "migr average & fert eq. to last": {
+        "population": 47172304,
+        "change_from_previous_model": -980405
+      },
+      "migr average & fert \u2193 0 in 2100": {
+        "population": 40801969,
+        "change_from_previous_model": -473011
+      },
+      "migr zero    & fert \u2191 2 in 2100": {
+        "population": 36291453,
+        "change_from_previous_model": -578358
+      },
+      "migr zero    & fert eq. to last": {
+        "population": 32226009,
+        "change_from_previous_model": -572781
+      },
+      "migr zero    & fert \u2193 0 in 2100": {
+        "population": 27600813,
+        "change_from_previous_model": -165715
+      }
+    },
+    "2100": {
+      "migr double  & fert \u2191 2 in 2100": {
+        "population": 77532153,
+        "change_from_previous_model": -1555800
+      },
+      "migr double  & fert eq. to last": {
+        "population": 62794377,
+        "change_from_previous_model": -1817902
+      },
+      "migr double  & fert \u2193 0 in 2100": {
+        "population": 47430931,
+        "change_from_previous_model": -758656
+      },
+      "migr average & fert \u2191 2 in 2100": {
+        "population": 54386947,
+        "change_from_previous_model": -1175250
+      },
+      "migr average & fert eq. to last": {
+        "population": 43304225,
+        "change_from_previous_model": -1317752
+      },
+      "migr average & fert \u2193 0 in 2100": {
+        "population": 31995772,
+        "change_from_previous_model": -474396
+      },
+      "migr zero    & fert \u2191 2 in 2100": {
+        "population": 31241755,
+        "change_from_previous_model": -794695
+      },
+      "migr zero    & fert eq. to last": {
+        "population": 23814075,
+        "change_from_previous_model": -817593
+      },
+      "migr zero    & fert \u2193 0 in 2100": {
+        "population": 16560620,
+        "change_from_previous_model": -190127
+      }
+    }
+  }
+}

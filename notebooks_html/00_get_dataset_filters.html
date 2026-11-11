@@ -13389,19 +13389,26 @@ body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:hover td {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Get-the-key-and-values-for-the-dataset">Get the key and values for the dataset<a class="anchor-link" href="#Get-the-key-and-values-for-the-dataset">¶</a></h1><p>Remember: max 5 queries per minute!</p>
+<p>The maintained refresh starts with the saved dataflow catalogue. Live exploration uses
+<code>istat_client()</code> with the shared request limiter; set <code>ISTAT_REFRESH=1</code> explicitly.
+The numbered model chain is refreshed by <code>python ../scripts/refresh_model.py --refresh</code> from this directory.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=a60d48bd">
 <div class="input">
-<div class="prompt input_prompt">In [4]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">sdmx</span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">"../scripts"</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()))</span>
 
-<span class="n">client</span> <span class="o">=</span> <span class="n">sdmx</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="s2">"ISTAT"</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sdmx</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">istat_source</span><span class="w"> </span><span class="kn">import</span> <span class="n">istat_client</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">istat_client</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -13412,10 +13419,8 @@ body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:hover td {
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># get all available dataflows</span>
-<span class="n">flow_msg</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">dataflow</span><span class="p">()</span>
-<span class="n">dataflows</span> <span class="o">=</span> <span class="n">sdmx</span><span class="o">.</span><span class="n">to_pandas</span><span class="p">(</span><span class="n">flow_msg</span><span class="o">.</span><span class="n">dataflow</span><span class="p">)</span>
-<span class="c1">#dataflows.to_csv("../data/all_istat_dataflows.csv")</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Offline discovery: do not refetch the full catalogue on every model refresh.</span>
+<span class="n">dataflows</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"../data/all_istat_dataflows.csv"</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="n">dataflows</span>
 </pre></div>
 </div>
@@ -13437,7 +13442,7 @@ SDDS_PLUS_POP_DF_22_315_1                                                  Popul
 TEST_LINKED_DF_DCSP_PREZZIAGR_1                       TEST_LINKED_DF_DCSP_PREZZIAGR_1
 UEM                                                                      Unemployment
 WOE                                                                 Contractual wages
-Length: 4836, dtype: str</pre>
+Name: 0, Length: 4836, dtype: str</pre>
 </div>
 </div>
 </div>

@@ -13390,6 +13390,7 @@ body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:hover td {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Investigating-the-best-way-to-get-DEATH-numbers-for-Italy">Investigating the best way to get DEATH numbers for Italy<a class="anchor-link" href="#Investigating-the-best-way-to-get-DEATH-numbers-for-Italy">¶</a></h1><p><strong>NO NEED TO UPDATE THIS NOTEBOOK, as it is just for investigation purposes</strong></p>
 <p>AIM: for each AGE and YEAR_OF_OBSERVATION, we want the most reliable estimate of the number of deaths in Italy.</p>
+<p>Live retrieval through legacy <code>istatapi</code> is disabled by the shared guard. The saved outputs are retained; migrate retrieval to the bounded <code>istat_source</code> client before enabling new queries.</p>
 </div>
 </div>
 </div>
@@ -13398,7 +13399,13 @@ body.nbm-dark .jp-RenderedHTMLCommon .dataframe tbody tr:hover td {
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">"../scripts"</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()))</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">istat_source</span><span class="w"> </span><span class="kn">import</span> <span class="n">install_istat_guard</span>
+<span class="n">install_istat_guard</span><span class="p">()</span>  <span class="c1"># legacy ISTAT requests are disabled; use the cached maintained runner</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>

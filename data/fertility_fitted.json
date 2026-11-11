@@ -1,10 +1,13 @@
 {
-    "last_observed_year": 2024,
-    "last_observed_value": 1.1526289356194974,
+    "last_observed_year": 2025,
+    "last_observed_value": 1.109729190221021,
     "sigmoid_x0": [
-        0.09490182479041313,
-        -160.47494571102223
+        0.09617143688493088,
+        -163.08834799890786
     ],
-    "sigmoid_k": -0.296,
-    "assumed_women_ratio": 0.5
+    "sigmoid_k": 0.2963913700353926,
+    "assumed_women_ratio": 0.5,
+    "last_official_year": 2025,
+    "last_official_value": 1.14,
+    "calibration": "Effective rate reproducing age-0 residents on next 1 January; not the official TFR"
 }

@@ -1,0 +1,135 @@
+{
+  "years": [
+    2002,
+    2025
+  ],
+  "n_years": 24,
+  "daily_weather_records": 8766,
+  "weather": {
+    "start_year": 2002,
+    "end_year": 2025,
+    "days": 8766,
+    "model": "ERA5",
+    "timezone": "Europe/Rome",
+    "queries": [
+      {
+        "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+        "params": {
+          "latitude": 45.464664,
+          "longitude": 9.18854,
+          "start_date": "2002-01-01",
+          "end_date": "2007-12-31",
+          "daily": "temperature_2m_min,temperature_2m_max",
+          "models": "era5",
+          "timezone": "Europe/Rome",
+          "temperature_unit": "celsius"
+        },
+        "retrieved_at": "2026-11-11T11:08:19.818717+00:00",
+        "sha256": "c6725fc5dcf248b38cfb3b68e2c25aa2a1210a7bb27f57615324335735a54af8",
+        "returned_grid": {
+          "latitude": 45.5,
+          "longitude": 9.25,
+          "elevation": 142.0
+        },
+        "attribution": "ERA5 reanalysis via Open-Meteo; CC BY 4.0"
+      },
+      {
+        "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+        "params": {
+          "latitude": 45.464664,
+          "longitude": 9.18854,
+          "start_date": "2008-01-01",
+          "end_date": "2013-12-31",
+          "daily": "temperature_2m_min,temperature_2m_max",
+          "models": "era5",
+          "timezone": "Europe/Rome",
+          "temperature_unit": "celsius"
+        },
+        "retrieved_at": "2026-11-11T11:08:51.421813+00:00",
+        "sha256": "37f440309dcf1398b801303bc8343c0b123a5abab7da26bc51c737426bde00e2",
+        "returned_grid": {
+          "latitude": 45.5,
+          "longitude": 9.25,
+          "elevation": 142.0
+        },
+        "attribution": "ERA5 reanalysis via Open-Meteo; CC BY 4.0"
+      },
+      {
+        "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+        "params": {
+          "latitude": 45.464664,
+          "longitude": 9.18854,
+          "start_date": "2014-01-01",
+          "end_date": "2019-12-31",
+          "daily": "temperature_2m_min,temperature_2m_max",
+          "models": "era5",
+          "timezone": "Europe/Rome",
+          "temperature_unit": "celsius"
+        },
+        "retrieved_at": "2026-11-11T11:09:23.092337+00:00",
+        "sha256": "533dcbfd1bb020b0f1c2c3bbc026051cfe3b7cdf474043192c52d7577613f2d6",
+        "returned_grid": {
+          "latitude": 45.5,
+          "longitude": 9.25,
+          "elevation": 142.0
+        },
+        "attribution": "ERA5 reanalysis via Open-Meteo; CC BY 4.0"
+      },
+      {
+        "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+        "params": {
+          "latitude": 45.464664,
+          "longitude": 9.18854,
+          "start_date": "2020-01-01",
+          "end_date": "2025-12-31",
+          "daily": "temperature_2m_min,temperature_2m_max",
+          "models": "era5",
+          "timezone": "Europe/Rome",
+          "temperature_unit": "celsius"
+        },
+        "retrieved_at": "2026-11-11T11:09:54.844390+00:00",
+        "sha256": "fdd44f596e0c4554af85752d60929a39024f67a684ed98a8b4b5e94ec789a121",
+        "returned_grid": {
+          "latitude": 45.5,
+          "longitude": 9.25,
+          "elevation": 142.0
+        },
+        "attribution": "ERA5 reanalysis via Open-Meteo; CC BY 4.0"
+      }
+    ]
+  },
+  "age_group": {
+    "minimum_destination_age": 85,
+    "maximum_destination_age": 99,
+    "weighting": "unweighted mean"
+  },
+  "alignment": "Weather year y matches CCR column y: 1 January y to 1 January y+1; no year shift",
+  "heat_metric": "sum(max(daily Tmax Celsius - 30, 0)); units Celsius-days",
+  "correlations": [
+    {
+      "sample": "All complete years",
+      "n_years": 24,
+      "heat_vs_decline_spearman": 0.10695652173913042,
+      "year_vs_decline_spearman": -0.45739130434782604
+    },
+    {
+      "sample": "Exclude 2020\u20132021",
+      "n_years": 22,
+      "heat_vs_decline_spearman": 0.18690005646527386,
+      "year_vs_decline_spearman": -0.5900621118012424
+    },
+    {
+      "sample": "Also exclude 2003",
+      "n_years": 21,
+      "heat_vs_decline_spearman": 0.06493506493506493,
+      "year_vs_decline_spearman": -0.5311688311688313
+    }
+  ],
+  "year_2003": {
+    "heat_exposure": 325.5,
+    "cohort_decline": 0.20950468121704308,
+    "heat_rank_hottest_first": 1
+  },
+  "hottest_proxy_year": 2003,
+  "interpretation": "Exploratory ecological association; cohort decline includes migration/revisions and is not mortality"
+}

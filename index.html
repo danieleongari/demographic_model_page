@@ -2,7 +2,7 @@
 <html>
  <head>
    <title>Demographic Model</title>
-   <link rel="icon" href="favicon-32x32.png" >
+   <link rel="icon" href="images_other/favicon-32x32.png" >
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
    <style>
       body {
@@ -112,6 +112,11 @@
             <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.
          </p>
 
+         <p>Updated 11 November 2026: population observations through 1 January 2026,
+            final 2025 fertility data, and ISTAT's projections based on 1 January 2025.
+            The official 2025 fertility rate is 1.14 children per woman; the provisional
+            January–July 2026 estimate is shown separately in the source notes.</p>
+
          <p>All calculations, starting from raw data, are available for inspection in the 
             <a href="https://github.com/danieleongari/demographic_model_page">GitHub repository</a> for this project.
             Don't hesitate to contribute!</p>
@@ -170,7 +175,7 @@
          <h2>Investigation on the Mortality</h2>
 
             <p>The probability of death by age and year of observation provided by ISTAT has been investigated in
-               <a href="notebooks_html/20_investigate_deaths.html">Notebooks #20</a>, 
+               <a href="notebooks_html/20_investigate_italian_deaths.html">Notebooks #20</a>,
                <a href="notebooks_html/25_compare_deaths_deltaresidents.html">#25</a> and 
                <a href="notebooks_html/30_investigate_italian_deathprob.html">#30</a>.
                ISTAT data on mortality comes from a 
@@ -194,6 +199,11 @@
                I excluded from the regression the values for these years (1988-1999) on people younger than 40.
             </p>
 
+
+            <p>An exploratory <a href="notebooks_html/53_correlate_deaths_heatwaves_2003.html">Notebook #53</a>
+               compares Milan's heat exposure with Italy's cohort changes through 2025,
+               including sensitivity to 2003 and the pandemic years. Cohort changes also include
+               migration and statistical revisions, so this comparison does not estimate heat-related deaths.</p>
 
          <h2>Investigation on the Net Migration Balance</h2>
 
@@ -262,8 +272,8 @@
 
             <iframe src="images_output/fertility_scenarios.html" style="height: 350px;"> </iframe>
 
-            <p>Note from the graph that the backfitted value of the fertility rate from the age-probability, population, 
-               and assuming 50% women, is slightly different from the official values from ISTAT due to unavoidable small differences
+            <p>The model's effective fertility rate is calibrated to reproduce age-0 residents on the next 1 January,
+               assuming 50% women and a fitted distribution of mothers' ages. It differs from the official ISTAT rate
                in the methodology, but it is still very close.
                The plot also contains ISTAT's projections for the future fertility rate, with uncertainty intervals, which are estimated till 2080.
             </p>
@@ -280,9 +290,9 @@
             <iframe src="images_output/pop_by_age_proj.html" style="height: 450px;"> </iframe>
 
             <p>Summing all ages, we obtain the total resident population till 2100.
-               The grey line represent ISTAT's projection till 2080 (check their 
-               <a href="https://www.istat.it/en/tag/population-projections/">press releases</a>
-               to read the details).
+               The grey line and band show ISTAT's base-2025 median and central 80% uncertainty interval through 2080
+               (see the <a href="https://www.istat.it/comunicato-stampa/previsioni-della-popolazione-residente-delle-famiglie-e-delle-forze-di-lavoro-base-1-1-2025/">31 August 2026 release</a>).
+               The nine model scenarios span 16.6–77.5 million residents in 2100 and are sensitivity assumptions.
             </p>
 
             <iframe src="images_output/pop_tot_proj.html" style="height: 350px;"> </iframe>
@@ -352,7 +362,7 @@
             </p>
 
             <p> Assuming an average age of 22 years old to start working in the future, 
-               and keeping constant a ratio of 2.06 working people per retired person
+               and keeping constant a ratio of 2.06 working-age residents per retirement-age resident
                (average historical value since 2000, see <a href="notebooks_html/84_sustainable_retirement_age.html">Notebook#84</a>)
                I can forecast the expected retirement age for the 9 scenarios.
             </p>

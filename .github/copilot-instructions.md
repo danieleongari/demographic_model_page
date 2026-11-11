@@ -30,19 +30,92 @@ during exploration, debugging, validation, and notebook execution.
   covers the underlying HTTP requests, disable uncontrolled retries, and cache
   responses. Do not use a whole-notebook or whole-repository run as a smoke test.
 - On HTTP 429, a block response, or an access-denied response, stop ISTAT calls
-  for the run. Respect `Retry-After`; do not probe repeatedly or evade a block
-  through another IP. Report the failure and continue offline where possible.
+  for the current retrieval attempt. Respect `Retry-After`; do not probe
+  repeatedly or change IP/endpoints automatically. Report the failure, follow
+  the user-directed VPN recovery procedure below, and continue offline where
+  possible.
+- Distinguish a locally persisted safety halt from a confirmed provider IP block.
+  A local halt does not establish that ISTAT blocked the public IP, and changing
+  networks/VPN does not clear that local state. Explain the distinction before
+  recommending connectivity troubleshooting; do not infer a remote block from a
+  hanging UI or a timeout alone.
+  Be technically precise: a VPN can change the public source IP and could bypass
+  a restriction based solely on the old IP. This possibility does not clear the
+  local halt, establish the cause of a stall, or authorize automatic IP rotation.
+  Another computer on the same ordinary home connection usually shares
+  the public IP.
+- Treat a hang/timeout, interrupted retrieval, transport/HTTP error, unexpected
+  SDMX reply, or oversized response as a possible service/block condition too:
+  stop **all** live retrieval, preserve the shared halted state, and do not retry,
+  change endpoint/IP, or clear the halt automatically. Cached analysis may
+  continue. A slow response is not permission to raise the timeout.
+- **User-directed VPN recovery (standing user preference, 2026-11-11):** When
+  an actual ISTAT API request is blocked or hangs, stop traffic and **ask the
+  user to turn on their VPN** (their current setup is Surfshark, Italy). If it is
+  already enabled, report that and ask them to check/reconnect it. Explain the
+  observed error; do not assume every timeout proves an IP block. Do not trigger
+  this prompt solely because a local halt flag exists.
+  The prompt should explain that confirmation will authorize **one tiny guarded
+  connection check**, so a second confirmation is unnecessary when the user says
+  they are ready. Wait for that confirmation, respect any explicit `Retry-After`,
+  establish a quiet minute, then use the single-request diagnostic below.
+  Never enable/switch the VPN or rotate exit servers automatically. If the
+  check fails, stop and report; do not loop through servers or endpoints. After
+  a successful check and user-authorized continuation, review any local halt
+  under the shared lock before resuming only the live work actually needed.
+  Preserve audit history, request counters, deadlines and caching. Prefer the
+  existing sources when they already satisfy the task. This user preference
+  supersedes the earlier blanket guidance against requesting a VPN change.
 
 ## Repository map
 
 - [`README.md`](../README.md): project context, source notes, and release history;
   some dataset descriptions are explicitly historical.
-- [`notebooks/`](../notebooks/): source analyses, ordered by numeric prefix. Most
+- [`scripts/`](../scripts/): retrieval, refresh runner, offline validation and safety tests.
+- [`notebooks/`](../notebooks/): notebook analyses only, ordered by numeric prefix. Most
   local paths assume the working directory is `notebooks/`.
-- [`notebooks/requirements.txt`](../notebooks/requirements.txt): declared Python
+- [`requirements.txt`](../requirements.txt): declared Python
   dependencies and version constraints.
 - [`data/`](../data/): checked-in inputs and derived model artifacts, including
   [`all_istat_dataflows.csv`](../data/all_istat_dataflows.csv) for offline discovery.
+- `data/sources/` (gitignored): local raw tidy source snapshots and JSON manifests
+  (dataset IDs, filters, coverage, retrieval timestamps, request URLs and hashes).
+  Never commit these downloads. Reuse a matching query only within the same
+  calendar day in Europe/Rome when refreshing; an explicit offline run may use
+  older saved sources. A fresh checkout needs one authorized live refresh.
+- [`scripts/istat_source.py`](../scripts/istat_source.py): the maintained
+  retrieval entry point. Its HTTP session covers implicit SDMX metadata calls,
+  uses a nonblocking shared file lock, waits 60 seconds per live run, and waits
+  at least 30.1 seconds after completion before another attempt. This permits at
+  most two requests per rolling minute. Retries and redirects are disabled.
+  A subprocess transport enforces a 45-second total deadline (including DNS,
+  TLS and a slow response body), with 5s connect/10s read timeouts and an 8 MiB
+  body limit. The subprocess also has its own termination alarm. A run has at
+  most eight attempts and eight minutes; failures freeze live retrieval across
+  sessions. Start/finish events are retained in a JSONL audit log alongside the
+  shared limiter. Do not infer request start times from cache file mtimes.
+  The temporary limiter is shared across checkouts for this OS account; it cannot
+  coordinate other users or devices on the same public IP. Coordinate those
+  separately. Do not clear a blocked limiter and retry automatically; follow the
+  user-directed VPN recovery and authorization procedure above.
+  A precautionary halt was placed on 2026-11-11 after the user's report of a long
+  stall. After a successful authorized VPN check and explicit user continuation,
+  that precautionary halt was reviewed and cleared under the lock; counters and
+  audit history were retained. No additional API calls were needed. Review any
+  future halt and user authorization before resuming; do not send unrequested
+  probes.
+  On explicit new user authorization, `scripts/check_istat_connection.py --live`
+  permits one fixed national TFR observation using an expiring, process- and
+  exact-URL-scoped ticket. This consumes the ticket while keeping the general
+  halt set. It waits a quiet minute, sends no metadata requests/retries, and caps
+  the request at 20 seconds and 64 KiB. Without `--live` it is a dry run; an
+  existing same-day diagnostic cache prevents repeating the same probe. Do not run this
+  command without a fresh user request, or retry it after failure. A tiny
+  successful response does not establish that a VPN caused recovery or that a
+  larger query will work. The 2026-11-11 user-authorized VPN check succeeded with
+  exactly one request. All ordinary retrieval limits and failure stops remain
+  in force after the user's subsequent continuation request.
+  Compressed HTTP responses in ignored `.cache/istat/` are reused on the same day.
 - [`index.html`](../index.html): static presentation; embeds figures from
   [`images_output/`](../images_output/) and links to [`notebooks_html/`](../notebooks_html/).
 - [`images_other/`](../images_other/): supporting static assets.
@@ -80,7 +153,8 @@ and validated.
 Inspect the working tree and preserve unrelated edits. Read the README and the
 affected notebook's Markdown, code, and saved outputs before changing assumptions.
 Use notebook sources rather than editing exported HTML as the primary analysis.
-There is no configured automated test suite or build command in the repository.
+Focused offline tests and refresh/export commands are documented below; no
+external CI pipeline is configured.
 
 The main artifact dependencies are:
 
@@ -91,6 +165,7 @@ The main artifact dependencies are:
 | `30_investigate_italian_deathprob` | Mortality retrieval | `deathprob_by_age_year.csv` |
 | `40_investigate_italian_fertility` | Population and fertility observations | `fertility_fitted.json` |
 | `45_investigate_italian_migration` | Population, cohort changes, and death probabilities | `average_migration_balance.csv` |
+| `53_correlate_deaths_heatwaves_2003` | Cached cohort changes and Open-Meteo ERA5 near Milan | `heatwave_analysis_summary.json`, exploratory heat/cohort figures; optional |
 | `63_deathprob_projections` | Historical death probabilities | `deathprob_by_age_year_proj.csv` |
 | `70_modelling_future_population` | Population, projected mortality, fertility fit, migration balance | `pop_by_age_year_proj.csv` and scenario figures |
 | `73_analyse_future_population` | Historical and projected population | Population-analysis figures |
@@ -101,6 +176,85 @@ artifacts are under `data/`. Notebooks `20`, `25`, and `53` are supplementary
 investigations, not prerequisites for every refresh. Numeric order alone is not
 a reason to execute every notebook. Even notebook `70` includes an ISTAT request
 for comparison data: inspect cells before assuming an analysis runs offline.
+
+### Maintained refresh workflow
+
+Use the existing Python environment with the dependencies in
+`requirements.txt` (including a Jupyter Python kernel and `nbmirror`).
+From the repository root:
+
+```sh
+python scripts/refresh_model.py --refresh  # explicit, serialized live retrieval
+python scripts/refresh_model.py            # saved sources only; HTTP disabled
+python -m unittest discover -s scripts -p 'test_*.py'  # mocked retrieval checks
+```
+
+The runner reads notebook `00`'s cached catalogue, then executes `14`, `30`, `40`,
+`45`, `63`, `70`, `73`, `84` in order and exports each with `nbmirror`. In `00`
+only the catalogue cells are executed: the rest remains optional exploration.
+`--download-only --refresh` separates retrieval from execution;
+`--from-notebook 40` (or another maintained prefix) resumes offline execution.
+The final validator writes tracked `data/refresh_validation.json`, including source
+coverage, accounting checks, and differences from `HEAD`'s checked-in model.
+The baseline comparison therefore means the current Git `HEAD`, not a fixed
+historical release. Main notebooks use `istat_data()` and never refresh on an
+ordinary run. The World Bank comparison is also cached. Supplementary notebooks
+`20`, `25`, `53` are outside this runner. `20`/`25` install the shared guard before
+legacy imports: plain `requests`/`istatapi` ISTAT traffic is rejected. Their old
+saved outputs remain historical. Notebook `53` has a separate optional runner:
+
+```sh
+python scripts/refresh_model.py --heatwaves --refresh  # Open-Meteo only
+python scripts/refresh_model.py --heatwaves            # offline notebook 53
+```
+
+The weather branch never calls ISTAT and does not rerun the national model.
+`scripts/weather_source.py` downloads daily ERA5 minimum/maximum temperatures near
+Milan through `/v1/archive`, explicitly fixing `models=era5`, Celsius and
+`Europe/Rome`. No API key is needed for the public noncommercial service. Raw
+JSON and source manifests stay in ignored `data/sources/open_meteo/` (a subfolder
+separate from the national source manifests). Matching same-day queries reuse
+downloads. Six-year chunks are separated by 31.1s after completion because long
+date windows count as multiple Open-Meteo calls. The locked, killable transport
+has a 45s total deadline, no retries/redirects and a 2 MiB response limit. Weather
+failures stop its own retrieval without changing the ISTAT limiter.
+
+The heatwave comparison preserves the 2002 start and ends at the latest complete
+common weather/cohort year (currently 2025). Require complete daily coverage,
+Celsius units, no duplicate dates, finite temperatures and Tmin ≤ Tmax. Keep
+zero-exposure years. Match weather year `y` directly to CCR column `y`, the
+transition from January `y` to January `y+1`; do not reintroduce the old `-1`
+year shift. The age bands refer to destination ages in the next January.
+`scripts/heatwave_analysis.py` reports signed Spearman correlations with sample
+sizes and exclusions for 2020–2021 and, separately, 2003. Do not take absolute
+values or interpret cohort change as actual deaths. A single Milan reanalysis
+point, secular trends, migration and census revisions limit causal claims.
+`heatwave_analysis_summary.json` contains derived statistics and provenance;
+daily weather downloads are never committed. The notebook saves interactive
+heat/cohort and age-sensitivity figures plus a standalone PNG and HTML export.
+
+The seven maintained national data queries use reviewed positional dimension
+keys, so SDMX does not implicitly retrieve full dataflow structures/codelists.
+Unknown flows/dimensions or unrestricted geography require deliberate migration
+before retrieval. The helper blocks unguarded ISTAT `requests` clients too.
+
+The 2026-11 refresh uses final full-year 2025 fertility observations, residents
+on 1 January 2026, and ISTAT base-2025 official projections through 2080. Keep the
+provisional January–July 2026 fertility estimate separate. The model's effective
+fertility coefficient reproduces next-January age-0 residents under its 50%
+women assumption; it is not the official total fertility rate. Calibration and
+forecasting use the same fitted age distribution (18–50). Migration residuals
+use origin-age mortality and only complete overlapping observation years.
+Mortality projections use the latest 12 available non-COVID observation years
+for their recent-average component. The original nine scenario definitions,
+100+ mortality assumption and demographic retirement-ratio scope are retained.
+Pre-2019 population is retained from the full Plotly figure in the Git `HEAD`
+population notebook and checked against the population matrix, rather than
+queried again from slow historical endpoints. Its local cache manifest identifies
+the source Git commit and explicitly labels it as retained data. Keep
+`plotly_mimetype+notebook` output in the maintained notebooks so this saved series
+remains recoverable on fresh checkouts. `retirement_summary.json` records the
+current reference ratio and scenario range for the 1990 birth cohort.
 
 ## Implement and validate changes
 

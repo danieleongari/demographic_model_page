@@ -5,4 +5,9 @@ matplotlib
 plotly<6.0.0 # untill they solve https://github.com/plotly/plotly.py/issues/4953
 #istatapi
 sdmx1~=2.25.1
-
+requests
+wbgapi
+nbformat
+nbclient
+nbmirror
+ipykernel
