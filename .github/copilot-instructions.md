@@ -297,6 +297,11 @@ a new retrieval date. The November 2026 baseline came from 11 November's cache.
 
 ## Implement and validate changes
 
+- Keep the main-page header and footer dark (`#333`) with matching content
+  alignment and white links to `https://www.italiancurious.com/`. The header
+  contains “← Home” on the left and the GitHub repository link on the right;
+  the footer contains only “← Back to Home”. Preserve the header's scroll
+  hide/reappear behavior and do not restore a footer modification timestamp.
 - **Standing language preference:** For every reader-facing ISTAT link in the
   main page, README, notebook sources and their HTML exports, use the official
   English page when it exists and can be found. Keep the original Italian page

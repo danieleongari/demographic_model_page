@@ -2,6 +2,9 @@
 
 🌐 View the presentation at https://danieleongari.github.io/demographic_model_page/
 
+The dark header links to [Italian Curious](https://www.italiancurious.com/) and
+the GitHub repository; the matching footer links back to the personal home page.
+
 🔗 Original project from deprecated https://github.com/danieleongari/saturdaymorningdsprojects.
 
 Agent contributors: [AGENTS.md](AGENTS.md) points to the

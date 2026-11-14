@@ -25,19 +25,49 @@
          top: 0;
          z-index: 100;
          display: flex;
-         justify-content: flex-end;
+         align-items: center;
          transition: transform 0.3s ease-in-out; /* slower transition for reappearing */
       }
       .banner-hidden {
          transform: translateY(-100%);
          transition: transform 0.2s ease-in-out;
       }
-      .banner a {
-            padding-right: 10px;
-            text-decoration: none;
+      .site-nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 0 10px;
+         box-sizing: border-box;
       }
-      .banner a img:hover {
-            filter: hue-rotate(0deg) saturate(100%) brightness(80%);
+      .site-nav a {
+         color: white;
+         text-decoration: none;
+      }
+      .site-nav .home {
+         font-weight: 600;
+      }
+      .site-nav .home:hover {
+         text-decoration: underline;
+      }
+      .site-nav a:focus-visible {
+         outline: 2px solid white;
+         outline-offset: 4px;
+      }
+      .github-link img {
+         display: block;
+         height: 30px;
+      }
+      .github-link:hover img {
+         opacity: 0.8;
+      }
+      .site-footer {
+         width: 100%;
+         margin-top: 24px;
+         padding: 16px 0;
+         background-color: #333;
       }
      .container {
          text-align: center;
@@ -84,11 +114,14 @@
   </style>
  </head>
  <body>
-   <div class="banner">
-      <a href="https://github.com/danieleongari/demographic_model_page">
-            <img src="images_other/github-mark-white.png" alt="GitHub" style="height: 30px"> <!-- Same height as banner -->
-      </a> 
-   </div> 
+   <header class="banner">
+      <nav class="site-nav" aria-label="Main navigation">
+         <a class="home" href="https://www.italiancurious.com/" rel="home">← Home</a>
+         <a class="github-link" href="https://github.com/danieleongari/demographic_model_page">
+            <img src="images_other/github-mark-white.png" alt="GitHub repository">
+         </a>
+      </nav>
+   </header>
    <div class="container">
 
       <h1>Demographic Model of the Italian population</h1>
@@ -390,10 +423,14 @@
                <a href="https://github.com/danieleongari/demographic_model_page/issues">Write me an issue!</a>
             </p>
             
-         <div style="height:50px"></div> 
          <!-- <div style="text-align: center;">
             <img src="images_other/tldr.jpg" alt="TLDR Image" style="width: 700px;"> -->
    </div>
+   <footer class="site-footer">
+      <div class="site-nav">
+         <a class="home" href="https://www.italiancurious.com/" rel="home">← Back to Home</a>
+      </div>
+   </footer>
 </body>
 </html>
 <script>

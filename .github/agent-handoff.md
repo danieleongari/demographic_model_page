@@ -1,38 +1,33 @@
 # Current agent handoff
 
-- **Status, 2026-11-14:** Applied the user's standing preference for English
-  ISTAT links, with their explicit exception: retain Italian when an English
-  equivalent does not exist or cannot be found. The preference is recorded in
-  `copilot-instructions.md` for the main page, README, notebooks and HTML exports.
-- Replaced Italian demographic-indicator links for 2024/2025 with verified
-  English releases, corrected an existing English-path/Italian-slug link, and
-  replaced the old demographic archive with the current English population page.
-  Final 2025 fertility links now use the verified English release whose slug
-  and heading say “Year 2026” but whose text explicitly reports 2025 observations.
-  Its publication date is 3 November 2026, so the source box and README link label
-  now use 2026-11-03. README distinguishes this translation from the original
-  21 October release and preserves the final/provisional reference periods.
-- No matching English base-2025 projection press release, 2020 census release,
-  or historical methodology PDFs were found. Their precise Italian originals
-  remain under the user's exception rather than substituting an older release
-  or a less specific source. ISTAT's English projection data portal itself links
-  to the base-2025 report as “in italian”.
-- Updated source Markdown in notebook 40 and rebuilt its HTML with `nbmirror`,
-  without executing analysis. Earlier source-box/footer edits and notebook 86's
-  matching Plotly styling are included in this commit; its linked Matplotlib
-  image remains unchanged. API endpoints, caches and model results are untouched.
-- Validation: checked destination content via web search/public pages; checked
-  notebook JSON and source-only edits, local links and whitespace. No ISTAT API
-  requests, model reruns or numerical export regeneration were needed. Changes
-  are being committed at the user's request with message
-  `improve update status and minor cleaning`. The user explicitly requested
-  **no push**; no deployment is requested.
-
-- Commit preparation: reviewed all nine staged files. The installed `nbmirror`
-  pre-commit hook regenerated and staged the notebook mirrors, requiring a
-  commit retry. Reviewed its generated changes; staged whitespace checks pass.
-  Notebook 40 changes only its source-link Markdown; notebook 86 changes only
-  plotting cell 7 and preserves all numerical trace values. No push is allowed.
+- **Status, 2026-11-14:** Added personal-home navigation to `index.html`, using
+  the linked IPAB page's “← Home” / “← Back to Home” labels. The header retains
+  its dark `#333` background and GitHub icon, with home on the left and GitHub
+  on the right. Added a matching dark footer containing only the personal-home
+  link. Both home links point to `https://www.italiancurious.com/`.
+- Header/footer share an 800px navigation container, white link styling and
+  keyboard focus indicators. Kept the existing header hide/reappear behavior
+  and removed the old bottom spacer in favor of footer spacing. The footer has
+  no GitHub link or file-modification timestamp. README and working guidance
+  describe this navigation convention.
+- Validation: checked header/footer link counts and destinations and all local
+  asset references. Headless Chromium checks matching backgrounds, keyboard
+  focus, navigation fit at 1024px and 390px, scroll hide/reappear, and JavaScript
+  errors. Header/footer screenshots were inspected. Chart iframes and remote
+  resources were blocked during this local presentation check; no analysis or
+  data retrieval was needed. No commit, push or deployment requested for this
+  change; the previous explicit no-push instruction remains in force.
+- Previous work is committed as `075820a` (`improve update status and minor
+  cleaning`): framed dated source summary, footer timestamp removal, matching
+  interactive retirement-life chart styling, and English ISTAT link preference
+  with the user's Italian fallback exception. Notebook 86's static PNG and all
+  scientific trace values were retained. The nbmirror pre-commit hook may
+  regenerate/stage mirrors and require a commit retry.
+- Source-language detail: the English fertility release's heading/slug says
+  “Year 2026”, but its final observations refer to 2025. Its publication date
+  is 3 November 2026; the original Italian release was 21 October. No matching
+  English base-2025 projection press release, 2020 census release, or historical
+  methodology PDFs were found, so their Italian originals are retained.
 
 ## Carried-forward model and workflow
 
