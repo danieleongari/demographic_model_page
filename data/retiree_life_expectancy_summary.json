@@ -1,0 +1,95 @@
+{
+  "measure": "period remaining life expectancy conditional on reaching retirement age",
+  "units": "years",
+  "mortality_source": {
+    "dataset": "26_295_DF_DCIS_MORTALITA1_2",
+    "filters": {
+      "FREQ": "A",
+      "REF_AREA": "IT",
+      "DATA_TYPE": "PROBDEATH",
+      "SEX": "9",
+      "AGE": "all single ages"
+    },
+    "retrieved_at": "2026-11-11T07:58:38.835035+00:00",
+    "probabilities_already_divided_by": 1000
+  },
+  "observed_mortality_years": [
+    1974,
+    2025
+  ],
+  "projected_mortality_years": [
+    2026,
+    2100
+  ],
+  "observed_retirement_age_years": [
+    1974,
+    2023
+  ],
+  "assumed_retirement_age_years": [
+    2024,
+    2025,
+    2026
+  ],
+  "assumed_retirement_age": 64,
+  "retirement_projection_years": [
+    2027,
+    2100
+  ],
+  "retirement_reference_ratio": 2.06,
+  "mortality_projection": "Reuse notebook 63: mean of age-specific exponential trend and rolling 12 non-COVID observation-year average; common to all nine scenarios",
+  "within_age_interval": "uniform distribution of deaths; conditional fractional-age formula",
+  "oldest_age_tail": "repeat age-119 annual probability above age 119; analytic geometric tail",
+  "max_tail_sensitivity_years": 1.0540723849317146e-10,
+  "fixed_retirement_age": 65,
+  "fixed_age_remaining_life": {
+    "1974": 15.141743349309962,
+    "2025": 21.410797557459414,
+    "2026": 21.239307038633072,
+    "2100": 24.020374909640896
+  },
+  "scenario_count": 9,
+  "scenario_results_at_end_year": {
+    "migr double  & fert ↑ 2 in 2100": {
+      "retirement_age": 66.0,
+      "remaining_life_expectancy": 23.132304362482014
+    },
+    "migr double  & fert eq. to last": {
+      "retirement_age": 68.0,
+      "remaining_life_expectancy": 21.37622348949935
+    },
+    "migr double  & fert ↓ 0 in 2100": {
+      "retirement_age": 71.0,
+      "remaining_life_expectancy": 18.794593623203244
+    },
+    "migr average & fert ↑ 2 in 2100": {
+      "retirement_age": 67.0,
+      "remaining_life_expectancy": 22.250898202794744
+    },
+    "migr average & fert eq. to last": {
+      "retirement_age": 70.0,
+      "remaining_life_expectancy": 19.64720571220396
+    },
+    "migr average & fert ↓ 0 in 2100": {
+      "retirement_age": 73.0,
+      "remaining_life_expectancy": 17.11769842998386
+    },
+    "migr zero    & fert ↑ 2 in 2100": {
+      "retirement_age": 71.0,
+      "remaining_life_expectancy": 18.794593623203244
+    },
+    "migr zero    & fert eq. to last": {
+      "retirement_age": 74.0,
+      "remaining_life_expectancy": 16.294635493292386
+    },
+    "migr zero    & fert ↓ 0 in 2100": {
+      "retirement_age": 78.0,
+      "remaining_life_expectancy": 13.116421719792923
+    }
+  },
+  "input_sha256": {
+    "deathprob_by_age_year.csv": "308459dae3abe3ae50afd3a3cef43463571a8d6bd512cf84274fa2bd8510c7fa",
+    "deathprob_by_age_year_proj.csv": "7f13f30fbdfcebd3c490a69fbc2a5b2179cc80c5d99f5d0277f9b53016c83132",
+    "retirement_age_by_year.csv": "2a1e574bd93c0353caf276117170269b709e7cf58d8a3ed86234cf1b80ab3283",
+    "retirement_summary.json": "172d1a4bcc6aece8b88a46ec64859e226b10e279c67603a304d4d7284b7e9789"
+  }
+}

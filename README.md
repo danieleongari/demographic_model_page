@@ -32,6 +32,7 @@ Agent contributors: [AGENTS.md](AGENTS.md) points to the
   - `modelling_future_population` - predict future population based on past data and several extreme assumptions (scenarios)
   - `analyze_future_population` - opinionated plots on how the future population will look like, based on the previous notebook
   - `sustainable_retirement_age` - compute, for each generation, the retirement age to keep a consistent ratio of workers/retired
+  - `86_retiree_life_expectation` - plot remaining period life expectancy at each calendar year's retirement age, using observed ISTAT age-specific mortality and all nine future retirement-age paths
 
 ## Reproducing the model
 
@@ -71,7 +72,7 @@ python -m unittest discover -s scripts -p 'test_*.py'
 ```
 
 The runner checks notebook `00`'s cached catalogue, then executes `14`, `30`, `40`,
-`45`, `63`, `70`, `73`, and `84` in dependency order, exports notebook HTML with
+`45`, `63`, `70`, `73`, `84`, and `86` in dependency order, exports notebook HTML with
 `nbmirror`, and records offline checks and changes from the Git `HEAD` model in
 [`data/refresh_validation.json`](data/refresh_validation.json). Optional
 investigations `20`, `25` and the live exploration cells of `00` are outside
@@ -87,6 +88,33 @@ If ISTAT blocks or stalls, the agent stops and asks the user to enable their VPN
 (or check it if already enabled). After confirmation, one small connection check
 uses the same request limiter and strict deadlines. VPN switching and repeated
 probes are never automatic; cached work continues where possible.
+
+To rebuild the retirement analysis from the checked-in population and mortality
+CSVs, without refreshing any source:
+
+```sh
+python scripts/refresh_model.py --from-notebook 84
+```
+
+Notebook `84` exports [`data/retirement_age_by_year.csv`](data/retirement_age_by_year.csv),
+and [`86_retiree_life_expectation.ipynb`](notebooks/86_retiree_life_expectation.ipynb)
+uses each year's death probabilities to calculate remaining life conditional on
+reaching that year's retirement age. Historical mortality comes from notebook
+`30`; future mortality reuses notebook `63`, shared across the nine scenarios.
+The measure is **period** life expectancy, holding the selected year's mortality
+schedule fixed over the remaining lifetime. It uses all single ages through 119,
+uniform deaths within each age interval, conditional fractional retirement ages,
+and an analytic tail repeating the age-119 probability. The 2024–2026 retirement
+age of 64 is an explicit assumption inherited from `84`; effective-age
+observations end in 2023. Mortality observations end in 2025.
+
+The [interactive chart](images_output/retiree_life_expectancy.html),
+[static figure](images_output/retiree_life_expectancy.png),
+[annual results](data/retiree_life_expectancy_by_year.csv), and
+[method/provenance summary](data/retiree_life_expectancy_summary.json) are exported
+offline. In 2100, the nine scenarios give retirement ages of 66–78 and remaining
+life expectancies of 13.1–23.1 years. At a fixed age of 65, remaining life rises
+from 21.4 years in 2025 to 24.0 in 2100 under the existing mortality projection.
 
 Notebook `53` can be refreshed separately:
 
@@ -114,6 +142,9 @@ monthly means and annual heat exposure are calculated in this project.
 ## ChangeLog
 
 - 2026 November
+  - Add notebook `86_retiree_life_expectation`, conditional remaining life at
+    retirement for 1974–2100, all nine projected retirement-age paths, offline
+    exports, and analytical life-table checks.
   - Refresh the national model using [final 2025 fertility data, released on 21 October 2026](https://www.istat.it/comunicato-stampa/natalita-e-fecondita-della-popolazione-residente-anno-2025/),
     and [ISTAT population and fertility projections based on 1 January 2025](https://www.istat.it/comunicato-stampa/previsioni-della-popolazione-residente-delle-famiglie-e-delle-forze-di-lavoro-base-1-1-2025/).
   - Keep the provisional January–July 2026 fertility estimate separate from full-year observations.

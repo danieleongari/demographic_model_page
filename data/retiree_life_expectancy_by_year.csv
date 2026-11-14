@@ -1,0 +1,720 @@
+year,scenario,retirement_age,retirement_age_source,remaining_life_expectancy,expected_age_at_death,mortality_source
+1974,Historical / current,60.900000000000006,observed effective age,18.159310544491923,79.05931054449192,observed
+1975,Historical / current,61.0,observed effective age,17.779564326073313,78.77956432607331,observed
+1976,Historical / current,61.2,observed effective age,17.718685998271948,78.91868599827195,observed
+1977,Historical / current,61.0,observed effective age,18.10339179034542,79.10339179034543,observed
+1978,Historical / current,60.8,observed effective age,18.474821646665937,79.27482164666594,observed
+1979,Historical / current,60.6,observed effective age,18.719935639831135,79.31993563983113,observed
+1980,Historical / current,60.6,observed effective age,18.545059184223135,79.14505918422313,observed
+1981,Historical / current,60.45,observed effective age,19.111754071726004,79.561754071726,observed
+1982,Historical / current,60.95,observed effective age,18.756874090545463,79.70687409054547,observed
+1983,Historical / current,60.85,observed effective age,18.587952694049548,79.43795269404956,observed
+1984,Historical / current,60.650000000000006,observed effective age,19.28159986618546,79.93159986618546,observed
+1985,Historical / current,60.75,observed effective age,19.16019108424699,79.91019108424699,observed
+1986,Historical / current,60.45,observed effective age,19.608132756320583,80.05813275632059,observed
+1987,Historical / current,60.65,observed effective age,19.786720096048192,80.43672009604819,observed
+1988,Historical / current,60.3,observed effective age,20.215818502208496,80.51581850220849,observed
+1989,Historical / current,59.650000000000006,observed effective age,21.04277135544333,80.69277135544334,observed
+1990,Historical / current,59.45,observed effective age,21.25273621908708,80.70273621908709,observed
+1991,Historical / current,59.25,observed effective age,21.628646265478384,80.87864626547838,observed
+1992,Historical / current,58.5,observed effective age,22.49508526252911,80.9950852625291,observed
+1993,Historical / current,58.9,observed effective age,22.222116044830273,81.12211604483028,observed
+1994,Historical / current,58.65,observed effective age,22.591554479043623,81.24155447904363,observed
+1995,Historical / current,58.45,observed effective age,22.985884550416326,81.43588455041633,observed
+1996,Historical / current,58.35,observed effective age,23.228851217654693,81.57885121765469,observed
+1997,Historical / current,58.25,observed effective age,23.448872373438487,81.69887237343849,observed
+1998,Historical / current,58.1,observed effective age,23.573793348583422,81.67379334858342,observed
+1999,Historical / current,58.05,observed effective age,23.886139619391084,81.93613961939108,observed
+2000,Historical / current,58.2,observed effective age,24.11609419733816,82.31609419733816,observed
+2001,Historical / current,58.6,observed effective age,24.144124059544403,82.7441240595444,observed
+2002,Historical / current,59.2,observed effective age,23.688204535010406,82.8882045350104,observed
+2003,Historical / current,58.95,observed effective age,23.705371574475976,82.65537157447598,observed
+2004,Historical / current,59.05,observed effective age,24.28878292851462,83.33878292851462,observed
+2005,Historical / current,58.9,observed effective age,24.395828914038947,83.29582891403895,observed
+2006,Historical / current,59.0,observed effective age,24.6358140845891,83.6358140845891,observed
+2007,Historical / current,59.1,observed effective age,24.602194214593286,83.70219421459329,observed
+2008,Historical / current,59.15,observed effective age,24.59608191148186,83.74608191148187,observed
+2009,Historical / current,58.95,observed effective age,24.870282602555307,83.82028260255531,observed
+2010,Historical / current,59.150000000000006,observed effective age,24.978196211688097,84.1281962116881,observed
+2011,Historical / current,59.5,observed effective age,24.81830143889991,84.31830143889991,observed
+2012,Historical / current,60.3,observed effective age,24.11746138584522,84.41746138584521,observed
+2013,Historical / current,60.35,observed effective age,24.37585720895241,84.72585720895242,observed
+2014,Historical / current,60.3,observed effective age,24.635774408197587,84.93577440819759,observed
+2015,Historical / current,60.55,observed effective age,24.05729205481457,84.60729205481456,observed
+2016,Historical / current,60.95,observed effective age,24.2096731775628,85.15967317756281,observed
+2017,Historical / current,61.1,observed effective age,23.873705538872766,84.97370553887276,observed
+2018,Historical / current,61.65,observed effective age,23.722044316224565,85.37204431622456,observed
+2019,Historical / current,62.35,observed effective age,23.271481408175372,85.62148140817537,observed
+2020,Historical / current,62.05,observed effective age,22.459208419124025,84.50920841912402,observed
+2021,Historical / current,61.9,observed effective age,22.999131257400865,84.89913125740087,observed
+2022,Historical / current,62.25,observed effective age,22.77896702277432,85.02896702277432,observed
+2023,Historical / current,62.650000000000006,observed effective age,22.871423213046583,85.52142321304659,observed
+2024,Historical / current,64.0,assumed age,22.138745036417856,86.13874503641786,observed
+2025,Historical / current,64.0,assumed age,22.266826527084813,86.26682652708482,observed
+2026,Historical / current,64.0,assumed age,22.091838688826563,86.09183868882656,projected
+2027,migr double  & fert ↑ 2 in 2100,63.0,projected demographic proxy,23.012313349509,86.012313349509,projected
+2028,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.321036871211852,86.32103687121185,projected
+2031,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.37659430859445,86.37659430859445,projected
+2032,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.625738792427818,86.62573879242782,projected
+2034,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.678293072523875,86.67829307252387,projected
+2035,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.73020446098802,86.73020446098802,projected
+2036,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.927106337371,86.927106337371,projected
+2037,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.976790760430145,86.97679076043015,projected
+2038,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,21.02587127495453,87.02587127495453,projected
+2039,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,21.074354130563044,87.07435413056305,projected
+2040,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,21.12224557005455,87.12224557005455,projected
+2041,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.318708445132145,87.31870844513215,projected
+2042,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.364526862477188,87.36452686247719,projected
+2043,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.409790952249868,87.40979095224986,projected
+2044,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.4545065998905,87.4545065998905,projected
+2045,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.498679675039504,87.49867967503951,projected
+2046,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.542316029522315,87.54231602952231,projected
+2047,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.585421495424036,87.58542149542404,projected
+2048,migr double  & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.77905237178932,87.77905237178932,projected
+2049,migr double  & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.82029116067945,87.82029116067945,projected
+2050,migr double  & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.861033471762394,87.8610334717624,projected
+2051,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.75265032346356,87.75265032346356,projected
+2052,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.793188012887615,87.79318801288761,projected
+2053,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.83322929461302,87.83322929461302,projected
+2054,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.872779815693917,87.87277981569392,projected
+2055,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.911845190998676,87.91184519099868,projected
+2056,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.950431001989923,87.95043100198993,projected
+2057,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.98854279557209,87.98854279557209,projected
+2058,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.026186083004234,88.02618608300423,projected
+2059,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.06336633887603,88.06336633887602,projected
+2060,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.100089000145203,88.1000890001452,projected
+2061,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.002212599725283,88.00221259972528,projected
+2062,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.038631050328277,88.03863105032828,projected
+2063,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.074595062704226,88.07459506270422,projected
+2064,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.110110155298333,88.11011015529833,projected
+2065,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.145181801582638,88.14518180158264,projected
+2066,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.179815429427176,88.17981542942718,projected
+2067,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.214016420521595,88.2140164205216,projected
+2068,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.247790109845067,88.24779010984507,projected
+2069,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.281141785183063,88.28114178518307,projected
+2070,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.314076686689134,88.31407668668913,projected
+2071,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.346600006490046,88.34660000649005,projected
+2072,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.378716888332615,88.37871688833262,projected
+2073,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.410432427270706,88.4104324272707,projected
+2074,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.44175166939085,88.44175166939085,projected
+2075,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.47267961157481,88.47267961157482,projected
+2076,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.503221201297844,88.50322120129785,projected
+2077,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.533381336461247,88.53338133646125,projected
+2078,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.68880131118365,88.68880131118365,projected
+2079,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.717807414459354,88.71780741445936,projected
+2080,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.746455741090728,88.74645574109073,projected
+2081,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.77475080460958,88.77475080460958,projected
+2082,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.80269707166209,88.8026970716621,projected
+2083,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.83029896198976,88.83029896198977,projected
+2084,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.85756084843474,88.85756084843474,projected
+2085,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.88448705696874,88.88448705696874,projected
+2086,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.911081866744368,88.91108186674437,projected
+2087,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.937349510167792,88.93734951016779,projected
+2088,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.96329417299188,88.96329417299188,projected
+2089,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,21.988919994428755,88.98891999442876,projected
+2090,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.01423106728096,89.01423106728096,projected
+2091,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.039231438090198,89.0392314380902,projected
+2092,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.063925107302932,89.06392510730294,projected
+2093,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.088316029451843,89.08831602945185,projected
+2094,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,22.99224578388465,88.99224578388464,projected
+2095,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,23.01632052941792,89.01632052941792,projected
+2096,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,23.040097445496134,89.04009744549613,projected
+2097,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,23.063580444897138,89.06358044489714,projected
+2098,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,23.086773393057733,89.08677339305774,projected
+2099,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,23.10968010836892,89.10968010836892,projected
+2100,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy,23.132304362482014,89.13230436248202,projected
+2027,migr double  & fert eq. to last,63.0,projected demographic proxy,23.012313349509,86.012313349509,projected
+2028,migr double  & fert eq. to last,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr double  & fert eq. to last,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr double  & fert eq. to last,64.0,projected demographic proxy,22.321036871211852,86.32103687121185,projected
+2031,migr double  & fert eq. to last,64.0,projected demographic proxy,22.37659430859445,86.37659430859445,projected
+2032,migr double  & fert eq. to last,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr double  & fert eq. to last,65.0,projected demographic proxy,21.625738792427818,86.62573879242782,projected
+2034,migr double  & fert eq. to last,65.0,projected demographic proxy,21.678293072523875,86.67829307252387,projected
+2035,migr double  & fert eq. to last,65.0,projected demographic proxy,21.73020446098802,86.73020446098802,projected
+2036,migr double  & fert eq. to last,66.0,projected demographic proxy,20.927106337371,86.927106337371,projected
+2037,migr double  & fert eq. to last,66.0,projected demographic proxy,20.976790760430145,86.97679076043015,projected
+2038,migr double  & fert eq. to last,66.0,projected demographic proxy,21.02587127495453,87.02587127495453,projected
+2039,migr double  & fert eq. to last,66.0,projected demographic proxy,21.074354130563044,87.07435413056305,projected
+2040,migr double  & fert eq. to last,66.0,projected demographic proxy,21.12224557005455,87.12224557005455,projected
+2041,migr double  & fert eq. to last,67.0,projected demographic proxy,20.318708445132145,87.31870844513215,projected
+2042,migr double  & fert eq. to last,67.0,projected demographic proxy,20.364526862477188,87.36452686247719,projected
+2043,migr double  & fert eq. to last,67.0,projected demographic proxy,20.409790952249868,87.40979095224986,projected
+2044,migr double  & fert eq. to last,67.0,projected demographic proxy,20.4545065998905,87.4545065998905,projected
+2045,migr double  & fert eq. to last,67.0,projected demographic proxy,20.498679675039504,87.49867967503951,projected
+2046,migr double  & fert eq. to last,67.0,projected demographic proxy,20.542316029522315,87.54231602952231,projected
+2047,migr double  & fert eq. to last,67.0,projected demographic proxy,20.585421495424036,87.58542149542404,projected
+2048,migr double  & fert eq. to last,68.0,projected demographic proxy,19.77905237178932,87.77905237178932,projected
+2049,migr double  & fert eq. to last,68.0,projected demographic proxy,19.82029116067945,87.82029116067945,projected
+2050,migr double  & fert eq. to last,68.0,projected demographic proxy,19.861033471762394,87.8610334717624,projected
+2051,migr double  & fert eq. to last,67.0,projected demographic proxy,20.75265032346356,87.75265032346356,projected
+2052,migr double  & fert eq. to last,67.0,projected demographic proxy,20.793188012887615,87.79318801288761,projected
+2053,migr double  & fert eq. to last,67.0,projected demographic proxy,20.83322929461302,87.83322929461302,projected
+2054,migr double  & fert eq. to last,67.0,projected demographic proxy,20.872779815693917,87.87277981569392,projected
+2055,migr double  & fert eq. to last,67.0,projected demographic proxy,20.911845190998676,87.91184519099868,projected
+2056,migr double  & fert eq. to last,67.0,projected demographic proxy,20.950431001989923,87.95043100198993,projected
+2057,migr double  & fert eq. to last,67.0,projected demographic proxy,20.98854279557209,87.98854279557209,projected
+2058,migr double  & fert eq. to last,67.0,projected demographic proxy,21.026186083004234,88.02618608300423,projected
+2059,migr double  & fert eq. to last,67.0,projected demographic proxy,21.06336633887603,88.06336633887602,projected
+2060,migr double  & fert eq. to last,67.0,projected demographic proxy,21.100089000145203,88.1000890001452,projected
+2061,migr double  & fert eq. to last,67.0,projected demographic proxy,21.13635946523412,88.13635946523412,projected
+2062,migr double  & fert eq. to last,66.0,projected demographic proxy,22.038631050328277,88.03863105032828,projected
+2063,migr double  & fert eq. to last,66.0,projected demographic proxy,22.074595062704226,88.07459506270422,projected
+2064,migr double  & fert eq. to last,66.0,projected demographic proxy,22.110110155298333,88.11011015529833,projected
+2065,migr double  & fert eq. to last,66.0,projected demographic proxy,22.145181801582638,88.14518180158264,projected
+2066,migr double  & fert eq. to last,66.0,projected demographic proxy,22.179815429427176,88.17981542942718,projected
+2067,migr double  & fert eq. to last,66.0,projected demographic proxy,22.214016420521595,88.2140164205216,projected
+2068,migr double  & fert eq. to last,66.0,projected demographic proxy,22.247790109845067,88.24779010984507,projected
+2069,migr double  & fert eq. to last,66.0,projected demographic proxy,22.281141785183063,88.28114178518307,projected
+2070,migr double  & fert eq. to last,66.0,projected demographic proxy,22.314076686689134,88.31407668668913,projected
+2071,migr double  & fert eq. to last,66.0,projected demographic proxy,22.346600006490046,88.34660000649005,projected
+2072,migr double  & fert eq. to last,67.0,projected demographic proxy,21.506992733684335,88.50699273368434,projected
+2073,migr double  & fert eq. to last,67.0,projected demographic proxy,21.53824289746969,88.53824289746969,projected
+2074,migr double  & fert eq. to last,67.0,projected demographic proxy,21.569107223272272,88.56910722327227,projected
+2075,migr double  & fert eq. to last,67.0,projected demographic proxy,21.599590504017392,88.59959050401739,projected
+2076,migr double  & fert eq. to last,67.0,projected demographic proxy,21.629697486439408,88.62969748643941,projected
+2077,migr double  & fert eq. to last,67.0,projected demographic proxy,21.659432870890964,88.65943287089097,projected
+2078,migr double  & fert eq. to last,67.0,projected demographic proxy,21.68880131118365,88.68880131118365,projected
+2079,migr double  & fert eq. to last,67.0,projected demographic proxy,21.717807414459354,88.71780741445936,projected
+2080,migr double  & fert eq. to last,68.0,projected demographic proxy,20.878315141579158,88.87831514157915,projected
+2081,migr double  & fert eq. to last,68.0,projected demographic proxy,20.906204712954164,88.90620471295416,projected
+2082,migr double  & fert eq. to last,68.0,projected demographic proxy,20.933754823265083,88.93375482326508,projected
+2083,migr double  & fert eq. to last,68.0,projected demographic proxy,20.960969705847774,88.96096970584777,projected
+2084,migr double  & fert eq. to last,68.0,projected demographic proxy,20.987853550231883,88.98785355023188,projected
+2085,migr double  & fert eq. to last,68.0,projected demographic proxy,21.014410502140098,89.0144105021401,projected
+2086,migr double  & fert eq. to last,68.0,projected demographic proxy,21.04064466350916,89.04064466350916,projected
+2087,migr double  & fert eq. to last,68.0,projected demographic proxy,21.066560092531628,89.06656009253163,projected
+2088,migr double  & fert eq. to last,68.0,projected demographic proxy,21.092160803717576,89.09216080371758,projected
+2089,migr double  & fert eq. to last,68.0,projected demographic proxy,21.11745076797519,89.11745076797519,projected
+2090,migr double  & fert eq. to last,68.0,projected demographic proxy,21.142433912709542,89.14243391270955,projected
+2091,migr double  & fert eq. to last,68.0,projected demographic proxy,21.16711412193852,89.16711412193852,projected
+2092,migr double  & fert eq. to last,68.0,projected demographic proxy,21.19149523642531,89.19149523642531,projected
+2093,migr double  & fert eq. to last,68.0,projected demographic proxy,21.215581053826323,89.21558105382633,projected
+2094,migr double  & fert eq. to last,68.0,projected demographic proxy,21.23937532885417,89.23937532885417,projected
+2095,migr double  & fert eq. to last,68.0,projected demographic proxy,21.262881773454588,89.26288177345458,projected
+2096,migr double  & fert eq. to last,68.0,projected demographic proxy,21.286104056996905,89.2861040569969,projected
+2097,migr double  & fert eq. to last,68.0,projected demographic proxy,21.30904580647704,89.30904580647704,projected
+2098,migr double  & fert eq. to last,68.0,projected demographic proxy,21.33171060673267,89.33171060673267,projected
+2099,migr double  & fert eq. to last,68.0,projected demographic proxy,21.354102000669663,89.35410200066966,projected
+2100,migr double  & fert eq. to last,68.0,projected demographic proxy,21.37622348949935,89.37622348949935,projected
+2027,migr double  & fert ↓ 0 in 2100,63.0,projected demographic proxy,23.012313349509,86.012313349509,projected
+2028,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.321036871211852,86.32103687121185,projected
+2031,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.37659430859445,86.37659430859445,projected
+2032,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.625738792427818,86.62573879242782,projected
+2034,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.678293072523875,86.67829307252387,projected
+2035,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.73020446098802,86.73020446098802,projected
+2036,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.927106337371,86.927106337371,projected
+2037,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.976790760430145,86.97679076043015,projected
+2038,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy,21.02587127495453,87.02587127495453,projected
+2039,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy,21.074354130563044,87.07435413056305,projected
+2040,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy,21.12224557005455,87.12224557005455,projected
+2041,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.318708445132145,87.31870844513215,projected
+2042,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.364526862477188,87.36452686247719,projected
+2043,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.409790952249868,87.40979095224986,projected
+2044,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.4545065998905,87.4545065998905,projected
+2045,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.498679675039504,87.49867967503951,projected
+2046,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.542316029522315,87.54231602952231,projected
+2047,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.585421495424036,87.58542149542404,projected
+2048,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.77905237178932,87.77905237178932,projected
+2049,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.82029116067945,87.82029116067945,projected
+2050,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.861033471762394,87.8610334717624,projected
+2051,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.75265032346356,87.75265032346356,projected
+2052,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.793188012887615,87.79318801288761,projected
+2053,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.83322929461302,87.83322929461302,projected
+2054,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.872779815693917,87.87277981569392,projected
+2055,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.911845190998676,87.91184519099868,projected
+2056,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.950431001989923,87.95043100198993,projected
+2057,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.98854279557209,87.98854279557209,projected
+2058,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.026186083004234,88.02618608300423,projected
+2059,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.06336633887603,88.06336633887602,projected
+2060,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.100089000145203,88.1000890001452,projected
+2061,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.13635946523412,88.13635946523412,projected
+2062,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.17218309318383,88.17218309318383,projected
+2063,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.207565202863478,88.20756520286348,projected
+2064,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.24251107223349,88.2425110722335,projected
+2065,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.277025937660454,88.27702593766045,projected
+2066,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.311114993281983,88.31111499328199,projected
+2067,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.34478339042007,88.34478339042008,projected
+2068,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.378036237040824,88.37803623704082,projected
+2069,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.41087859725926,88.41087859725926,projected
+2070,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.443315490887358,88.44331549088736,projected
+2071,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.475351893023873,88.47535189302387,projected
+2072,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.506992733684335,88.50699273368434,projected
+2073,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.53824289746969,88.53824289746969,projected
+2074,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy,21.569107223272272,88.56910722327227,projected
+2075,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,20.733624140556685,88.73362414055669,projected
+2076,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,20.763276047497435,88.76327604749744,projected
+2077,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,20.792566671280344,88.79256667128034,projected
+2078,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,20.821500463427675,88.82150046342767,projected
+2079,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy,20.8500818320216,88.8500818320216,projected
+2080,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy,20.016889524685347,89.01688952468535,projected
+2081,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy,20.044356921236062,89.04435692123606,projected
+2082,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy,20.07149462472939,89.07149462472938,projected
+2083,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy,20.098306673483275,89.09830667348328,projected
+2084,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy,20.12479706523227,89.12479706523227,projected
+2085,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.295152962672205,89.2951529626722,projected
+2086,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.320620631402257,89.32062063140225,projected
+2087,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.34578761887091,89.34578761887092,projected
+2088,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.370657573625145,89.37065757362515,projected
+2089,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.395234106841215,89.39523410684122,projected
+2090,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.419520792356707,89.4195207923567,projected
+2091,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.59379638215083,89.59379638215083,projected
+2092,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.617160594998005,89.61716059499801,projected
+2093,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.64025399148718,89.64025399148719,projected
+2094,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.663079821298275,89.66307982129828,projected
+2095,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.68564130022003,89.68564130022003,projected
+2096,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.707941610233377,89.70794161023338,projected
+2097,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.729983899606776,89.72998389960678,projected
+2098,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.75177128300303,89.75177128300302,projected
+2099,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.77330684159691,89.7733068415969,projected
+2100,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.794593623203244,89.79459362320324,projected
+2027,migr average & fert ↑ 2 in 2100,63.0,projected demographic proxy,23.012313349509,86.012313349509,projected
+2028,migr average & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr average & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr average & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.321036871211852,86.32103687121185,projected
+2031,migr average & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.51867527851008,86.51867527851007,projected
+2032,migr average & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr average & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.625738792427818,86.62573879242782,projected
+2034,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.82590074936133,86.82590074936132,projected
+2035,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.87681175203417,86.87681175203417,projected
+2036,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.927106337371,86.927106337371,projected
+2037,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.976790760430145,86.97679076043015,projected
+2038,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.17786818118294,87.17786818118294,projected
+2039,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.225385019703694,87.2253850197037,projected
+2040,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.27232980108201,87.27232980108201,projected
+2041,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.47601782092726,87.47601782092727,projected
+2042,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.520886095928805,87.5208860959288,projected
+2043,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.56521923493818,87.56521923493818,projected
+2044,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.60902280865156,87.60902280865156,projected
+2045,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.8135730727949,87.8135730727949,projected
+2046,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.855420660752994,87.855420660753,projected
+2047,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.896774075075246,87.89677407507524,projected
+2048,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.93763850768303,87.93763850768303,projected
+2049,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.978019133478558,87.97801913347855,projected
+2050,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.017921108774495,88.01792110877449,projected
+2051,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.057349569795395,88.05734956979539,projected
+2052,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.096309631248847,88.09630963124884,projected
+2053,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.134806384964644,88.13480638496465,projected
+2054,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.172844898599788,88.17284489859979,projected
+2055,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.210430214407708,88.21043021440771,projected
+2056,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.24756734806967,88.24756734806967,projected
+2057,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.284261287586634,88.28426128758663,projected
+2058,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.320516992229756,88.32051699222976,projected
+2059,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.356339391547646,88.35633939154765,projected
+2060,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.39173338442893,88.39173338442893,projected
+2061,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.426703838218078,88.42670383821807,projected
+2062,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.461255587883045,88.46125558788304,projected
+2063,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.495393435232952,88.49539343523296,projected
+2064,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.382292471879975,88.38229247187998,projected
+2065,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.416224502022974,88.41622450202297,projected
+2066,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.449743481634467,88.44974348163447,projected
+2067,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.48285432288379,88.48285432288378,projected
+2068,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.515561898010315,88.51556189801032,projected
+2069,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.547871038818304,88.5478710388183,projected
+2070,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.579786536213184,88.57978653621319,projected
+2071,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.6113131397778,88.61131313977779,projected
+2072,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.642455557387223,88.64245555738722,projected
+2073,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.673218454860613,88.67321845486062,projected
+2074,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.703606455648885,88.70360645564888,projected
+2075,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.733624140556685,88.73362414055669,projected
+2076,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.763276047497435,88.76327604749744,projected
+2077,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.792566671280344,88.79256667128034,projected
+2078,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,20.821500463427675,88.82150046342767,projected
+2079,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,19.989088356229054,88.98908835622905,projected
+2080,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.016889524685347,89.01688952468535,projected
+2081,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.044356921236062,89.04435692123606,projected
+2082,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.07149462472939,89.07149462472938,projected
+2083,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.098306673483275,89.09830667348328,projected
+2084,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.12479706523227,89.12479706523227,projected
+2085,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.150969757096462,89.15096975709646,projected
+2086,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.176828665571463,89.17682866557146,projected
+2087,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.20237766653853,89.20237766653852,projected
+2088,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.227620595293985,89.22762059529398,projected
+2089,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.252561246597,89.252561246597,projected
+2090,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.27720337473512,89.27720337473512,projected
+2091,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.30155069360641,89.3015506936064,projected
+2092,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy,20.325606876817847,89.32560687681784,projected
+2093,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,21.215581053826323,89.21558105382633,projected
+2094,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,21.23937532885417,89.23937532885417,projected
+2095,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,21.262881773454588,89.26288177345458,projected
+2096,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,21.286104056996905,89.2861040569969,projected
+2097,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy,21.30904580647704,89.30904580647704,projected
+2098,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.205864654874986,89.20586465487499,projected
+2099,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.22851959517877,89.22851959517877,projected
+2100,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy,22.250898202794744,89.25089820279474,projected
+2027,migr average & fert eq. to last,63.0,projected demographic proxy,23.012313349509,86.012313349509,projected
+2028,migr average & fert eq. to last,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr average & fert eq. to last,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr average & fert eq. to last,64.0,projected demographic proxy,22.321036871211852,86.32103687121185,projected
+2031,migr average & fert eq. to last,65.0,projected demographic proxy,21.51867527851008,86.51867527851007,projected
+2032,migr average & fert eq. to last,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr average & fert eq. to last,65.0,projected demographic proxy,21.625738792427818,86.62573879242782,projected
+2034,migr average & fert eq. to last,66.0,projected demographic proxy,20.82590074936133,86.82590074936132,projected
+2035,migr average & fert eq. to last,66.0,projected demographic proxy,20.87681175203417,86.87681175203417,projected
+2036,migr average & fert eq. to last,66.0,projected demographic proxy,20.927106337371,86.927106337371,projected
+2037,migr average & fert eq. to last,66.0,projected demographic proxy,20.976790760430145,86.97679076043015,projected
+2038,migr average & fert eq. to last,67.0,projected demographic proxy,20.17786818118294,87.17786818118294,projected
+2039,migr average & fert eq. to last,67.0,projected demographic proxy,20.225385019703694,87.2253850197037,projected
+2040,migr average & fert eq. to last,67.0,projected demographic proxy,20.27232980108201,87.27232980108201,projected
+2041,migr average & fert eq. to last,68.0,projected demographic proxy,19.47601782092726,87.47601782092727,projected
+2042,migr average & fert eq. to last,68.0,projected demographic proxy,19.520886095928805,87.5208860959288,projected
+2043,migr average & fert eq. to last,68.0,projected demographic proxy,19.56521923493818,87.56521923493818,projected
+2044,migr average & fert eq. to last,68.0,projected demographic proxy,19.60902280865156,87.60902280865156,projected
+2045,migr average & fert eq. to last,69.0,projected demographic proxy,18.8135730727949,87.8135730727949,projected
+2046,migr average & fert eq. to last,69.0,projected demographic proxy,18.855420660752994,87.855420660753,projected
+2047,migr average & fert eq. to last,69.0,projected demographic proxy,18.896774075075246,87.89677407507524,projected
+2048,migr average & fert eq. to last,69.0,projected demographic proxy,18.93763850768303,87.93763850768303,projected
+2049,migr average & fert eq. to last,69.0,projected demographic proxy,18.978019133478558,87.97801913347855,projected
+2050,migr average & fert eq. to last,69.0,projected demographic proxy,19.017921108774495,88.01792110877449,projected
+2051,migr average & fert eq. to last,69.0,projected demographic proxy,19.057349569795395,88.05734956979539,projected
+2052,migr average & fert eq. to last,69.0,projected demographic proxy,19.096309631248847,88.09630963124884,projected
+2053,migr average & fert eq. to last,69.0,projected demographic proxy,19.134806384964644,88.13480638496465,projected
+2054,migr average & fert eq. to last,69.0,projected demographic proxy,19.172844898599788,88.17284489859979,projected
+2055,migr average & fert eq. to last,69.0,projected demographic proxy,19.210430214407708,88.21043021440771,projected
+2056,migr average & fert eq. to last,69.0,projected demographic proxy,19.24756734806967,88.24756734806967,projected
+2057,migr average & fert eq. to last,69.0,projected demographic proxy,19.284261287586634,88.28426128758663,projected
+2058,migr average & fert eq. to last,69.0,projected demographic proxy,19.320516992229756,88.32051699222976,projected
+2059,migr average & fert eq. to last,69.0,projected demographic proxy,19.356339391547646,88.35633939154765,projected
+2060,migr average & fert eq. to last,69.0,projected demographic proxy,19.39173338442893,88.39173338442893,projected
+2061,migr average & fert eq. to last,69.0,projected demographic proxy,19.426703838218078,88.42670383821807,projected
+2062,migr average & fert eq. to last,69.0,projected demographic proxy,19.461255587883045,88.46125558788304,projected
+2063,migr average & fert eq. to last,69.0,projected demographic proxy,19.495393435232952,88.49539343523296,projected
+2064,migr average & fert eq. to last,69.0,projected demographic proxy,19.52912214818437,88.52912214818437,projected
+2065,migr average & fert eq. to last,69.0,projected demographic proxy,19.562446460074387,88.56244646007438,projected
+2066,migr average & fert eq. to last,69.0,projected demographic proxy,19.595371069019052,88.59537106901905,projected
+2067,migr average & fert eq. to last,69.0,projected demographic proxy,19.627900637315758,88.62790063731576,projected
+2068,migr average & fert eq. to last,69.0,projected demographic proxy,19.66003979088788,88.66003979088788,projected
+2069,migr average & fert eq. to last,69.0,projected demographic proxy,19.691793118770363,88.69179311877036,projected
+2070,migr average & fert eq. to last,69.0,projected demographic proxy,19.723165172634822,88.72316517263482,projected
+2071,migr average & fert eq. to last,69.0,projected demographic proxy,19.75416046635268,88.75416046635269,projected
+2072,migr average & fert eq. to last,69.0,projected demographic proxy,19.78478347559518,88.78478347559518,projected
+2073,migr average & fert eq. to last,69.0,projected demographic proxy,19.815038637468703,88.8150386374687,projected
+2074,migr average & fert eq. to last,69.0,projected demographic proxy,19.84493035018432,88.84493035018431,projected
+2075,migr average & fert eq. to last,69.0,projected demographic proxy,19.874462972760195,88.8744629727602,projected
+2076,migr average & fert eq. to last,69.0,projected demographic proxy,19.903640824755605,88.9036408247556,projected
+2077,migr average & fert eq. to last,69.0,projected demographic proxy,19.932468186035607,88.9324681860356,projected
+2078,migr average & fert eq. to last,69.0,projected demographic proxy,19.960949296564724,88.96094929656472,projected
+2079,migr average & fert eq. to last,69.0,projected demographic proxy,19.989088356229054,88.98908835622905,projected
+2080,migr average & fert eq. to last,70.0,projected demographic proxy,19.16317408465274,89.16317408465274,projected
+2081,migr average & fert eq. to last,70.0,projected demographic proxy,19.190201195893415,89.19020119589342,projected
+2082,migr average & fert eq. to last,70.0,projected demographic proxy,19.216908822695462,89.21690882269546,projected
+2083,migr average & fert eq. to last,70.0,projected demographic proxy,19.243300800314763,89.24330080031476,projected
+2084,migr average & fert eq. to last,70.0,projected demographic proxy,19.269380926748152,89.26938092674816,projected
+2085,migr average & fert eq. to last,70.0,projected demographic proxy,19.295152962672205,89.2951529626722,projected
+2086,migr average & fert eq. to last,70.0,projected demographic proxy,19.320620631402257,89.32062063140225,projected
+2087,migr average & fert eq. to last,70.0,projected demographic proxy,19.34578761887091,89.34578761887092,projected
+2088,migr average & fert eq. to last,70.0,projected demographic proxy,19.370657573625145,89.37065757362515,projected
+2089,migr average & fert eq. to last,70.0,projected demographic proxy,19.395234106841215,89.39523410684122,projected
+2090,migr average & fert eq. to last,71.0,projected demographic proxy,18.57015806930375,89.57015806930374,projected
+2091,migr average & fert eq. to last,71.0,projected demographic proxy,18.59379638215083,89.59379638215083,projected
+2092,migr average & fert eq. to last,71.0,projected demographic proxy,18.617160594998005,89.61716059499801,projected
+2093,migr average & fert eq. to last,70.0,projected demographic proxy,19.49067694211747,89.49067694211747,projected
+2094,migr average & fert eq. to last,70.0,projected demographic proxy,19.513839230445093,89.51383923044509,projected
+2095,migr average & fert eq. to last,70.0,projected demographic proxy,19.536728982400664,89.53672898240066,projected
+2096,migr average & fert eq. to last,70.0,projected demographic proxy,19.559349549324956,89.55934954932496,projected
+2097,migr average & fert eq. to last,70.0,projected demographic proxy,19.581704245861385,89.58170424586139,projected
+2098,migr average & fert eq. to last,70.0,projected demographic proxy,19.603796350099344,89.60379635009934,projected
+2099,migr average & fert eq. to last,70.0,projected demographic proxy,19.625629103728542,89.62562910372854,projected
+2100,migr average & fert eq. to last,70.0,projected demographic proxy,19.64720571220396,89.64720571220396,projected
+2027,migr average & fert ↓ 0 in 2100,63.0,projected demographic proxy,23.012313349509,86.012313349509,projected
+2028,migr average & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr average & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr average & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.321036871211852,86.32103687121185,projected
+2031,migr average & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.51867527851008,86.51867527851007,projected
+2032,migr average & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr average & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.625738792427818,86.62573879242782,projected
+2034,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.82590074936133,86.82590074936132,projected
+2035,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.87681175203417,86.87681175203417,projected
+2036,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.927106337371,86.927106337371,projected
+2037,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.976790760430145,86.97679076043015,projected
+2038,migr average & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.17786818118294,87.17786818118294,projected
+2039,migr average & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.225385019703694,87.2253850197037,projected
+2040,migr average & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.27232980108201,87.27232980108201,projected
+2041,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.47601782092726,87.47601782092727,projected
+2042,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.520886095928805,87.5208860959288,projected
+2043,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.56521923493818,87.56521923493818,projected
+2044,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.60902280865156,87.60902280865156,projected
+2045,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.8135730727949,87.8135730727949,projected
+2046,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.855420660752994,87.855420660753,projected
+2047,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.896774075075246,87.89677407507524,projected
+2048,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.93763850768303,87.93763850768303,projected
+2049,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.978019133478558,87.97801913347855,projected
+2050,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.017921108774495,88.01792110877449,projected
+2051,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.057349569795395,88.05734956979539,projected
+2052,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.096309631248847,88.09630963124884,projected
+2053,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.134806384964644,88.13480638496465,projected
+2054,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.172844898599788,88.17284489859979,projected
+2055,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.210430214407708,88.21043021440771,projected
+2056,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.24756734806967,88.24756734806967,projected
+2057,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.284261287586634,88.28426128758663,projected
+2058,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.320516992229756,88.32051699222976,projected
+2059,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.356339391547646,88.35633939154765,projected
+2060,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.39173338442893,88.39173338442893,projected
+2061,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.426703838218078,88.42670383821807,projected
+2062,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.461255587883045,88.46125558788304,projected
+2063,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.495393435232952,88.49539343523296,projected
+2064,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.52912214818437,88.52912214818437,projected
+2065,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.562446460074387,88.56244646007438,projected
+2066,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.595371069019052,88.59537106901905,projected
+2067,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.627900637315758,88.62790063731576,projected
+2068,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.66003979088788,88.66003979088788,projected
+2069,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.691793118770363,88.69179311877036,projected
+2070,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.723165172634822,88.72316517263482,projected
+2071,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.75416046635268,88.75416046635269,projected
+2072,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.78478347559518,88.78478347559518,projected
+2073,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy,19.815038637468703,88.8150386374687,projected
+2074,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy,18.99408280054103,88.99408280054104,projected
+2075,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.023109432052102,89.02310943205211,projected
+2076,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.051792791360374,89.05179279136037,projected
+2077,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.08013693474086,89.08013693474086,projected
+2078,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.108145882053474,89.10814588205348,projected
+2079,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy,19.135823616540975,89.13582361654097,projected
+2080,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.317952685054554,89.31795268505455,projected
+2081,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.344520092184066,89.34452009218407,projected
+2082,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.370778689651473,89.37077868965147,projected
+2083,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy,18.39673210139485,89.39673210139485,projected
+2084,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.584685458382776,89.58468545838278,projected
+2085,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.609600986468113,89.60960098646811,projected
+2086,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.63423229618578,89.63423229618579,projected
+2087,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.658582670665826,89.65858267066582,projected
+2088,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.68265536231101,89.68265536231101,projected
+2089,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.706453592747255,89.70645359274725,projected
+2090,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.900275353700344,89.90027535370035,projected
+2091,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.923132852519316,89.92313285251932,projected
+2092,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.945734905159387,89.94573490515938,projected
+2093,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.96808441969481,89.9680844196948,projected
+2094,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.990184276551904,89.9901842765519,projected
+2095,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,17.012037328512623,90.01203732851262,projected
+2096,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,17.033646400729847,90.03364640072985,projected
+2097,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,17.055014290753853,90.05501429075386,projected
+2098,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,17.076143768569583,90.07614376856958,projected
+2099,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,17.09703757664408,90.09703757664408,projected
+2100,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy,17.11769842998386,90.11769842998386,projected
+2027,migr zero    & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.150197175284838,86.15019717528483,projected
+2028,migr zero    & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr zero    & fert ↑ 2 in 2100,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr zero    & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.464152922692385,86.46415292269239,projected
+2031,migr zero    & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.51867527851008,86.51867527851007,projected
+2032,migr zero    & fert ↑ 2 in 2100,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr zero    & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.774367075902653,86.77436707590266,projected
+2034,migr zero    & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.82590074936133,86.82590074936132,projected
+2035,migr zero    & fert ↑ 2 in 2100,66.0,projected demographic proxy,20.87681175203417,86.87681175203417,projected
+2036,migr zero    & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.081094621995454,87.08109462199545,projected
+2037,migr zero    & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.12977335891305,87.12977335891304,projected
+2038,migr zero    & fert ↑ 2 in 2100,67.0,projected demographic proxy,20.17786818118294,87.17786818118294,projected
+2039,migr zero    & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.38465352784735,87.38465352784735,projected
+2040,migr zero    & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.43060882834919,87.4306088283492,projected
+2041,migr zero    & fert ↑ 2 in 2100,68.0,projected demographic proxy,19.47601782092726,87.47601782092727,projected
+2042,migr zero    & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.685013127662728,87.68501312766273,projected
+2043,migr zero    & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.728374533130232,87.72837453313024,projected
+2044,migr zero    & fert ↑ 2 in 2100,69.0,projected demographic proxy,18.77122610390453,87.77122610390452,projected
+2045,migr zero    & fert ↑ 2 in 2100,70.0,projected demographic proxy,17.98353497209306,87.98353497209305,projected
+2046,migr zero    & fert ↑ 2 in 2100,70.0,projected demographic proxy,18.024429721486065,88.02442972148606,projected
+2047,migr zero    & fert ↑ 2 in 2100,70.0,projected demographic proxy,18.064849839969625,88.06484983996963,projected
+2048,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.281377592037405,88.2813775920374,projected
+2049,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.31992862294893,88.31992862294894,projected
+2050,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.358038924075746,88.35803892407574,projected
+2051,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.395712987890008,88.39571298789001,projected
+2052,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.43295529213332,88.43295529213333,projected
+2053,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.652048334599314,88.65204833459931,projected
+2054,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.687561850066935,88.68756185006694,projected
+2055,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.722675376904863,88.72267537690486,projected
+2056,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.75739300406687,88.75739300406687,projected
+2057,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.79171880356013,88.79171880356013,projected
+2058,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.82565682947804,88.82565682947804,projected
+2059,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.85921111707888,88.85921111707887,projected
+2060,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.892385681909225,88.89238568190922,projected
+2061,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.92518451897068,88.92518451897068,projected
+2062,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.95761160192865,88.95761160192865,projected
+2063,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,16.989670882362052,88.98967088236205,projected
+2064,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.02136628905267,89.02136628905266,projected
+2065,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.052701727312954,89.05270172731295,projected
+2066,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.083681078351063,89.08368107835106,projected
+2067,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.942765203514668,88.94276520351467,projected
+2068,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,17.97369200903932,88.97369200903933,projected
+2069,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.004259896557713,89.00425989655771,projected
+2070,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.034472911201373,89.03447291120138,projected
+2071,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.064335067614444,89.06433506761445,projected
+2072,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.093850349528267,89.09385034952827,projected
+2073,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.123022709367635,89.12302270936763,projected
+2074,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.15185606788775,89.15185606788775,projected
+2075,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.180354313840706,89.18035431384071,projected
+2076,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.208521303670498,89.2085213036705,projected
+2077,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.402036450431222,89.40203645043123,projected
+2078,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.429035997519524,89.42903599751952,projected
+2079,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.455727491748423,89.45572749174842,projected
+2080,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.482114428485268,89.48211442848526,projected
+2081,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.50820027321588,89.50820027321588,projected
+2082,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.533988461365126,89.53398846136513,projected
+2083,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.559482398138357,89.55948239813836,projected
+2084,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.584685458382776,89.58468545838278,projected
+2085,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.609600986468113,89.60960098646811,projected
+2086,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.63423229618578,89.63423229618579,projected
+2087,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.658582670665826,89.65858267066582,projected
+2088,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.68265536231101,89.68265536231101,projected
+2089,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.706453592747255,89.70645359274725,projected
+2090,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.729980552789943,89.72998055278994,projected
+2091,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.753239402425177,89.75323940242518,projected
+2092,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.776233270805765,89.77623327080576,projected
+2093,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.798965256260907,89.79896525626091,projected
+2094,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.82143842631926,89.82143842631926,projected
+2095,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.84365581774476,89.84365581774476,projected
+2096,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy,17.865620436584617,89.86562043658462,projected
+2097,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.729983899606776,89.72998389960678,projected
+2098,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.75177128300303,89.75177128300302,projected
+2099,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.77330684159691,89.7733068415969,projected
+2100,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy,18.794593623203244,89.79459362320324,projected
+2027,migr zero    & fert eq. to last,64.0,projected demographic proxy,22.150197175284838,86.15019717528483,projected
+2028,migr zero    & fert eq. to last,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr zero    & fert eq. to last,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr zero    & fert eq. to last,65.0,projected demographic proxy,21.464152922692385,86.46415292269239,projected
+2031,migr zero    & fert eq. to last,65.0,projected demographic proxy,21.51867527851008,86.51867527851007,projected
+2032,migr zero    & fert eq. to last,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr zero    & fert eq. to last,66.0,projected demographic proxy,20.774367075902653,86.77436707590266,projected
+2034,migr zero    & fert eq. to last,66.0,projected demographic proxy,20.82590074936133,86.82590074936132,projected
+2035,migr zero    & fert eq. to last,66.0,projected demographic proxy,20.87681175203417,86.87681175203417,projected
+2036,migr zero    & fert eq. to last,67.0,projected demographic proxy,20.081094621995454,87.08109462199545,projected
+2037,migr zero    & fert eq. to last,67.0,projected demographic proxy,20.12977335891305,87.12977335891304,projected
+2038,migr zero    & fert eq. to last,67.0,projected demographic proxy,20.17786818118294,87.17786818118294,projected
+2039,migr zero    & fert eq. to last,68.0,projected demographic proxy,19.38465352784735,87.38465352784735,projected
+2040,migr zero    & fert eq. to last,68.0,projected demographic proxy,19.43060882834919,87.4306088283492,projected
+2041,migr zero    & fert eq. to last,68.0,projected demographic proxy,19.47601782092726,87.47601782092727,projected
+2042,migr zero    & fert eq. to last,69.0,projected demographic proxy,18.685013127662728,87.68501312766273,projected
+2043,migr zero    & fert eq. to last,69.0,projected demographic proxy,18.728374533130232,87.72837453313024,projected
+2044,migr zero    & fert eq. to last,69.0,projected demographic proxy,18.77122610390453,87.77122610390452,projected
+2045,migr zero    & fert eq. to last,70.0,projected demographic proxy,17.98353497209306,87.98353497209305,projected
+2046,migr zero    & fert eq. to last,70.0,projected demographic proxy,18.024429721486065,88.02442972148606,projected
+2047,migr zero    & fert eq. to last,70.0,projected demographic proxy,18.064849839969625,88.06484983996963,projected
+2048,migr zero    & fert eq. to last,71.0,projected demographic proxy,17.281377592037405,88.2813775920374,projected
+2049,migr zero    & fert eq. to last,71.0,projected demographic proxy,17.31992862294893,88.31992862294894,projected
+2050,migr zero    & fert eq. to last,71.0,projected demographic proxy,17.358038924075746,88.35803892407574,projected
+2051,migr zero    & fert eq. to last,71.0,projected demographic proxy,17.395712987890008,88.39571298789001,projected
+2052,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.616130725616113,88.61613072561612,projected
+2053,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.652048334599314,88.65204833459931,projected
+2054,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.687561850066935,88.68756185006694,projected
+2055,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.722675376904863,88.72267537690486,projected
+2056,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.75739300406687,88.75739300406687,projected
+2057,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.79171880356013,88.79171880356013,projected
+2058,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.82565682947804,88.82565682947804,projected
+2059,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.85921111707888,88.85921111707887,projected
+2060,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.892385681909225,88.89238568190922,projected
+2061,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.92518451897068,88.92518451897068,projected
+2062,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.95761160192865,88.95761160192865,projected
+2063,migr zero    & fert eq. to last,72.0,projected demographic proxy,16.989670882362052,88.98967088236205,projected
+2064,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.02136628905267,89.02136628905266,projected
+2065,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.052701727312954,89.05270172731295,projected
+2066,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.083681078351063,89.08368107835106,projected
+2067,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.114308198672138,89.11430819867213,projected
+2068,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.144586919514538,89.14458691951454,projected
+2069,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.174521046319942,89.17452104631994,projected
+2070,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.20411435823637,89.20411435823637,projected
+2071,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.233370607652862,89.23337060765286,projected
+2072,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.26229351976499,89.262293519765,projected
+2073,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.29088679217001,89.29088679217001,projected
+2074,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.319154094490763,89.31915409449076,projected
+2075,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.347099068027354,89.34709906802735,projected
+2076,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.374725325435556,89.37472532543555,projected
+2077,migr zero    & fert eq. to last,72.0,projected demographic proxy,17.402036450431222,89.40203645043123,projected
+2078,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.60496443333214,89.60496443333214,projected
+2079,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.63112412717854,89.63112412717854,projected
+2080,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.65699133841094,89.65699133841093,projected
+2081,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.682569302163753,89.68256930216376,projected
+2082,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.707861226992442,89.70786122699243,projected
+2083,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.732870294692876,89.73287029469287,projected
+2084,migr zero    & fert eq. to last,73.0,projected demographic proxy,16.757599660139388,89.75759966013939,projected
+2085,migr zero    & fert eq. to last,74.0,projected demographic proxy,15.965076115366214,89.96507611536622,projected
+2086,migr zero    & fert eq. to last,74.0,projected demographic proxy,15.98877891656064,89.98877891656065,projected
+2087,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.012222296766467,90.01222229676647,projected
+2088,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.03540909069119,90.03540909069119,projected
+2089,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.058342108846972,90.05834210884697,projected
+2090,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.081024137462084,90.08102413746208,projected
+2091,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.103457938405782,90.10345793840578,projected
+2092,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.316791984923983,90.31679198492398,projected
+2093,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.33831148378683,90.33831148378682,projected
+2094,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.359600900563954,90.35960090056395,projected
+2095,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.380662704879846,90.38066270487985,projected
+2096,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.401499344896962,90.40149934489696,projected
+2097,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.422113247283278,90.42211324728328,projected
+2098,migr zero    & fert eq. to last,75.0,projected demographic proxy,15.442506817189564,90.44250681718957,projected
+2099,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.27431549771816,90.27431549771816,projected
+2100,migr zero    & fert eq. to last,74.0,projected demographic proxy,16.294635493292386,90.29463549329239,projected
+2027,migr zero    & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.150197175284838,86.15019717528483,projected
+2028,migr zero    & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.20784515271746,86.20784515271745,projected
+2029,migr zero    & fert ↓ 0 in 2100,64.0,projected demographic proxy,22.264789438297942,86.26478943829794,projected
+2030,migr zero    & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.464152922692385,86.46415292269239,projected
+2031,migr zero    & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.51867527851008,86.51867527851007,projected
+2032,migr zero    & fert ↓ 0 in 2100,65.0,projected demographic proxy,21.572535049590037,86.57253504959004,projected
+2033,migr zero    & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.774367075902653,86.77436707590266,projected
+2034,migr zero    & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.82590074936133,86.82590074936132,projected
+2035,migr zero    & fert ↓ 0 in 2100,66.0,projected demographic proxy,20.87681175203417,86.87681175203417,projected
+2036,migr zero    & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.081094621995454,87.08109462199545,projected
+2037,migr zero    & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.12977335891305,87.12977335891304,projected
+2038,migr zero    & fert ↓ 0 in 2100,67.0,projected demographic proxy,20.17786818118294,87.17786818118294,projected
+2039,migr zero    & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.38465352784735,87.38465352784735,projected
+2040,migr zero    & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.43060882834919,87.4306088283492,projected
+2041,migr zero    & fert ↓ 0 in 2100,68.0,projected demographic proxy,19.47601782092726,87.47601782092727,projected
+2042,migr zero    & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.685013127662728,87.68501312766273,projected
+2043,migr zero    & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.728374533130232,87.72837453313024,projected
+2044,migr zero    & fert ↓ 0 in 2100,69.0,projected demographic proxy,18.77122610390453,87.77122610390452,projected
+2045,migr zero    & fert ↓ 0 in 2100,70.0,projected demographic proxy,17.98353497209306,87.98353497209305,projected
+2046,migr zero    & fert ↓ 0 in 2100,70.0,projected demographic proxy,18.024429721486065,88.02442972148606,projected
+2047,migr zero    & fert ↓ 0 in 2100,70.0,projected demographic proxy,18.064849839969625,88.06484983996963,projected
+2048,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy,17.281377592037405,88.2813775920374,projected
+2049,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy,17.31992862294893,88.31992862294894,projected
+2050,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy,17.358038924075746,88.35803892407574,projected
+2051,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy,17.395712987890008,88.39571298789001,projected
+2052,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.616130725616113,88.61613072561612,projected
+2053,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.652048334599314,88.65204833459931,projected
+2054,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.687561850066935,88.68756185006694,projected
+2055,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.722675376904863,88.72267537690486,projected
+2056,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.75739300406687,88.75739300406687,projected
+2057,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.79171880356013,88.79171880356013,projected
+2058,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.82565682947804,88.82565682947804,projected
+2059,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.85921111707888,88.85921111707887,projected
+2060,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.892385681909225,88.89238568190922,projected
+2061,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.92518451897068,88.92518451897068,projected
+2062,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.95761160192865,88.95761160192865,projected
+2063,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,16.989670882362052,88.98967088236205,projected
+2064,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.02136628905267,89.02136628905266,projected
+2065,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.052701727312954,89.05270172731295,projected
+2066,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.083681078351063,89.08368107835106,projected
+2067,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.114308198672138,89.11430819867213,projected
+2068,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.144586919514538,89.14458691951454,projected
+2069,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.174521046319942,89.17452104631994,projected
+2070,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy,17.20411435823637,89.20411435823637,projected
+2071,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.413379832435293,89.4133798324353,projected
+2072,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.441679673676035,89.44167967367603,projected
+2073,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.469663661612177,89.46966366161217,projected
+2074,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.497335210639488,89.49733521063949,projected
+2075,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.52469771042751,89.52469771042752,projected
+2076,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.551754525586507,89.5517545255865,projected
+2077,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy,16.57850899535861,89.57850899535862,projected
+2078,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy,15.79164957721762,89.79164957721763,projected
+2079,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy,15.81724970420213,89.81724970420213,projected
+2080,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy,15.842569900306886,89.84256990030688,projected
+2081,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy,15.867613165876346,89.86761316587635,projected
+2082,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy,15.088383936741334,90.08838393674134,projected
+2083,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy,15.112344762899005,90.112344762899,projected
+2084,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy,15.13604964517058,90.13604964517057,projected
+2085,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy,15.15950126359938,90.15950126359938,projected
+2086,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy,14.387968158695074,90.38796815869507,projected
+2087,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy,14.41040797807288,90.41040797807288,projected
+2088,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy,14.432614184047594,90.4326141840476,projected
+2089,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy,14.454589153367536,90.45458915336754,projected
+2090,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy,13.691690366600334,90.69169036660034,projected
+2091,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy,13.712721379233365,90.71272137923336,projected
+2092,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy,13.7335395114654,90.7335395114654,projected
+2093,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy,13.754146854682043,90.75414685468205,projected
+2094,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy,13.774545485308023,90.77454548530802,projected
+2095,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy,13.020647285505186,91.02064728550519,projected
+2096,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy,13.040182238007217,91.04018223800722,projected
+2097,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy,13.059525352193024,91.05952535219302,projected
+2098,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy,13.078678439698658,91.07867843969866,projected
+2099,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy,13.097643299893729,91.09764329989373,projected
+2100,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy,13.116421719792923,91.11642171979292,projected

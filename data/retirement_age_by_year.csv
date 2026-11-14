@@ -1,0 +1,742 @@
+year,scenario,retirement_age,retirement_age_source
+1952,Historical / current,61.0,assumed age
+1953,Historical / current,61.0,assumed age
+1954,Historical / current,61.0,assumed age
+1955,Historical / current,61.0,assumed age
+1956,Historical / current,61.0,assumed age
+1957,Historical / current,61.0,assumed age
+1958,Historical / current,61.0,assumed age
+1959,Historical / current,61.0,assumed age
+1960,Historical / current,61.0,assumed age
+1961,Historical / current,61.0,assumed age
+1962,Historical / current,61.0,assumed age
+1963,Historical / current,61.0,assumed age
+1964,Historical / current,61.0,assumed age
+1965,Historical / current,61.0,assumed age
+1966,Historical / current,61.0,assumed age
+1967,Historical / current,61.0,assumed age
+1968,Historical / current,61.0,assumed age
+1969,Historical / current,61.0,assumed age
+1970,Historical / current,61.0,assumed age
+1971,Historical / current,61.0,assumed age
+1972,Historical / current,61.0,assumed age
+1973,Historical / current,61.0,assumed age
+1974,Historical / current,60.900000000000006,observed effective age
+1975,Historical / current,61.0,observed effective age
+1976,Historical / current,61.2,observed effective age
+1977,Historical / current,61.0,observed effective age
+1978,Historical / current,60.8,observed effective age
+1979,Historical / current,60.6,observed effective age
+1980,Historical / current,60.599999999999994,observed effective age
+1981,Historical / current,60.45,observed effective age
+1982,Historical / current,60.95,observed effective age
+1983,Historical / current,60.85,observed effective age
+1984,Historical / current,60.650000000000006,observed effective age
+1985,Historical / current,60.75,observed effective age
+1986,Historical / current,60.45,observed effective age
+1987,Historical / current,60.65,observed effective age
+1988,Historical / current,60.3,observed effective age
+1989,Historical / current,59.650000000000006,observed effective age
+1990,Historical / current,59.45,observed effective age
+1991,Historical / current,59.25,observed effective age
+1992,Historical / current,58.5,observed effective age
+1993,Historical / current,58.9,observed effective age
+1994,Historical / current,58.65,observed effective age
+1995,Historical / current,58.45,observed effective age
+1996,Historical / current,58.35,observed effective age
+1997,Historical / current,58.25,observed effective age
+1998,Historical / current,58.099999999999994,observed effective age
+1999,Historical / current,58.05,observed effective age
+2000,Historical / current,58.2,observed effective age
+2001,Historical / current,58.6,observed effective age
+2002,Historical / current,59.2,observed effective age
+2003,Historical / current,58.95,observed effective age
+2004,Historical / current,59.05,observed effective age
+2005,Historical / current,58.9,observed effective age
+2006,Historical / current,59.0,observed effective age
+2007,Historical / current,59.099999999999994,observed effective age
+2008,Historical / current,59.15,observed effective age
+2009,Historical / current,58.95,observed effective age
+2010,Historical / current,59.150000000000006,observed effective age
+2011,Historical / current,59.5,observed effective age
+2012,Historical / current,60.3,observed effective age
+2013,Historical / current,60.35,observed effective age
+2014,Historical / current,60.3,observed effective age
+2015,Historical / current,60.55,observed effective age
+2016,Historical / current,60.95,observed effective age
+2017,Historical / current,61.1,observed effective age
+2018,Historical / current,61.65,observed effective age
+2019,Historical / current,62.349999999999994,observed effective age
+2020,Historical / current,62.05,observed effective age
+2021,Historical / current,61.9,observed effective age
+2022,Historical / current,62.25,observed effective age
+2023,Historical / current,62.650000000000006,observed effective age
+2024,Historical / current,64.0,assumed age
+2025,Historical / current,64.0,assumed age
+2026,Historical / current,64.0,assumed age
+2027,migr double  & fert ↑ 2 in 2100,63.0,projected demographic proxy
+2028,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2029,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2030,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2031,migr double  & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2032,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2033,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2034,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2035,migr double  & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2036,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2037,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2038,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2039,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2040,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2041,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2042,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2043,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2044,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2045,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2046,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2047,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2048,migr double  & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2049,migr double  & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2050,migr double  & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2051,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2052,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2053,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2054,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2055,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2056,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2057,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2058,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2059,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2060,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2061,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2062,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2063,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2064,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2065,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2066,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2067,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2068,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2069,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2070,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2071,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2072,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2073,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2074,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2075,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2076,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2077,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2078,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2079,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2080,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2081,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2082,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2083,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2084,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2085,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2086,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2087,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2088,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2089,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2090,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2091,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2092,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2093,migr double  & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2094,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2095,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2096,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2097,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2098,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2099,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2100,migr double  & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2027,migr double  & fert eq. to last,63.0,projected demographic proxy
+2028,migr double  & fert eq. to last,64.0,projected demographic proxy
+2029,migr double  & fert eq. to last,64.0,projected demographic proxy
+2030,migr double  & fert eq. to last,64.0,projected demographic proxy
+2031,migr double  & fert eq. to last,64.0,projected demographic proxy
+2032,migr double  & fert eq. to last,65.0,projected demographic proxy
+2033,migr double  & fert eq. to last,65.0,projected demographic proxy
+2034,migr double  & fert eq. to last,65.0,projected demographic proxy
+2035,migr double  & fert eq. to last,65.0,projected demographic proxy
+2036,migr double  & fert eq. to last,66.0,projected demographic proxy
+2037,migr double  & fert eq. to last,66.0,projected demographic proxy
+2038,migr double  & fert eq. to last,66.0,projected demographic proxy
+2039,migr double  & fert eq. to last,66.0,projected demographic proxy
+2040,migr double  & fert eq. to last,66.0,projected demographic proxy
+2041,migr double  & fert eq. to last,67.0,projected demographic proxy
+2042,migr double  & fert eq. to last,67.0,projected demographic proxy
+2043,migr double  & fert eq. to last,67.0,projected demographic proxy
+2044,migr double  & fert eq. to last,67.0,projected demographic proxy
+2045,migr double  & fert eq. to last,67.0,projected demographic proxy
+2046,migr double  & fert eq. to last,67.0,projected demographic proxy
+2047,migr double  & fert eq. to last,67.0,projected demographic proxy
+2048,migr double  & fert eq. to last,68.0,projected demographic proxy
+2049,migr double  & fert eq. to last,68.0,projected demographic proxy
+2050,migr double  & fert eq. to last,68.0,projected demographic proxy
+2051,migr double  & fert eq. to last,67.0,projected demographic proxy
+2052,migr double  & fert eq. to last,67.0,projected demographic proxy
+2053,migr double  & fert eq. to last,67.0,projected demographic proxy
+2054,migr double  & fert eq. to last,67.0,projected demographic proxy
+2055,migr double  & fert eq. to last,67.0,projected demographic proxy
+2056,migr double  & fert eq. to last,67.0,projected demographic proxy
+2057,migr double  & fert eq. to last,67.0,projected demographic proxy
+2058,migr double  & fert eq. to last,67.0,projected demographic proxy
+2059,migr double  & fert eq. to last,67.0,projected demographic proxy
+2060,migr double  & fert eq. to last,67.0,projected demographic proxy
+2061,migr double  & fert eq. to last,67.0,projected demographic proxy
+2062,migr double  & fert eq. to last,66.0,projected demographic proxy
+2063,migr double  & fert eq. to last,66.0,projected demographic proxy
+2064,migr double  & fert eq. to last,66.0,projected demographic proxy
+2065,migr double  & fert eq. to last,66.0,projected demographic proxy
+2066,migr double  & fert eq. to last,66.0,projected demographic proxy
+2067,migr double  & fert eq. to last,66.0,projected demographic proxy
+2068,migr double  & fert eq. to last,66.0,projected demographic proxy
+2069,migr double  & fert eq. to last,66.0,projected demographic proxy
+2070,migr double  & fert eq. to last,66.0,projected demographic proxy
+2071,migr double  & fert eq. to last,66.0,projected demographic proxy
+2072,migr double  & fert eq. to last,67.0,projected demographic proxy
+2073,migr double  & fert eq. to last,67.0,projected demographic proxy
+2074,migr double  & fert eq. to last,67.0,projected demographic proxy
+2075,migr double  & fert eq. to last,67.0,projected demographic proxy
+2076,migr double  & fert eq. to last,67.0,projected demographic proxy
+2077,migr double  & fert eq. to last,67.0,projected demographic proxy
+2078,migr double  & fert eq. to last,67.0,projected demographic proxy
+2079,migr double  & fert eq. to last,67.0,projected demographic proxy
+2080,migr double  & fert eq. to last,68.0,projected demographic proxy
+2081,migr double  & fert eq. to last,68.0,projected demographic proxy
+2082,migr double  & fert eq. to last,68.0,projected demographic proxy
+2083,migr double  & fert eq. to last,68.0,projected demographic proxy
+2084,migr double  & fert eq. to last,68.0,projected demographic proxy
+2085,migr double  & fert eq. to last,68.0,projected demographic proxy
+2086,migr double  & fert eq. to last,68.0,projected demographic proxy
+2087,migr double  & fert eq. to last,68.0,projected demographic proxy
+2088,migr double  & fert eq. to last,68.0,projected demographic proxy
+2089,migr double  & fert eq. to last,68.0,projected demographic proxy
+2090,migr double  & fert eq. to last,68.0,projected demographic proxy
+2091,migr double  & fert eq. to last,68.0,projected demographic proxy
+2092,migr double  & fert eq. to last,68.0,projected demographic proxy
+2093,migr double  & fert eq. to last,68.0,projected demographic proxy
+2094,migr double  & fert eq. to last,68.0,projected demographic proxy
+2095,migr double  & fert eq. to last,68.0,projected demographic proxy
+2096,migr double  & fert eq. to last,68.0,projected demographic proxy
+2097,migr double  & fert eq. to last,68.0,projected demographic proxy
+2098,migr double  & fert eq. to last,68.0,projected demographic proxy
+2099,migr double  & fert eq. to last,68.0,projected demographic proxy
+2100,migr double  & fert eq. to last,68.0,projected demographic proxy
+2027,migr double  & fert ↓ 0 in 2100,63.0,projected demographic proxy
+2028,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2029,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2030,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2031,migr double  & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2032,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2033,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2034,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2035,migr double  & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2036,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2037,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2038,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2039,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2040,migr double  & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2041,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2042,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2043,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2044,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2045,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2046,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2047,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2048,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2049,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2050,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2051,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2052,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2053,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2054,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2055,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2056,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2057,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2058,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2059,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2060,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2061,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2062,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2063,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2064,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2065,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2066,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2067,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2068,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2069,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2070,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2071,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2072,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2073,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2074,migr double  & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2075,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2076,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2077,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2078,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2079,migr double  & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2080,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2081,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2082,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2083,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2084,migr double  & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2085,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2086,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2087,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2088,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2089,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2090,migr double  & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2091,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2092,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2093,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2094,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2095,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2096,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2097,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2098,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2099,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2100,migr double  & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2027,migr average & fert ↑ 2 in 2100,63.0,projected demographic proxy
+2028,migr average & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2029,migr average & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2030,migr average & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2031,migr average & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2032,migr average & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2033,migr average & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2034,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2035,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2036,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2037,migr average & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2038,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2039,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2040,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2041,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2042,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2043,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2044,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2045,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2046,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2047,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2048,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2049,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2050,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2051,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2052,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2053,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2054,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2055,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2056,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2057,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2058,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2059,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2060,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2061,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2062,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2063,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2064,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2065,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2066,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2067,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2068,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2069,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2070,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2071,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2072,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2073,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2074,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2075,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2076,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2077,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2078,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2079,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2080,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2081,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2082,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2083,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2084,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2085,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2086,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2087,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2088,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2089,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2090,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2091,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2092,migr average & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2093,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2094,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2095,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2096,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2097,migr average & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2098,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2099,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2100,migr average & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2027,migr average & fert eq. to last,63.0,projected demographic proxy
+2028,migr average & fert eq. to last,64.0,projected demographic proxy
+2029,migr average & fert eq. to last,64.0,projected demographic proxy
+2030,migr average & fert eq. to last,64.0,projected demographic proxy
+2031,migr average & fert eq. to last,65.0,projected demographic proxy
+2032,migr average & fert eq. to last,65.0,projected demographic proxy
+2033,migr average & fert eq. to last,65.0,projected demographic proxy
+2034,migr average & fert eq. to last,66.0,projected demographic proxy
+2035,migr average & fert eq. to last,66.0,projected demographic proxy
+2036,migr average & fert eq. to last,66.0,projected demographic proxy
+2037,migr average & fert eq. to last,66.0,projected demographic proxy
+2038,migr average & fert eq. to last,67.0,projected demographic proxy
+2039,migr average & fert eq. to last,67.0,projected demographic proxy
+2040,migr average & fert eq. to last,67.0,projected demographic proxy
+2041,migr average & fert eq. to last,68.0,projected demographic proxy
+2042,migr average & fert eq. to last,68.0,projected demographic proxy
+2043,migr average & fert eq. to last,68.0,projected demographic proxy
+2044,migr average & fert eq. to last,68.0,projected demographic proxy
+2045,migr average & fert eq. to last,69.0,projected demographic proxy
+2046,migr average & fert eq. to last,69.0,projected demographic proxy
+2047,migr average & fert eq. to last,69.0,projected demographic proxy
+2048,migr average & fert eq. to last,69.0,projected demographic proxy
+2049,migr average & fert eq. to last,69.0,projected demographic proxy
+2050,migr average & fert eq. to last,69.0,projected demographic proxy
+2051,migr average & fert eq. to last,69.0,projected demographic proxy
+2052,migr average & fert eq. to last,69.0,projected demographic proxy
+2053,migr average & fert eq. to last,69.0,projected demographic proxy
+2054,migr average & fert eq. to last,69.0,projected demographic proxy
+2055,migr average & fert eq. to last,69.0,projected demographic proxy
+2056,migr average & fert eq. to last,69.0,projected demographic proxy
+2057,migr average & fert eq. to last,69.0,projected demographic proxy
+2058,migr average & fert eq. to last,69.0,projected demographic proxy
+2059,migr average & fert eq. to last,69.0,projected demographic proxy
+2060,migr average & fert eq. to last,69.0,projected demographic proxy
+2061,migr average & fert eq. to last,69.0,projected demographic proxy
+2062,migr average & fert eq. to last,69.0,projected demographic proxy
+2063,migr average & fert eq. to last,69.0,projected demographic proxy
+2064,migr average & fert eq. to last,69.0,projected demographic proxy
+2065,migr average & fert eq. to last,69.0,projected demographic proxy
+2066,migr average & fert eq. to last,69.0,projected demographic proxy
+2067,migr average & fert eq. to last,69.0,projected demographic proxy
+2068,migr average & fert eq. to last,69.0,projected demographic proxy
+2069,migr average & fert eq. to last,69.0,projected demographic proxy
+2070,migr average & fert eq. to last,69.0,projected demographic proxy
+2071,migr average & fert eq. to last,69.0,projected demographic proxy
+2072,migr average & fert eq. to last,69.0,projected demographic proxy
+2073,migr average & fert eq. to last,69.0,projected demographic proxy
+2074,migr average & fert eq. to last,69.0,projected demographic proxy
+2075,migr average & fert eq. to last,69.0,projected demographic proxy
+2076,migr average & fert eq. to last,69.0,projected demographic proxy
+2077,migr average & fert eq. to last,69.0,projected demographic proxy
+2078,migr average & fert eq. to last,69.0,projected demographic proxy
+2079,migr average & fert eq. to last,69.0,projected demographic proxy
+2080,migr average & fert eq. to last,70.0,projected demographic proxy
+2081,migr average & fert eq. to last,70.0,projected demographic proxy
+2082,migr average & fert eq. to last,70.0,projected demographic proxy
+2083,migr average & fert eq. to last,70.0,projected demographic proxy
+2084,migr average & fert eq. to last,70.0,projected demographic proxy
+2085,migr average & fert eq. to last,70.0,projected demographic proxy
+2086,migr average & fert eq. to last,70.0,projected demographic proxy
+2087,migr average & fert eq. to last,70.0,projected demographic proxy
+2088,migr average & fert eq. to last,70.0,projected demographic proxy
+2089,migr average & fert eq. to last,70.0,projected demographic proxy
+2090,migr average & fert eq. to last,71.0,projected demographic proxy
+2091,migr average & fert eq. to last,71.0,projected demographic proxy
+2092,migr average & fert eq. to last,71.0,projected demographic proxy
+2093,migr average & fert eq. to last,70.0,projected demographic proxy
+2094,migr average & fert eq. to last,70.0,projected demographic proxy
+2095,migr average & fert eq. to last,70.0,projected demographic proxy
+2096,migr average & fert eq. to last,70.0,projected demographic proxy
+2097,migr average & fert eq. to last,70.0,projected demographic proxy
+2098,migr average & fert eq. to last,70.0,projected demographic proxy
+2099,migr average & fert eq. to last,70.0,projected demographic proxy
+2100,migr average & fert eq. to last,70.0,projected demographic proxy
+2027,migr average & fert ↓ 0 in 2100,63.0,projected demographic proxy
+2028,migr average & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2029,migr average & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2030,migr average & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2031,migr average & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2032,migr average & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2033,migr average & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2034,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2035,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2036,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2037,migr average & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2038,migr average & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2039,migr average & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2040,migr average & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2041,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2042,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2043,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2044,migr average & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2045,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2046,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2047,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2048,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2049,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2050,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2051,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2052,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2053,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2054,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2055,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2056,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2057,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2058,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2059,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2060,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2061,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2062,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2063,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2064,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2065,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2066,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2067,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2068,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2069,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2070,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2071,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2072,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2073,migr average & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2074,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2075,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2076,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2077,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2078,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2079,migr average & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2080,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2081,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2082,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2083,migr average & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2084,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2085,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2086,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2087,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2088,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2089,migr average & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2090,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2091,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2092,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2093,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2094,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2095,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2096,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2097,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2098,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2099,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2100,migr average & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2027,migr zero    & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2028,migr zero    & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2029,migr zero    & fert ↑ 2 in 2100,64.0,projected demographic proxy
+2030,migr zero    & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2031,migr zero    & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2032,migr zero    & fert ↑ 2 in 2100,65.0,projected demographic proxy
+2033,migr zero    & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2034,migr zero    & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2035,migr zero    & fert ↑ 2 in 2100,66.0,projected demographic proxy
+2036,migr zero    & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2037,migr zero    & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2038,migr zero    & fert ↑ 2 in 2100,67.0,projected demographic proxy
+2039,migr zero    & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2040,migr zero    & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2041,migr zero    & fert ↑ 2 in 2100,68.0,projected demographic proxy
+2042,migr zero    & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2043,migr zero    & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2044,migr zero    & fert ↑ 2 in 2100,69.0,projected demographic proxy
+2045,migr zero    & fert ↑ 2 in 2100,70.0,projected demographic proxy
+2046,migr zero    & fert ↑ 2 in 2100,70.0,projected demographic proxy
+2047,migr zero    & fert ↑ 2 in 2100,70.0,projected demographic proxy
+2048,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2049,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2050,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2051,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2052,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2053,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2054,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2055,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2056,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2057,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2058,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2059,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2060,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2061,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2062,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2063,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2064,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2065,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2066,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2067,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2068,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2069,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2070,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2071,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2072,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2073,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2074,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2075,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2076,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2077,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2078,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2079,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2080,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2081,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2082,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2083,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2084,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2085,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2086,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2087,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2088,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2089,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2090,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2091,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2092,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2093,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2094,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2095,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2096,migr zero    & fert ↑ 2 in 2100,72.0,projected demographic proxy
+2097,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2098,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2099,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2100,migr zero    & fert ↑ 2 in 2100,71.0,projected demographic proxy
+2027,migr zero    & fert eq. to last,64.0,projected demographic proxy
+2028,migr zero    & fert eq. to last,64.0,projected demographic proxy
+2029,migr zero    & fert eq. to last,64.0,projected demographic proxy
+2030,migr zero    & fert eq. to last,65.0,projected demographic proxy
+2031,migr zero    & fert eq. to last,65.0,projected demographic proxy
+2032,migr zero    & fert eq. to last,65.0,projected demographic proxy
+2033,migr zero    & fert eq. to last,66.0,projected demographic proxy
+2034,migr zero    & fert eq. to last,66.0,projected demographic proxy
+2035,migr zero    & fert eq. to last,66.0,projected demographic proxy
+2036,migr zero    & fert eq. to last,67.0,projected demographic proxy
+2037,migr zero    & fert eq. to last,67.0,projected demographic proxy
+2038,migr zero    & fert eq. to last,67.0,projected demographic proxy
+2039,migr zero    & fert eq. to last,68.0,projected demographic proxy
+2040,migr zero    & fert eq. to last,68.0,projected demographic proxy
+2041,migr zero    & fert eq. to last,68.0,projected demographic proxy
+2042,migr zero    & fert eq. to last,69.0,projected demographic proxy
+2043,migr zero    & fert eq. to last,69.0,projected demographic proxy
+2044,migr zero    & fert eq. to last,69.0,projected demographic proxy
+2045,migr zero    & fert eq. to last,70.0,projected demographic proxy
+2046,migr zero    & fert eq. to last,70.0,projected demographic proxy
+2047,migr zero    & fert eq. to last,70.0,projected demographic proxy
+2048,migr zero    & fert eq. to last,71.0,projected demographic proxy
+2049,migr zero    & fert eq. to last,71.0,projected demographic proxy
+2050,migr zero    & fert eq. to last,71.0,projected demographic proxy
+2051,migr zero    & fert eq. to last,71.0,projected demographic proxy
+2052,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2053,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2054,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2055,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2056,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2057,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2058,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2059,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2060,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2061,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2062,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2063,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2064,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2065,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2066,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2067,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2068,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2069,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2070,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2071,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2072,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2073,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2074,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2075,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2076,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2077,migr zero    & fert eq. to last,72.0,projected demographic proxy
+2078,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2079,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2080,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2081,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2082,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2083,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2084,migr zero    & fert eq. to last,73.0,projected demographic proxy
+2085,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2086,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2087,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2088,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2089,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2090,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2091,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2092,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2093,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2094,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2095,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2096,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2097,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2098,migr zero    & fert eq. to last,75.0,projected demographic proxy
+2099,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2100,migr zero    & fert eq. to last,74.0,projected demographic proxy
+2027,migr zero    & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2028,migr zero    & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2029,migr zero    & fert ↓ 0 in 2100,64.0,projected demographic proxy
+2030,migr zero    & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2031,migr zero    & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2032,migr zero    & fert ↓ 0 in 2100,65.0,projected demographic proxy
+2033,migr zero    & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2034,migr zero    & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2035,migr zero    & fert ↓ 0 in 2100,66.0,projected demographic proxy
+2036,migr zero    & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2037,migr zero    & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2038,migr zero    & fert ↓ 0 in 2100,67.0,projected demographic proxy
+2039,migr zero    & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2040,migr zero    & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2041,migr zero    & fert ↓ 0 in 2100,68.0,projected demographic proxy
+2042,migr zero    & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2043,migr zero    & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2044,migr zero    & fert ↓ 0 in 2100,69.0,projected demographic proxy
+2045,migr zero    & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2046,migr zero    & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2047,migr zero    & fert ↓ 0 in 2100,70.0,projected demographic proxy
+2048,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2049,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2050,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2051,migr zero    & fert ↓ 0 in 2100,71.0,projected demographic proxy
+2052,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2053,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2054,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2055,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2056,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2057,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2058,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2059,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2060,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2061,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2062,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2063,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2064,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2065,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2066,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2067,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2068,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2069,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2070,migr zero    & fert ↓ 0 in 2100,72.0,projected demographic proxy
+2071,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2072,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2073,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2074,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2075,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2076,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2077,migr zero    & fert ↓ 0 in 2100,73.0,projected demographic proxy
+2078,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy
+2079,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy
+2080,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy
+2081,migr zero    & fert ↓ 0 in 2100,74.0,projected demographic proxy
+2082,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy
+2083,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy
+2084,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy
+2085,migr zero    & fert ↓ 0 in 2100,75.0,projected demographic proxy
+2086,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy
+2087,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy
+2088,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy
+2089,migr zero    & fert ↓ 0 in 2100,76.0,projected demographic proxy
+2090,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy
+2091,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy
+2092,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy
+2093,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy
+2094,migr zero    & fert ↓ 0 in 2100,77.0,projected demographic proxy
+2095,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy
+2096,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy
+2097,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy
+2098,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy
+2099,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy
+2100,migr zero    & fert ↓ 0 in 2100,78.0,projected demographic proxy

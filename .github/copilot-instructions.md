@@ -169,7 +169,8 @@ The main artifact dependencies are:
 | `63_deathprob_projections` | Historical death probabilities | `deathprob_by_age_year_proj.csv` |
 | `70_modelling_future_population` | Population, projected mortality, fertility fit, migration balance | `pop_by_age_year_proj.csv` and scenario figures |
 | `73_analyse_future_population` | Historical and projected population | Population-analysis figures |
-| `84_sustainable_retirement_age` | Historical and projected population, embedded historical retirement data | `sust_retirement_age.html` |
+| `84_sustainable_retirement_age` | Historical and projected population, embedded historical retirement data | `sust_retirement_age.html`, `retirement_age_by_year.csv` |
+| `86_retiree_life_expectation` | Annual retirement ages from `84`, observed mortality from `30`, projected mortality from `63` | Remaining-life CSVs, method/provenance JSON, interactive HTML and static PNG |
 
 Notebook names in the table refer to `.ipynb` files under `notebooks/`; data
 artifacts are under `data/`. Notebooks `20`, `25`, and `53` are supplementary
@@ -190,7 +191,7 @@ python -m unittest discover -s scripts -p 'test_*.py'  # mocked retrieval checks
 ```
 
 The runner reads notebook `00`'s cached catalogue, then executes `14`, `30`, `40`,
-`45`, `63`, `70`, `73`, `84` in order and exports each with `nbmirror`. In `00`
+`45`, `63`, `70`, `73`, `84`, `86` in order and exports each with `nbmirror`. In `00`
 only the catalogue cells are executed: the rest remains optional exploration.
 `--download-only --refresh` separates retrieval from execution;
 `--from-notebook 40` (or another maintained prefix) resumes offline execution.
@@ -255,6 +256,38 @@ the source Git commit and explicitly labels it as retained data. Keep
 `plotly_mimetype+notebook` output in the maintained notebooks so this saved series
 remains recoverable on fresh checkouts. `retirement_summary.json` records the
 current reference ratio and scenario range for the 1990 birth cohort.
+
+Notebook `84` also exports calendar-year retirement ages to
+`retirement_age_by_year.csv`: one historical/current row per population year,
+tagged as an observed effective age or an assumption, and nine scenario rows
+per future year. Keep its existing ratio search and scenario labels unchanged
+when exporting. Notebook `86_retiree_life_expectation` consumes this file plus
+the checked-in mortality CSVs and needs no raw snapshots or live access.
+`python scripts/refresh_model.py --from-notebook 84` regenerates both analyses;
+`--from-notebook 86` reuses the existing annual retirement-age export.
+
+The `86` measure is **period remaining life expectancy conditional on reaching
+the retirement age in that calendar year**, not cohort expectancy or life
+expectancy at birth minus retirement age. Reuse `63`'s mortality probabilities,
+shared across all nine fertility/migration scenarios; do not fit an independent
+longevity trend or force a smooth observed/projected boundary. Use the full
+single-age ISTAT series through 119, uniform within-age deaths, conditional
+fractional ages, and an analytic tail repeating q119. This detailed life-table
+calculation intentionally differs from `70`'s 40% mortality assumption in its
+aggregate 100+ population bin. The tail sensitivity is recorded in the summary.
+Historical effective retirement ages are the unweighted male/female mean from
+`84`, available through 2023; 2024–2026 use its assumed age 64. Mortality is
+observed through 2025, projected from 2026, and scenario retirement ages begin
+in 2027. Preserve these observation/assumption/projection distinctions in all
+exports. Derived outputs are `retiree_life_expectancy_by_year.csv`,
+`retiree_fixed_age_life_expectancy.csv`, `retiree_life_expectancy_summary.json`,
+and `images_output/retiree_life_expectancy.{html,png}`. Pure transformations and
+analytical tests live in `scripts/retiree_life_expectancy.py` and
+`scripts/test_retiree_life_expectancy.py`; the national validator checks annual
+scenario coverage, alignment with the 1990 cohort, expectancy values and hashes.
+Record retrieval time from a matching local mortality source manifest when
+available; otherwise leave it null and retain input hashes, rather than inventing
+a new retrieval date. The November 2026 baseline came from 11 November's cache.
 
 ## Implement and validate changes
 

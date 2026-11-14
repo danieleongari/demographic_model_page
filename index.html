@@ -112,14 +112,14 @@
             <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.
          </p>
 
-         <p>Updated 11 November 2026: population observations through 1 January 2026,
-            final 2025 fertility data, and ISTAT's projections based on 1 January 2025.
-            The official 2025 fertility rate is 1.14 children per woman; the provisional
-            January–July 2026 estimate is shown separately in the source notes.</p>
-
          <p>All calculations, starting from raw data, are available for inspection in the 
             <a href="https://github.com/danieleongari/demographic_model_page">GitHub repository</a> for this project.
             Don't hesitate to contribute!</p>
+
+         <p><i>Updated on November 14th, 2026: population observations through 1 January 2026,
+            final 2025 fertility data, and ISTAT's projections based on 1 January 2025.
+            The official 2025 fertility rate is 1.14 children per woman; the provisional
+            January–July 2026 estimate is shown separately in the source notes.</i></p>
 
          <p><i>Tips for visualization: best way is to browse the web page on a computer, as you can hover the mouse on the plots and check the data in detail 
             (often more convenient than comparing the colors to the legend). Still acceptable for smartphone visualization, it is better to turn it horizontal.
@@ -368,6 +368,27 @@
             </p>
 
             <iframe src="images_output/sust_retirement_age.html" style="height: 350px;"> </iframe>
+
+         <h2>Expected years of life after retirement</h2>
+
+            <p>For each calendar year of retirement, I calculate remaining life expectancy
+               conditional on reaching that year's retirement age, using ISTAT's single-age
+               death probabilities. Observed mortality covers 1974–2025; future mortality
+               follows the same projections used in the population model. Each of the nine
+               scenarios uses its own projected retirement age.
+               See <a href="notebooks_html/86_retiree_life_expectation.html">Notebook#86</a>.
+            </p>
+
+            <iframe src="images_output/retiree_life_expectancy.html" title="Expected remaining life at retirement in all nine scenarios" style="height: 590px;"> </iframe>
+
+            <p>These are period life expectancies: the mortality schedule for each retirement
+               year is held fixed over the remaining lifetime. The effective retirement-age
+               observations end in 2023; the dotted 2024–2026 segment assumes age 64, as in
+               Notebook#84. In 2100, the nine scenarios imply 13.1–23.1 further years of life
+               at their respective retirement ages of 66–78. A
+               <a href="images_output/retiree_life_expectancy.png">companion figure</a>
+               also shows mortality improvement with retirement held at age 65.
+            </p>
 
             <p>That's all folks!
             </p>

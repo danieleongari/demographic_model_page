@@ -11,6 +11,7 @@ import pandas as pd
 from scipy.special import expit
 
 from istat_source import ROOT, SOURCES
+from retiree_life_expectancy import period_life_expectancy, retirement_expectancies
 
 
 def matrix(name):
@@ -115,6 +116,38 @@ def validate():
     previous_totals = baseline.groupby("year")[scenarios].sum()
     retirement = json.loads((ROOT / "data" / "retirement_summary.json").read_text())
     assert set(retirement["scenarios"]) == set(scenarios), "Incomplete 1990-cohort retirement results"
+    ages = pd.read_csv(ROOT / "data" / "retirement_age_by_year.csv")
+    ages = ages.loc[ages.year >= mortality.columns.min()]
+    assert set(ages.scenario) == {"Historical / current", *scenarios}
+    assert not ages.duplicated(["year", "scenario"]).any()
+    assert ages.loc[ages.scenario == "Historical / current", "year"].tolist() == list(range(mortality.columns.min(), last + 1))
+    for scenario in scenarios:
+        path = ages.loc[ages.scenario == scenario]
+        assert path.year.tolist() == list(range(last + 1, 2101))
+        cohort = path.loc[path.year - path.retirement_age == retirement["birth_year"]]
+        assert not cohort.empty
+        assert cohort.retirement_age.min() == retirement["scenarios"][scenario]["retirement_age_min"]
+        assert cohort.retirement_age.max() == retirement["scenarios"][scenario]["retirement_age_max"]
+    expectancy = pd.read_csv(ROOT / "data" / "retiree_life_expectancy_by_year.csv")
+    expected = retirement_expectancies(ages, mortality.loc[50:], future_mortality.loc[50:])
+    pd.testing.assert_frame_equal(expectancy, expected.reset_index(drop=True), check_dtype=False, rtol=1e-12, atol=1e-12)
+    assert np.isfinite(expectancy.remaining_life_expectancy).all() and (expectancy.remaining_life_expectancy > 0).all()
+    fixed = pd.read_csv(ROOT / "data" / "retiree_fixed_age_life_expectancy.csv")
+    assert fixed.year.tolist() == list(range(mortality.columns.min(), 2101))
+    np.testing.assert_allclose(fixed.remaining_life_expectancy, period_life_expectancy(pd.concat([mortality.loc[50:], future_mortality.loc[50:]], axis=1)).loc[65], rtol=1e-12)
+    expectancy_summary = json.loads((ROOT / "data" / "retiree_life_expectancy_summary.json").read_text())
+    assert expectancy_summary["scenario_count"] == 9
+    assert set(expectancy_summary["scenario_results_at_end_year"]) == set(scenarios)
+    assert expectancy_summary["observed_mortality_years"] == [int(mortality.columns.min()), int(mortality.columns.max())]
+    assert expectancy_summary["projected_mortality_years"] == [int(future_mortality.columns.min()), 2100]
+    import hashlib
+
+    for name, digest in expectancy_summary["input_sha256"].items():
+        assert hashlib.sha256((ROOT / "data" / name).read_bytes()).hexdigest() == digest
+    for row in expectancy.loc[expectancy.year == 2100].itertuples():
+        saved = expectancy_summary["scenario_results_at_end_year"][row.scenario]
+        assert saved["retirement_age"] == row.retirement_age
+        np.testing.assert_allclose(saved["remaining_life_expectancy"], row.remaining_life_expectancy, rtol=1e-12)
     comparisons = {}
     for year in (last, 2050, 2080, 2100):
         comparisons[str(year)] = {
@@ -128,13 +161,17 @@ def validate():
         "mortality_observed_through": int(max(mortality.columns)),
         "fertility": fertility,
         "retirement_1990_cohort": retirement,
+        "retiree_life_expectancy_2100": expectancy_summary["scenario_results_at_end_year"],
         "average_annual_migration": int(migration.sum()),
         "max_cohort_rounding_error_people": max_cohort_error,
         "max_birth_rounding_error_people": max_birth_error,
         "checks": ["source hashes and unique keys", "complete age/year grids", "sex totals",
                    "nonnegative finite populations", "probabilities in [0, 1]", "historical cohort changes",
                    "migration reconciliation", "observations preserved in all nine scenarios",
-                   "yearly births/deaths/migration accounting", "base-2025 official projections and ordered intervals"],
+                   "yearly births/deaths/migration accounting", "base-2025 official projections and ordered intervals",
+                   "annual retirement paths cover all nine scenarios and match the 1990 cohort",
+                   "conditional retiree and fixed-age life expectancy match annual mortality",
+                   "retiree expectancy provenance hashes and summary match exports"],
         "source_snapshots": source_summary,
         "scenario_totals_and_changes": comparisons,
     }

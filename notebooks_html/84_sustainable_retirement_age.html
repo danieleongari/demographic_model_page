@@ -14149,6 +14149,12 @@ if (outputEl) {{
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
 <span class="n">retirement_summary</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"reference_ratio"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">wr_ratio</span><span class="p">),</span> <span class="s2">"reference_years"</span><span class="p">:</span> <span class="p">[</span><span class="n">starting_year_mean</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">last_year</span><span class="p">)],</span> <span class="s2">"birth_year"</span><span class="p">:</span> <span class="mi">1990</span><span class="p">,</span> <span class="s2">"scenarios"</span><span class="p">:</span> <span class="p">{}}</span>
+<span class="c1"># Export calendar-year ages for notebook 86, preserving the assumptions above.</span>
+<span class="n">annual_retirement_records</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"year"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="s2">"scenario"</span><span class="p">:</span> <span class="s2">"Historical / current"</span><span class="p">,</span> <span class="s2">"retirement_age"</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">retirem_age</span><span class="p">[</span><span class="n">y</span><span class="p">]),</span>
+     <span class="s2">"retirement_age_source"</span><span class="p">:</span> <span class="s2">"observed effective age"</span> <span class="k">if</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">past_retirement_lookup</span> <span class="k">else</span> <span class="s2">"assumed age"</span><span class="p">}</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">dfp</span><span class="o">.</span><span class="n">columns</span>
+<span class="p">]</span>
 <span class="k">for</span> <span class="n">scenario_label</span><span class="p">,</span> <span class="n">dfpproj</span> <span class="ow">in</span> <span class="n">dfp_projs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">raproj_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span><span class="mi">2100</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
     <span class="n">raproj_df</span><span class="p">[</span><span class="s2">"Sustainable retirement age"</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -14165,6 +14171,12 @@ if (outputEl) {{
         <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
         <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"index"</span><span class="p">:</span> <span class="s2">"Year of Retirement"</span><span class="p">})</span>
         <span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">annual_retirement_records</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+        <span class="p">{</span><span class="s2">"year"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">"Year of Retirement"</span><span class="p">]),</span> <span class="s2">"scenario"</span><span class="p">:</span> <span class="n">scenario_label</span><span class="p">,</span>
+         <span class="s2">"retirement_age"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">"Sustainable retirement age"</span><span class="p">]),</span>
+         <span class="s2">"retirement_age_source"</span><span class="p">:</span> <span class="s2">"projected demographic proxy"</span><span class="p">}</span>
+        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">raproj_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">raproj_df</span><span class="p">[</span><span class="s2">"Year of Retirement"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">last_year</span><span class="p">]</span><span class="o">.</span><span class="n">iterrows</span><span class="p">()</span>
     <span class="p">)</span>
     <span class="n">cohort</span> <span class="o">=</span> <span class="n">raproj_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">raproj_df</span><span class="p">[</span><span class="s2">"Born year retiring"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1990</span><span class="p">]</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">cohort</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
@@ -14210,6 +14222,9 @@ if (outputEl) {{
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../data/retirement_summary.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">output</span><span class="p">:</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">retirement_summary</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">retirement_summary</span><span class="p">)</span>
+
+<span class="c1"># One historical/current row per year, then all nine scenarios after the population baseline.</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">annual_retirement_records</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"../data/retirement_age_by_year.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

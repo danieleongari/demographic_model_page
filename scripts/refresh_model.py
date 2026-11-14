@@ -17,7 +17,7 @@ from jupyter_client import KernelManager
 
 from istat_source import ROOT, istat_data, worldbank_fertility, population_history
 
-CHAIN = ("14", "30", "40", "45", "63", "70", "73", "84")
+CHAIN = ("14", "30", "40", "45", "63", "70", "73", "84", "86")
 NOTEBOOKS = ROOT / "notebooks"
 
 
@@ -95,7 +95,7 @@ def main():
     parser.add_argument("--download-only", action="store_true", help="Save source snapshots without running notebooks")
     parser.add_argument("--heatwaves", action="store_true", help="Run supplementary notebook 53 only; --refresh downloads Open-Meteo, never ISTAT")
     parser.add_argument("--from-notebook", choices=CHAIN, default="14", help="Resume offline execution at a notebook")
-    parser.add_argument("--through-notebook", choices=CHAIN, default="84", help="Stop after this notebook")
+    parser.add_argument("--through-notebook", choices=CHAIN, default="86", help="Stop after this notebook")
     args = parser.parse_args()
     if args.heatwaves:
         if args.refresh:
@@ -124,7 +124,7 @@ def main():
         parser.error("--from-notebook must not follow --through-notebook")
     for prefix in CHAIN[start:stop + 1]:
         execute_offline(path_for(prefix))
-    if args.through_notebook != "84":
+    if args.through_notebook != "86":
         return
     from validate_model import validate
 
