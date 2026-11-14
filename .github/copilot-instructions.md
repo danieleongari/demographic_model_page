@@ -279,7 +279,13 @@ Historical effective retirement ages are the unweighted male/female mean from
 `84`, available through 2023; 2024–2026 use its assumed age 64. Mortality is
 observed through 2025, projected from 2026, and scenario retirement ages begin
 in 2027. Preserve these observation/assumption/projection distinctions in all
-exports. Derived outputs are `retiree_life_expectancy_by_year.csv`,
+exports. Keep notebook 86's interactive chart consistent with the adjacent
+retirement-age chart: standard `plotly` background, no title or legend, no
+projection-background shading, and a 780×320 figure in a 350px main-page iframe.
+Retain scenario names in hover and the existing scenario colors. Its Matplotlib
+companion keeps its independent title, legend and layout; presentation-only
+interactive changes should not regenerate that PNG or numerical exports.
+Derived outputs are `retiree_life_expectancy_by_year.csv`,
 `retiree_fixed_age_life_expectancy.csv`, `retiree_life_expectancy_summary.json`,
 and `images_output/retiree_life_expectancy.{html,png}`. Pure transformations and
 analytical tests live in `scripts/retiree_life_expectancy.py` and
@@ -291,6 +297,17 @@ a new retrieval date. The November 2026 baseline came from 11 November's cache.
 
 ## Implement and validate changes
 
+- **Standing language preference:** For every reader-facing ISTAT link in the
+  main page, README, notebook sources and their HTML exports, use the official
+  English page when it exists and can be found. Keep the original Italian page
+  or document only when no English equivalent exists or can be found. Verify the
+  actual destination and matching subject/reference period; do not invent URLs
+  by translating slugs or point to an older release to obtain English text.
+  English translations may have different publication dates or misleading year
+  headings: preserve the data reference year and distinguish the original release
+  date from the English page's date. Regenerate affected notebook mirrors without
+  executing analyses for link-only edits. This preference does not change API
+  endpoints, cached provenance or the ISTAT retrieval safety rules.
 - Keep notebook edits focused; preserve cell identities and avoid unrelated
   output churn. Preserve the Plotly version constraint in the requirements.
   Check actual imports when preparing an environment; the declared dependencies
@@ -311,6 +328,15 @@ a new retrieval date. The November 2026 baseline came from 11 November's cache.
   tooling before choosing a command. Keep `index.html` links, embedded figures,
   explanatory text, and README conclusions consistent with the new results.
   Inspect changed presentation assets visually and check their local links.
+- Maintain the `index.html` `.data-update` source box when revising the main-page
+  summary or publishing refreshed model inputs. Use an explicit ISO page-update
+  date in `<time datetime="YYYY-MM-DD">`, followed by three bullets: population
+  observation date, final official fertility rate and reference year, and ISTAT
+  projection base date and horizon. Link each bullet to its official release,
+  labelled `ISTAT YYYY-MM-DD` with the verified publication date. Cross-check
+  coverage and fertility against the checked-in data; keep provisional estimates
+  separate in the README source notes. An unchanged offline rerun does not advance
+  the page-update date. Do not restore a `document.lastModified` footer timestamp.
 - Finish by updating `agent-handoff.md` and any affected `.github/` guidance, inspecting
   the diff, and reporting changes, validation, and unresolved limitations. State
   when results or exports could not be regenerated rather than implying success.

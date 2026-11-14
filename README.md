@@ -116,6 +116,11 @@ offline. In 2100, the nine scenarios give retirement ages of 66–78 and remaini
 life expectancies of 13.1–23.1 years. At a fixed age of 65, remaining life rises
 from 21.4 years in 2025 to 24.0 in 2100 under the existing mortality projection.
 
+The interactive retirement-life chart uses the same background and scenario
+colors as the preceding retirement-age chart, without a repeated title or legend.
+Scenario names remain available on hover; the static companion retains its
+title and legend.
+
 Notebook `53` can be refreshed separately:
 
 ```sh
@@ -145,7 +150,7 @@ monthly means and annual heat exposure are calculated in this project.
   - Add notebook `86_retiree_life_expectation`, conditional remaining life at
     retirement for 1974–2100, all nine projected retirement-age paths, offline
     exports, and analytical life-table checks.
-  - Refresh the national model using [final 2025 fertility data, released on 21 October 2026](https://www.istat.it/comunicato-stampa/natalita-e-fecondita-della-popolazione-residente-anno-2025/),
+  - Refresh the national model using [final 2025 fertility data, released on 21 October 2026](https://www.istat.it/en/press-release/births-and-fertility-of-the-resident-population-year-2026/),
     and [ISTAT population and fertility projections based on 1 January 2025](https://www.istat.it/comunicato-stampa/previsioni-della-popolazione-residente-delle-famiglie-e-delle-forze-di-lavoro-base-1-1-2025/).
   - Keep the provisional January–July 2026 fertility estimate separate from full-year observations.
   - Use the same fitted fertility-age parameters for calibration and projection;
@@ -155,7 +160,7 @@ monthly means and annual heat exposure are calculated in this project.
     offline execution, and demographic accounting validation.
 
 - 2026 May
-  - Update with 2025 data ([press release](https://www.istat.it/en/press-release/indicatori-demografici-anno-2025/)) 
+  - Update with 2025 data ([press release](https://www.istat.it/en/press-release/demographic-indicators-year-2025/))
   - Finalize replacement of `istatapi` with `sdmx` for ISTAT data retrieval
   - For the population, use `RICPOPRES` data back to 1952
   - Include gender split in some graphs 
@@ -170,7 +175,7 @@ monthly means and annual heat exposure are calculated in this project.
   - Revamp the population projections on 3x3 scenarios 
   - add more plots about the future population
   - Revamp the website 
-  - Update with 2024 data ([press release](https://www.istat.it/comunicato-stampa/indicatori-demografici-anno-2024/)) but note that this is still a partial update because it still lacks the latest mortality and fertility data
+  - Update with 2024 data ([press release](https://www.istat.it/en/press-release/demographic-indicators-year-2024/)) but note that this is still a partial update because it still lacks the latest mortality and fertility data
 
 - 2025 January
   - More in depth analysis for mortality, fertility rates, and migration balance: comparing my calculations from the 
@@ -202,15 +207,28 @@ provenance summary accompanies the tracked validation report.
 
 | Input | SDMX dataflow | Current coverage / interpretation |
 | --- | --- | --- |
-| Population | `22_289_DF_DCIS_POPRES1_1` | Residents on 1 January, since 2019; earlier years retained from the existing reconstruction baseline |
+| Population | `22_289_DF_DCIS_POPRES1_1` | Residents on 1 January, 2019–2026 ([ISTAT 2026-03-31](https://www.istat.it/en/press-release/demographic-indicators-year-2025/)); earlier years retained from the existing reconstruction baseline |
 | Death probability | `26_295_DF_DCIS_MORTALITA1_2` | Annual single-age probabilities; source values per thousand converted to probabilities |
-| Official fertility | `25_326_DF_DCIS_FECONDITA1_5` | Full-year TFR by mother's citizenship |
+| Official fertility | `25_326_DF_DCIS_FECONDITA1_5` | Full-year TFR by mother's citizenship; final 2025 data ([ISTAT 2026-11-03](https://www.istat.it/en/press-release/births-and-fertility-of-the-resident-population-year-2026/)) |
 | Fertility age profile | `25_326_DF_DCIS_FECONDITA1_7` | Age-specific rates per thousand women |
 | Migration comparison | `28_185` | Immigration/emigration with abroad, by age group and citizenship |
-| Population projections | `165_889_DF_DCIS_PREVDEM1_1` | Base 1 January 2025, through 2080 |
+| Population projections | `165_889_DF_DCIS_PREVDEM1_1` | Base 1 January 2025, through 2080 ([ISTAT 2026-08-31](https://www.istat.it/comunicato-stampa/previsioni-della-popolazione-residente-delle-famiglie-e-delle-forze-di-lavoro-base-1-1-2025/)) |
 | Fertility projections | `165_889_DF_DCIS_PREVDEM1_3` | TFR assumptions, base 2025, through 2080 |
 
-The official full-year 2025 TFR is **1.14**. The model separately calibrates an
+The main page's framed update summary lists the observation/reference dates and
+dated release links above; its explicit update date replaces the former file
+modification timestamp.
+
+ISTAT links use the English version when available. Original Italian reports
+are retained when an English equivalent cannot be found, including the base-2025
+projection release and the historical methodology PDFs.
+
+The official full-year 2025 TFR is **1.14**. The English release is dated
+3 November 2026 (the original Italian release was published on 21 October).
+Despite the English page's “Year 2026” heading, its final observations refer to
+2025. It also reports a
+**provisional January–July 2026 estimate of 1.13**, which is not a full-year model
+input. The model separately calibrates an
 effective rate to reproduce age-0 residents on the following 1 January under its
 50% women and fitted age-profile assumptions. These quantities differ and should
 not be labelled interchangeably. The nine model scenarios are sensitivity

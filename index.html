@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
  <head>
+   <meta charset="UTF-8">
    <title>Demographic Model</title>
    <link rel="icon" href="images_other/favicon-32x32.png" >
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap">
    <style>
       body {
          padding-top: 50px; /* to avoid the fixed banner */ 
@@ -45,38 +45,24 @@
          max-width: 800px;
          margin: 0 auto;
       }
-      .footer {
-         bottom: 0;
-         width: 100%;
-         height: 50px; /* Adjust this value to match the height of your banner */
-         display: flex;
-         justify-content: space-between;
-         align-items: flex-end;
-         margin-top: 10px;
-         border-top: 1px solid white;
-         background: linear-gradient(to bottom, white 0%, white 50% );
-         }
-      .footer .left {
-         padding-left: 10px;
-         padding-bottom: 10px;
-         font-family: 'Dancing Script', cursive;
-         font-size: 20px;
-         color: black;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-         text-decoration: none;
+      .data-update {
+         margin: 24px 0;
+         padding: 16px 20px;
+         border: 1px solid #d5dce3;
+         border-radius: 6px;
+         background-color: #f7f9fb;
+         text-align: left;
+         line-height: 1.5;
       }
-      .footer .left:hover {
-         color: gray;
+      .data-update p {
+         margin: 0 0 8px;
       }
-      .footer .right {
-         padding-right: 10px;
-         padding-bottom: 10px;
-         font-family: 'Dancing Script', cursive;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-         font-size: 18px;
+      .data-update ul {
+         margin: 0;
+         padding-left: 20px;
       }
-      #modDate {
-         font-size: 15px;
+      .data-update li + li {
+         margin-top: 6px;
       }
      h2, h3, h4 {
          text-align: left;
@@ -109,17 +95,24 @@
 
          <p>This is a visualization of a model of the resident population in Italy, projected till 2100.
             The model is based on the historical demographic data published by 
-            <a href="https://www.istat.it/en/archivio/demography">ISTAT (Italian National Institute of Statistics)</a>.
+            <a href="https://www.istat.it/en/statistical-themes/population/population-and-households/">ISTAT (Italian National Institute of Statistics)</a>.
          </p>
 
          <p>All calculations, starting from raw data, are available for inspection in the 
             <a href="https://github.com/danieleongari/demographic_model_page">GitHub repository</a> for this project.
             Don't hesitate to contribute!</p>
 
-         <p><i>Updated on November 14th, 2026: population observations through 1 January 2026,
-            final 2025 fertility data, and ISTAT's projections based on 1 January 2025.
-            The official 2025 fertility rate is 1.14 children per woman; the provisional
-            January–July 2026 estimate is shown separately in the source notes.</i></p>
+         <aside class="data-update" aria-label="Last update and data sources">
+            <p><strong>Last update on <time datetime="2026-11-14">2026-11-14</time></strong>, based on:</p>
+            <ul>
+               <li><strong>Population:</strong> observations at 1 January 2026 —
+                  <a href="https://www.istat.it/en/press-release/demographic-indicators-year-2025/">ISTAT 2026-03-31</a>.</li>
+               <li><strong>Fertility:</strong> final 2025 rate of 1.14 children per woman —
+                  <a href="https://www.istat.it/en/press-release/births-and-fertility-of-the-resident-population-year-2026/">ISTAT 2026-11-03</a>.</li>
+               <li><strong>Population projections:</strong> base 1 January 2025, through 2080 —
+                  <a href="https://www.istat.it/comunicato-stampa/previsioni-della-popolazione-residente-delle-famiglie-e-delle-forze-di-lavoro-base-1-1-2025/">ISTAT 2026-08-31</a>.</li>
+            </ul>
+         </aside>
 
          <p><i>Tips for visualization: best way is to browse the web page on a computer, as you can hover the mouse on the plots and check the data in detail 
             (often more convenient than comparing the colors to the legend). Still acceptable for smartphone visualization, it is better to turn it horizontal.
@@ -379,7 +372,7 @@
                See <a href="notebooks_html/86_retiree_life_expectation.html">Notebook#86</a>.
             </p>
 
-            <iframe src="images_output/retiree_life_expectancy.html" title="Expected remaining life at retirement in all nine scenarios" style="height: 590px;"> </iframe>
+            <iframe src="images_output/retiree_life_expectancy.html" title="Expected remaining life at retirement in all nine scenarios" style="height: 350px;"> </iframe>
 
             <p>These are period life expectancies: the mortality schedule for each retirement
                year is held fixed over the remaining lifetime. The effective retirement-age
@@ -401,10 +394,6 @@
          <!-- <div style="text-align: center;">
             <img src="images_other/tldr.jpg" alt="TLDR Image" style="width: 700px;"> -->
    </div>
-   <div class="footer">
-      <span class="left"> </span>
-      <span class="right">Last modification <span id="modDate" font-size="10px"></span></span>
-  </div>
 </body>
 </html>
 <script>
@@ -422,14 +411,4 @@
        }
        lastScrollTop = scrollTop;
    });
-</script>
-<script>
-   var lastMod = new Date(document.lastModified);
-   var day = ("0" + lastMod.getDate()).slice(-2);
-   var month = ("0" + (lastMod.getMonth() + 1)).slice(-2);
-   var year = lastMod.getFullYear();
-   var hours = ("0" + lastMod.getHours()).slice(-2);
-   var minutes = ("0" + lastMod.getMinutes()).slice(-2);
-   var formattedDate = day + "/" + month + "/" + year + " " + hours + ":" + minutes;
-   document.getElementById('modDate').textContent = formattedDate;
 </script>
